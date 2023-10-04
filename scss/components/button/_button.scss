@@ -108,3 +108,24 @@ button,
     @include setBgColor(lighten($textprimary, 20%), $white);
   }
 }
+
+.btn-remove {
+  @include square(32);
+  @include flex-center;
+  overflow: hidden;
+  padding: size(8);
+
+  svg {
+    @include transitiontransform;
+  }
+
+  @include hover {
+    svg {
+      @include rotate(90);
+
+      path {
+        stroke: $danger;
+      }
+    }
+  }
+}

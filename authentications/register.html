@@ -164,7 +164,7 @@
               <div class="auth">
                 <div class="auth-header">
                   <div class="titletext">
-                    <h1 class="auth-title">Welcome back</h1>
+                    <h1 class="auth-title">Join grow your business</h1>
                     <div class="textinfo">
                       <p class="authtext">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit
@@ -172,6 +172,139 @@
                         ame
                       </p>
                     </div>
+                  </div>
+                </div>
+
+                <div class="auth-body">
+                  <form class="authform">
+                    <div class="inputbox">
+                      <label for="regname" class="inputlabel">
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        id="regname"
+                        class="inputfield"
+                        placeholder="Enter name"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+
+                    <div class="inputbox">
+                      <label for="regmail" class="inputlabel">
+                        E-mail address
+                      </label>
+                      <input
+                        type="email"
+                        id="regmail"
+                        class="inputfield"
+                        placeholder="E-mail address"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+
+                    <div class="inputbox">
+                      <label for="regpassword" class="inputlabel">
+                        Password
+                      </label>
+                      <input
+                        type="password"
+                        id="regpassword"
+                        class="inputfield"
+                        placeholder="Enter password"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+
+                    <div class="passwordbox">
+                      <div class="inputbox">
+                        <label for="confirmregmail" class="inputlabel">
+                          Confirm Password
+                        </label>
+                        <input
+                          type="password"
+                          id="confirmregmail"
+                          class="inputfield"
+                          placeholder="Confirm password"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+
+                      <div class="customcheck">
+                        <input
+                          type="checkbox"
+                          name="rememberme"
+                          id="rememberme"
+                          class="checkinput"
+                          autocomplete="off"
+                          hidden
+                        />
+                        <label for="rememberme" class="checklabel">
+                          Remember me
+                        </label>
+                      </div>
+
+                      <div class="customcheck">
+                        <input
+                          type="checkbox"
+                          name="rememberme"
+                          id="termscheck"
+                          class="checkinput"
+                          autocomplete="off"
+                          required
+                          hidden
+                        />
+                        <label for="termscheck" class="checklabel">
+                          I agree to all the
+                          <a href="#" class="checklink">Terms</a> and
+                          <a href="#" class="checklink">Privacy Policy.</a>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="submitbox mt-5">
+                      <button type="submit" class="btn-submit w-100">
+                        Create Account
+                      </button>
+                    </div>
+                  </form>
+
+                  <div class="authinfo">
+                    <figure class="icon">
+                      <svg
+                        width="133"
+                        height="1"
+                        viewBox="0 0 133 1"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line y1="0.5" x2="133" y2="0.5" stroke="#E2E8F0" />
+                      </svg>
+                    </figure>
+
+                    <p class="text">or Sign up with email</p>
+
+                    <figure class="icon">
+                      <svg
+                        width="133"
+                        height="1"
+                        viewBox="0 0 133 1"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          x1="4.37114e-08"
+                          y1="0.5"
+                          x2="133"
+                          y2="0.500012"
+                          stroke="#E2E8F0"
+                        />
+                      </svg>
+                    </figure>
                   </div>
 
                   <button type="button" class="btn-signin w-100">
@@ -201,97 +334,8 @@
                         />
                       </svg>
                     </span>
-                    <span class="text">Sign in with Google</span>
+                    <span class="text">Sign up with Google</span>
                   </button>
-                </div>
-
-                <div class="auth-body">
-                  <div class="authinfo">
-                    <figure class="icon">
-                      <svg
-                        width="133"
-                        height="1"
-                        viewBox="0 0 133 1"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <line y1="0.5" x2="133" y2="0.5" stroke="#E2E8F0" />
-                      </svg>
-                    </figure>
-
-                    <p class="text">or Sign in with email</p>
-
-                    <figure class="icon">
-                      <svg
-                        width="133"
-                        height="1"
-                        viewBox="0 0 133 1"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <line
-                          x1="4.37114e-08"
-                          y1="0.5"
-                          x2="133"
-                          y2="0.500012"
-                          stroke="#E2E8F0"
-                        />
-                      </svg>
-                    </figure>
-                  </div>
-
-                  <form class="authform">
-                    <div class="inputbox">
-                      <label for="loginemail" class="inputlabel">
-                        E-mail address
-                      </label>
-                      <input
-                        type="email"
-                        id="loginemail"
-                        class="inputfield"
-                        placeholder="E-mail address"
-                      />
-                    </div>
-
-                    <div class="passwordbox">
-                      <div class="inputbox">
-                        <label for="loginpassword" class="inputlabel">
-                          Password
-                        </label>
-                        <input
-                          type="password"
-                          id="loginpassword"
-                          class="inputfield"
-                          placeholder="Enter password"
-                        />
-                      </div>
-
-                      <div class="d-flex justify-content-between">
-                        <div class="customcheck">
-                          <input
-                            type="checkbox"
-                            name="rememberme"
-                            id="rememberme"
-                            class="checkinput"
-                            hidden
-                          />
-                          <label for="rememberme" class="checklabel">
-                            Remember me
-                          </label>
-                        </div>
-
-                        <a href="forgotpassword.html" class="authlink">
-                          Forgot password?
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="submitbox mt-5">
-                      <button type="submit" class="btn-submit w-100">
-                        Login
-                      </button>
-                    </div>
-                  </form>
                 </div>
               </div>
             </div>

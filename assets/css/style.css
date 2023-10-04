@@ -251,9 +251,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  text-rendering: optimizeSpeed;
-  overflow: hidden;
   scroll-snap-type: y mandatory;
+  text-rendering: optimizeSpeed;
 }
 
 h1,
@@ -441,6 +440,25 @@ button:focus,
 .btn-submit:not([disabled]):hover {
   background: #31417d;
   color: hsl(0, 0%, 100%);
+}
+
+.btn-remove {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.btn-remove svg {
+  transition: transform 350ms ease-in-out;
+}
+.btn-remove:not([disabled]):hover svg {
+  transform: rotate(90deg);
+}
+.btn-remove:not([disabled]):hover svg path {
+  stroke: hsl(7, 100%, 55%);
 }
 
 .header {
@@ -879,8 +897,24 @@ table tr td {
   color: hsl(227, 44%, 14%);
 }
 .customcheck .checklabel .checklink {
+  color: hsl(227, 44%, 14%);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
   transition: color 350ms ease-in-out;
 }
+.customcheck .checklabel .checklink:not([disabled]):hover {
+  color: hsl(4, 100%, 68%);
+}
+.customcheck .checklabel .checklink::-moz-selection {
+  background: transparent;
+  color: hsl(227, 44%, 14%);
+}
+.customcheck .checklabel .checklink::selection {
+  background: transparent;
+  color: hsl(227, 44%, 14%);
+}
+
 .desktoplist {
   margin: 0;
   padding: 0;
@@ -1030,6 +1064,57 @@ table tr td {
 .pagination .page-item:hover:not(.active) .page-link {
   background: hsl(4, 100%, 68%);
   color: hsl(0, 0%, 100%);
+}
+
+.topbar {
+  background: hsl(210, 20%, 98%);
+  border-bottom: solid 0.0625rem hsl(210, 42%, 90%);
+  padding: 0.71875rem 0.875rem;
+  display: none;
+}
+@media screen and (min-width: 48rem) {
+  .topbar {
+    display: flex;
+    align-items: center;
+  }
+}
+.topbar .topbarcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.topbar .topbarcontent .topbarinfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.topbar .topbarcontent .topbarinfo .topbaricon {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.topbar .topbarcontent .topbarinfo .topbartext {
+  color: hsl(227, 44%, 14%);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.topbar .topbarcontent .topbarinfo .topbartext .textlink {
+  color: inherit;
+  font: inherit;
+  font-weight: 500;
+  text-decoration-line: underline;
+  transition: color 350ms ease-in-out;
+}
+.topbar .topbarcontent .topbarinfo .topbartext .textlink:not([disabled]):hover {
+  color: hsl(4, 100%, 68%);
+}
+.topbar .topbarcontent .btn-remove {
+  position: absolute;
+  right: 0;
 }
 
 .auth {

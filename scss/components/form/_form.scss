@@ -104,15 +104,18 @@
     }
 
     .checklink {
-      // color: $textlink;
+      color: $textprimary;
+      font: inherit;
+      font-weight: 600;
+      text-decoration: underline;
       @include transitionscolor;
 
       @include hover {
-        // color: $primary;
+        color: $primary;
       }
 
       &::selection {
-        // @include setBgColor(transparent, $headingtext);
+        @include setBgColor(transparent, $textprimary);
       }
     }
   }

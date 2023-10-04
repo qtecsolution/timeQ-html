@@ -1,3 +1,37 @@
 @use '../global' as *;
 @use '../partials' as *;
 
+.errormain {
+  min-height: 50vh;
+}
+
+.notfound {
+  &-content {
+    @include flex-center-column;
+    gap: size(48);
+    text-align: center;
+  }
+  
+  &-thumbnail {
+    @include w100;
+    height: size(215);
+    @include flex-center;
+    margin-bottom: size(16);
+    overflow: hidden;
+
+    img {
+      @include wh100;
+      object-fit: contain;
+    }
+  }
+
+  .errortitle {
+    font-weight: 600;
+  }
+
+  .btn-main {
+    min-width: size(140);
+    max-width: size(180);
+    margin-inline: auto;
+  }
+}

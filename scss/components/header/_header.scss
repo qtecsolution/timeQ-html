@@ -1,0 +1,23 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+.header {
+  background: $white;
+  @include border-single(bottom, solid, 1, $headerborder);
+
+  &-nav {
+    @include flex-center-between;
+  
+    .brand-logo {
+      width: size(120);
+      height: size(36);
+      @include flex-center;
+      overflow: hidden;
+
+      img {
+        @include wh100;
+        object-fit: contain;
+      }
+    }
+  }
+}

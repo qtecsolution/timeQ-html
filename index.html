@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="TimeQ HTML Template" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap" />
+    <meta name="author" content="Qtec Solution Limited" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeQ</title>
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/favicon.svg"
+      type="image/svg+xml"
+    />
+    <!-- REMIX-ICON(CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    />
+    <!-- BOOTSTRAP-CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <!-- TIMEQ-CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- PAGE-LOADER START -->
+    <div class="preloader" id="preloader">
+      <div class="preloader1">
+        <div class="loader loader-inner-1">
+          <div class="loader loader-inner-2">
+            <div class="loader loader-inner-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PAGE-LOADER END -->
+
+    <!-- HEADER-SECTION START -->
+    <header class="header sticky-top">
+      <div class="container">
+        <nav id="header-nav" class="header-nav">
+          <!-- HAMBURGER-MENU -->
+          <div class="d-lg-none d-flex">
+            <button
+              class="btn-hamburger"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+            >
+              <i class="ri-menu-2-fill"></i>
+            </button>
+          </div>
+
+          <!-- MOBILE-MENU -->
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="mobileMenu"
+            aria-labelledby="mobileMenuLabel"
+          >
+            <div class="offcanvas-header">
+              <!-- BRAND-LOGO -->
+              <a href="index.html" class="brand-logo">
+                <img src="assets/images/logo/logo.svg" alt="brand-logo" />
+              </a>
+
+              <button
+                type="button"
+                id="close-button"
+                class="btn-close d-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="ri-close-fill"></i>
+              </button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="mobilelist">
+                <li class="mobilelist-item">
+                  <a href="index.html" class="mobilelist-link active">Home</a>
+                </li>
+
+                <li class="mobilelist-item">
+                  <a href="#" class="mobilelist-link">Features</a>
+                </li>
+
+                <li class="mobilelist-item">
+                  <a href="about.html" class="mobilelist-link">About Us</a>
+                </li>
+
+                <li class="mobilelist-item">
+                  <a href="#" class="mobilelist-link">Pricing</a>
+                </li>
+
+                <li class="mobilelist-item">
+                  <a href="contact.html" class="mobilelist-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- BRAND-LOGO -->
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo/logo.svg" alt="brand-logo" />
+          </a>
+
+          <!-- DESKTOP-LIST -->
+          <div class="d-none d-lg-flex">
+            <ul class="desktoplist">
+              <li class="desktoplist-item">
+                <a href="index.html" class="desktoplist-link active">Home</a>
+              </li>
+
+              <li class="desktoplist-item">
+                <a href="#" class="desktoplist-link">Features</a>
+              </li>
+
+              <li class="desktoplist-item">
+                <a href="about.html" class="desktoplist-link">About Us</a>
+              </li>
+
+              <li class="desktoplist-item">
+                <a href="#" class="desktoplist-link">Pricing</a>
+              </li>
+
+              <li class="desktoplist-item">
+                <a href="contact.html" class="desktoplist-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- AUTH-LIST -->
+          <ul class="authlist">
+            <li class="authlist-item">
+              <a href="authentications/login.html" class="btn-text">
+                Sign In
+              </a>
+            </li>
+
+            <li class="authlist-item d-none d-lg-flex">
+              <a href="#" class="btn-main">Get Started</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER-SECTION END -->
+
+    <!-- FOOTER-SECTION START -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5 col-md-6">
+              <div class="footerinfo">
+                <div class="footerinfo-header">
+                  <!-- BRAND-LOGO -->
+                  <figure class="brand-logo">
+                    <img src="assets/images/logo/logo.svg" alt="brand-logo" />
+                  </figure>
+                </div>
+
+                <div class="footerinfo-body">
+                  <div class="info">
+                    <p class="footertext">
+                      TimeQ is a comprehensive team collaboration and task
+                      management platform designed to streamline communication,
+                      improve productivity, and enhance teamwork within
+                      organizations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="footerinfo">
+                <div class="footerinfo-header">
+                  <h5 class="footertitle">Features</h5>
+                </div>
+
+                <div class="footerinfo-body">
+                  <ul class="footerlist">
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">
+                        Support Ticket Management
+                      </a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">
+                        Internal Team Messaging
+                      </a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">Task Assignment</a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">
+                        Personal To-Do Lists
+                      </a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">
+                        Appointment System
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+              <div class="footerinfo">
+                <div class="footerinfo-header">
+                  <h5 class="footertitle">Company</h5>
+                </div>
+
+                <div class="footerinfo-body">
+                  <ul class="footerlist">
+                    <li class="footerlist-item">
+                      <a href="contact.html" class="footerlist-link">
+                        Contact Us
+                      </a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">Terms of Service</a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+              <div class="footerinfo">
+                <div class="footerinfo-header">
+                  <h5 class="footertitle">Follow us</h5>
+                </div>
+
+                <div class="footerinfo-body">
+                  <ul class="social-list">
+                    <li class="social-list-item">
+                      <a
+                        href="#"
+                        class="social-list-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Follow on Facebook"
+                      >
+                        <svg
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.33268 9.47428H10.9993L11.666 6.80762H9.33268V5.47428C9.33268 4.78762 9.33268 4.14095 10.666 4.14095H11.666V1.90095C11.4487 1.87228 10.628 1.80762 9.76135 1.80762C7.95135 1.80762 6.66602 2.91228 6.66602 4.94095V6.80762H4.66602V9.47428H6.66602V15.1409H9.33268V9.47428Z"
+                            fill="#141B34"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social-list-item">
+                      <a
+                        href="#"
+                        class="social-list-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Follow on Twitter"
+                      >
+                        <svg
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.974 4.47494C14.4607 4.70827 13.9073 4.8616 13.334 4.93494C13.9207 4.5816 14.374 4.0216 14.5873 3.34827C14.034 3.6816 13.4207 3.91494 12.774 4.04827C12.2473 3.47494 11.5073 3.1416 10.6673 3.1416C9.10068 3.1416 7.82068 4.4216 7.82068 6.0016C7.82068 6.22827 7.84734 6.44827 7.89401 6.65494C5.52068 6.53494 3.40734 5.39494 2.00068 3.66827C1.75401 4.08827 1.61401 4.5816 1.61401 5.1016C1.61401 6.09494 2.11401 6.97494 2.88734 7.47494C2.41401 7.47494 1.97401 7.3416 1.58734 7.1416V7.1616C1.58734 8.54827 2.57401 9.70827 3.88068 9.96827C3.46116 10.0831 3.02074 10.099 2.59401 10.0149C2.77508 10.5833 3.1297 11.0805 3.60802 11.4369C4.08634 11.7932 4.66431 11.9907 5.26068 12.0016C4.24976 12.8019 2.99667 13.2345 1.70734 13.2283C1.48068 13.2283 1.25401 13.2149 1.02734 13.1883C2.29401 14.0016 3.80068 14.4749 5.41401 14.4749C10.6673 14.4749 13.554 10.1149 13.554 6.33494C13.554 6.20827 13.554 6.08827 13.5473 5.9616C14.1073 5.5616 14.5873 5.05494 14.974 4.47494Z"
+                            fill="#141B34"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social-list-item">
+                      <a
+                        href="#"
+                        class="social-list-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Follow on Instagram"
+                      >
+                        <svg
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.68442 1.80844C9.17091 1.80657 9.6574 1.81146 10.1438 1.8231L10.2731 1.82777C10.4224 1.8331 10.5697 1.83977 10.7478 1.84777C11.4571 1.8811 11.9411 1.9931 12.3658 2.15777C12.8058 2.3271 13.1764 2.55644 13.5471 2.9271C13.886 3.26017 14.1483 3.66307 14.3158 4.10777C14.4804 4.53244 14.5924 5.0171 14.6258 5.72644C14.6338 5.90377 14.6404 6.05177 14.6458 6.2011L14.6498 6.33044C14.6616 6.81657 14.6667 7.30283 14.6651 7.7891L14.6658 8.28644V9.15977C14.6674 9.64626 14.6623 10.1328 14.6504 10.6191L14.6464 10.7484C14.6411 10.8978 14.6344 11.0451 14.6264 11.2231C14.5931 11.9324 14.4798 12.4164 14.3158 12.8411C14.1489 13.2863 13.8865 13.6895 13.5471 14.0224C13.2137 14.3613 12.8106 14.6236 12.3658 14.7911C11.9411 14.9558 11.4571 15.0678 10.7478 15.1011C10.5697 15.1091 10.4224 15.1158 10.2731 15.1211L10.1438 15.1251C9.6574 15.137 9.17091 15.1421 8.68442 15.1404L8.18708 15.1411H7.31442C6.82792 15.1427 6.34143 15.1376 5.85508 15.1258L5.72575 15.1218C5.56749 15.116 5.40926 15.1094 5.25108 15.1018C4.54175 15.0684 4.05775 14.9551 3.63242 14.7911C3.18754 14.624 2.78457 14.3617 2.45175 14.0224C2.11245 13.6893 1.8499 13.2861 1.68242 12.8411C1.51775 12.4164 1.40575 11.9324 1.37242 11.2231C1.36499 11.0649 1.35832 10.9067 1.35242 10.7484L1.34908 10.6191C1.33679 10.1328 1.33124 9.64627 1.33242 9.15977V7.7891C1.33056 7.30284 1.33544 6.81657 1.34708 6.33044L1.35175 6.2011C1.35708 6.05177 1.36375 5.90377 1.37175 5.72644C1.40508 5.01644 1.51708 4.5331 1.68175 4.10777C1.84933 3.66285 2.11239 3.26007 2.45242 2.92777C2.78501 2.58827 3.18772 2.32549 3.63242 2.15777C4.05775 1.9931 4.54108 1.8811 5.25108 1.84777L5.72575 1.82777L5.85508 1.82444C6.34121 1.81215 6.82747 1.8066 7.31375 1.80777L8.68442 1.80844ZM7.99908 5.14177C7.55742 5.13552 7.11892 5.21712 6.70907 5.38182C6.29921 5.54651 5.92618 5.79102 5.61165 6.10114C5.29711 6.41126 5.04735 6.7808 4.87687 7.18828C4.7064 7.59576 4.61861 8.03306 4.61861 8.47477C4.61861 8.91648 4.7064 9.35378 4.87687 9.76126C5.04735 10.1687 5.29711 10.5383 5.61165 10.8484C5.92618 11.1585 6.29921 11.403 6.70907 11.5677C7.11892 11.7324 7.55742 11.814 7.99908 11.8078C8.88314 11.8078 9.73098 11.4566 10.3561 10.8315C10.9812 10.2063 11.3324 9.35849 11.3324 8.47444C11.3324 7.59038 10.9812 6.74254 10.3561 6.11741C9.73098 5.49229 8.88314 5.14177 7.99908 5.14177ZM7.99908 6.4751C8.26475 6.47021 8.52874 6.5183 8.77561 6.61658C9.02249 6.71485 9.24731 6.86133 9.43694 7.04747C9.62656 7.2336 9.7772 7.45566 9.88005 7.70066C9.98289 7.94567 10.0359 8.20871 10.0359 8.47443C10.036 8.74015 9.98307 9.00321 9.8803 9.24825C9.77754 9.49329 9.62698 9.7154 9.43741 9.9016C9.24785 10.0878 9.02308 10.2344 8.77623 10.3327C8.52939 10.4311 8.26542 10.4792 7.99975 10.4744C7.46932 10.4744 6.96061 10.2637 6.58554 9.88865C6.21046 9.51358 5.99975 9.00487 5.99975 8.47444C5.99975 7.944 6.21046 7.4353 6.58554 7.06022C6.96061 6.68515 7.46932 6.47444 7.99975 6.47444L7.99908 6.4751ZM11.4991 4.14177C11.284 4.15038 11.0806 4.24187 10.9315 4.39708C10.7824 4.5523 10.6991 4.75919 10.6991 4.97444C10.6991 5.18968 10.7824 5.39658 10.9315 5.55179C11.0806 5.707 11.284 5.7985 11.4991 5.8071C11.7201 5.8071 11.9321 5.71931 12.0883 5.56303C12.2446 5.40675 12.3324 5.19478 12.3324 4.97377C12.3324 4.75276 12.2446 4.5408 12.0883 4.38452C11.9321 4.22823 11.7201 4.14044 11.4991 4.14044V4.14177Z"
+                            fill="#141B34"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social-list-item">
+                      <a
+                        href="#"
+                        class="social-list-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Follow on Linkedin"
+                      >
+                        <svg
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4.6276 3.80763C4.62743 4.16125 4.48678 4.50032 4.23661 4.75025C3.98644 5.00017 3.64723 5.14048 3.2936 5.1403C2.93998 5.14012 2.60091 4.99948 2.35099 4.7493C2.10107 4.49913 1.96076 4.15992 1.96094 3.8063C1.96111 3.45268 2.10176 3.11361 2.35193 2.86369C2.60211 2.61376 2.94132 2.47346 3.29494 2.47363C3.64856 2.47381 3.98763 2.61446 4.23755 2.86463C4.48748 3.1148 4.62778 3.45401 4.6276 3.80763ZM4.6676 6.12763H2.00094V14.4743H4.6676V6.12763ZM8.88094 6.12763H6.2276V14.4743H8.85427V10.0943C8.85427 7.6543 12.0343 7.42763 12.0343 10.0943V14.4743H14.6676V9.18763C14.6676 5.0743 9.96094 5.22763 8.85427 7.24763L8.88094 6.12763Z"
+                            fill="#141B34"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="copyright">
+            <p class="textcopyright">
+              &copy; <span class="currentyear"></span> TimeQ &ndash; All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER-SECTION END -->
+
+    <!-- PAGE-LOADER-JS -->
+    <script src="assets/js/loader/loader.js"></script>
+    <!-- COPYRIGHT-JS -->
+    <script src="assets/js/copyright/copyright.js"></script>
+    <!-- BOOTSTRAP-JS -->
+    <script src="assets/js/bootsrap/bootstrap.bundle.min.js"></script>
+    <!-- TOOLTIP-JS -->
+    <script src="assets/js/tooltip/tooltip.js"></script>
+  </body>
+</html>

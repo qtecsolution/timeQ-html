@@ -1,0 +1,18 @@
+@use '../global' as *;
+@use '../partials' as *;
+
+
+.timecontainer {
+  min-width: 100%;
+  max-width: 100%;
+  padding-inline: size(20);
+  margin-inline: auto;
+
+  @include breakpoint(tab992) {
+    padding-inline: size(80);
+  }
+
+  @include breakpoint(desktop1400) {
+    padding-inline: size(150);
+  }
+}

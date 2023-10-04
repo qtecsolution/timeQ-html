@@ -1,0 +1,71 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+.preloader {
+  background: $white;
+  @include flex-center;
+  position: fixed;
+  inset: size(0);
+  @include w100;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 9999;
+
+  .preloader1,
+  .preloader1 .loader {
+    display: flex;
+    align-content: center;
+  }
+
+  .preloader1 {
+    @include wh100;
+    padding: size(20) 0;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    perspective: 700;
+  }
+
+  .preloader1 .loader {
+    margin: size(5);
+    @include circle;
+    @include border(solid, 4, $textprimary);
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+  }
+
+  .preloader1 .preloader1 .loader-inner-1 {
+    animation: change_first_circle 2s ease-in-out infinite;
+  }
+
+  .preloader1 .loader-inner-2 {
+    animation: change_second_circle 2s ease-in-out infinite;
+  }
+
+  .preloader1 .loader-inner-3 {
+    @include square(100);
+    animation: change_last_circle 3s linear infinite;
+  }
+}
+
+@keyframes change_first_circle {
+  50% {
+    @include transform(rotateX(360deg) scale(.8));
+  }
+}
+
+@keyframes change_second_circle {
+  50% {
+    @include transform(rotateY(360deg) scale(.8));
+  }
+}
+
+@keyframes change_last_circle {
+  50% {
+    @include transform(rotateX(360deg) scale(.8));
+  }
+}

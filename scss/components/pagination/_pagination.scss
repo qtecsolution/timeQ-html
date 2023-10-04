@@ -1,0 +1,65 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+.pagination {
+  gap: size(14);
+
+  .page-item {
+    .page-link {
+      // @include setBgColor($paginationitembg, $headingtext);
+      border: none;
+      @include square(51);
+      @include circle;
+      @include flex-center;
+      font-size: size(18);
+      font-weight: 700;
+      text-align: center;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &:first-child,
+    &:last-child {
+      .page-link {
+        // @include setBgColor($paginationitembg, $headingtext);
+        border: none;
+        @include circle;
+        @include square(51);
+        @include flex-center;
+
+        span {
+          width: size(9);
+          height: size(15);
+          @include flex-center;
+          overflow: hidden;
+        }
+      }
+
+      @include hover {
+        .page-link {
+          span {
+            svg {
+              path {
+                fill: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.active {
+      .page-link {
+        @include setBgColor($primary, $white);
+      }
+    }
+
+    &:hover:not(.active) {
+      .page-link {
+        @include setBgColor($primary, $white);
+      }
+    }
+  }
+}

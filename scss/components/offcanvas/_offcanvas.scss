@@ -1,0 +1,61 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+.offcanvas {
+  background: $white;
+
+  &.offcanvas-top {
+    border-bottom: 0;
+  }
+
+  &.offcanvas-bottom {
+    border-top: 0;
+  }
+
+  &.offcanvas-start {
+    border-right: 0;
+    width: 65%;
+  }
+
+  &.offcanvas-end {
+    border-left: 0;
+  }
+
+  &-header {
+    .btn-close {
+      @include square(24);
+      @include flex-center;
+      overflow: hidden;
+      @include radius(0);
+      @include transitionsall;
+
+      i {
+        color: $textsecondary;
+        font-size: size(24);
+      }
+
+      @include hover {
+        opacity: 1;
+        @include rotate(180);
+
+        i {
+          color: $danger;
+        }
+      }
+    }
+  }
+
+  &-body {
+    background: $white;
+    padding-bottom: size(48);
+
+    &::-webkit-scrollbar {
+      background: transparent;
+      width: size(8);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @include radius(8);
+    }
+  }
+}

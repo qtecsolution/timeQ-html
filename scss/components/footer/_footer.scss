@@ -1,0 +1,58 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+.footer {
+  padding: size(64) size(0) size(32);
+
+  &-content {
+    @include flex-center-column;
+    gap: size(64);
+    text-align: center;
+
+    @include breakpoint(mobile768) {
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+
+  .footerinfo {
+    @include flex-center-column;
+    gap: size(32);
+
+    @include breakpoint(mobile768) {
+      align-items: flex-start;
+    }
+
+    &-header {
+      .footertitle {
+        color: $textprimary;
+        font-size: size(20);
+        font-weight: 600;
+      }
+    }
+    
+    &-body {
+      .info {
+        max-width: size(460);
+      }
+    }
+  }
+
+  .copyright {
+    @include border-single(top, solid, 1, $headerborder);
+    @include flex-center;
+    padding-top: size(32);
+
+    @include breakpoint(mobile768) {
+      align-items: flex-start;
+    }
+
+    .textcopyright {
+      color: $textsecondary;
+      font-family: $primaryFont;
+      font-size: size(14);
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+}

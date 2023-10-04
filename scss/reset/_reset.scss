@@ -1,0 +1,191 @@
+@use '../global' as *;
+@use '../partials' as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  &:focus-within {
+    scroll-behavior: inherit;
+  }
+}
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+button,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+header,
+hgroup,
+html,
+i,
+input,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+main,
+nav,
+object,
+ol,
+output,
+option,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+select,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  font: inherit;
+}
+
+::selection {
+  @include setBgColor($textprimary, $white);
+}
+
+body {
+  @include setBgColor($white, $textsecondary);
+  font-family: $inter;
+  font-size: size(17);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $textprimary;
+  margin: 0;
+  font-family: $primaryFont;
+  // text-wrap: balance;
+
+  &::selection {
+    @include setBgColor($primary, $white);
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+svg,
+picture {
+  @include wh100;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+strong,
+i {
+  font-weight: bolder;
+}
+
+iframe {
+  @include w100;
+}
+
+select {
+  cursor: pointer;
+}
+
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+  color: transparent;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-4,
+.display-5,
+.display-6 {
+  color: $textprimary;
+  font-family: inherit;
+}

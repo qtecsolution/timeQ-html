@@ -1,0 +1,10 @@
+@use "../../global" as *;
+@use "../../partials" as *;
+
+.main {
+  padding-bottom: size(80);
+  
+  @include breakpoint(desktop1400) {    
+    padding-bottom: size(160);
+  }
+}

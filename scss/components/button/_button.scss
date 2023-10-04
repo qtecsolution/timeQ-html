@@ -1,0 +1,64 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  @include transparent-button;
+  cursor: pointer;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  @include transitionsall;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.btn-hamburger {
+  @include square(32);
+  @include flex-center;
+  text-align: center;
+
+  i {
+    font-size: size(24);
+  }
+}
+
+.btn-text,
+.btn-main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $primaryFont;
+  font-size: size(16);
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  @include transitionsall;
+}
+
+.btn-text {
+  @include setBgColor($white, $textprimary);
+  font-weight: 400;
+  padding: size(23.5) size(0);
+
+  @include hover {
+    color: $primary;
+  }
+}
+
+.btn-main {
+  @include setBgColor($primary, $white);
+  @include border(solid, 1, $primary);
+  @include radius(4);
+  font-weight: 600;
+  padding: size(12.5) size(26);
+
+  @include hover {
+    @include setBgColor($white, $primary);
+  }
+}

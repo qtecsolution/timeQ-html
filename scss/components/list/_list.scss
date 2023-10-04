@@ -1,0 +1,92 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+.desktoplist {
+  @include list-horizontal;
+
+  &-item {
+    cursor: pointer;
+    padding: size(22.25) size(20);
+  }
+
+  &-link {
+    color: $textprimary;
+    font-family: $primaryFont;
+    font-size: size(16);
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: size(-0.48);
+    @include transitionsall;
+
+    &:hover:not(.active) {
+      color: $primary;
+    }
+
+    &.active {
+      color: $primary;
+    }
+  }
+}
+
+.authlist {
+  @include list-horizontal;
+  gap: size(24);
+}
+
+.mobilelist {
+  @include list-vertical;
+
+  &-link {
+    @include border-single(bottom, solid, 1, $headerborder);
+    color: $textprimary;
+    display: inline-flex;
+    font-family: $primaryFont;
+    font-size: size(16);
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: size(-0.48);
+    padding: size(16) size(0);
+    @include transitionsall;
+    @include w100;
+
+    &:hover:not(.active) {
+      border-color: $primary;
+      color: $primary;
+    }
+
+    &.active {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+}
+
+.footerlist {
+  @include list-vertical;
+  gap: size(12);
+
+  &-link {
+    color: $textsecondary;
+    @include transitionsall;
+
+    @include hover {
+      color: $textprimary;
+    }
+  }
+}
+
+.social-list {
+  @include list-horizontal;
+  gap: size(8);
+  justify-content: flex-start;
+
+  @include breakpoint(mobile768) {
+    justify-content: flex-start;
+  }
+
+  &-link {
+    @include square(24);
+    @include flex-center;
+    overflow: hidden;
+  }
+}

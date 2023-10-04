@@ -4,6 +4,8 @@
 .header {
   background: $white;
   @include border-single(bottom, solid, 1, $headerborder);
+  @include flex-center-vert;
+  height: size(70);
 
   &-nav {
     @include flex-center-between;

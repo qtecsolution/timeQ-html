@@ -1,3 +1,55 @@
 @use '../global' as *;
 @use '../partials' as *;
 
+.auth {
+  @include flex-column;
+  gap: size(40);
+
+  &-header {
+    @include flex-column;
+    gap: size(40);
+    
+    .titletext {
+      @include flex-column;
+      gap: size(20);
+
+      .textinfo {
+        max-width: size(480);
+      }
+    }
+  }
+
+  &-body {
+    @include flex-column;
+    gap: size(40);
+
+    .authinfo {
+      @include flex-center;
+      gap: size(13);
+
+      .text {
+        color: $textsignin;
+        font-family: $primaryFont;
+        font-size: size(12);
+        min-width: size(130);
+        text-align: center;
+      }
+
+      .icon {
+        width: calc(100% - size(156));
+      }
+    }
+
+    .authlink {
+      color: $textprimary;
+      font-family: $primaryFont;
+      font-size: size(14);
+      font-weight: 400;
+      @include transitionscolor;
+
+      @include hover {
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,10 +1,15 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
-.main {
-  padding-bottom: size(80);
+main {
+  min-height: 100vh;
+  padding: size(48) size(0) size(80);
+  
+  @include breakpoint(mobile768) {
+    padding: size(80) size(0);
+  }
   
   @include breakpoint(desktop1400) {    
-    padding-bottom: size(160);
+    padding: size(80) size(0) size(160);
   }
 }

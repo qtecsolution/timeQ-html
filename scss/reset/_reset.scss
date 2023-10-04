@@ -130,11 +130,8 @@ h6 {
   color: $textprimary;
   margin: 0;
   font-family: $primaryFont;
+  font-weight: 700;
   // text-wrap: balance;
-
-  &::selection {
-    @include setBgColor($primary, $white);
-  }
 }
 
 img {

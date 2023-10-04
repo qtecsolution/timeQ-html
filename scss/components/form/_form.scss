@@ -1,3 +1,119 @@
 @use '../../global' as *;
 @use '../../partials' as *;
 
+.authform {
+  @include flex-column;
+  gap: size(26);
+  
+  .passwordbox {
+    @include flex-column;
+    gap: size(18);
+  }
+}
+
+.inputbox {
+  @include flex-column;
+  gap: size(12);
+
+  .inputlabel {
+    color: $textprimary;
+    font-family: $primaryFont;
+    font-size: size(14);
+    font-weight: 600;
+  }
+
+  .inputfield {
+    @include setBgColor($white, $black);
+    @include border(solid, 1, $headerborder);
+    @include radius(4);
+    font-family: $primaryFont;
+    font-size: size(14);
+    font-weight: 400;
+    padding: size(12.5) size(16);
+    @include w100;
+    @include transitionsall;
+
+    &:focus {
+      border-color: $textsecondary;
+    }
+
+    &::placeholder {
+      color: $textplaceholder;
+      font-weight: 400;
+    }
+  }
+}
+
+.customcheck {
+  .checkinput {
+    &:checked ~ .checklabel {
+      &::before {
+        background: $textprimary;
+        border-color: $textprimary;
+      }
+      
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .checklabel {
+    cursor: pointer;
+    color: $textsecondary;
+    font-family: $primaryFont;
+    font-size: size(14);
+    font-weight: 400;
+    position: relative;
+    padding-left: size(30);
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      left: 0;
+      top: 50%;
+      @include translateY(-50%);
+      background: $white;
+      @include square(18);
+      @include border(solid, 1, $headerborder);
+      @include radius(4);
+      @include transitionsall;
+    }
+
+    &::after {
+      width: size(10);
+      height: size(5);
+      @include border(solid, 2, $white);
+      border-top: 0;
+      left: size(4.5);
+      border-right: 0;
+      top: 50%;
+      @include transform(translateY(-70%) rotate(-45deg));
+      opacity: 0;
+      visibility: hidden;
+      @include transitiontransform;
+    }
+
+    &::selection {
+      @include setBgColor(transparent, $textprimary);
+    }
+
+    .checklink {
+      // color: $textlink;
+      @include transitionscolor;
+
+      @include hover {
+        // color: $primary;
+      }
+
+      &::selection {
+        // @include setBgColor(transparent, $headingtext);
+      }
+    }
+  }
+}

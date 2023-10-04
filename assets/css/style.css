@@ -265,19 +265,7 @@ h6 {
   color: hsl(227, 44%, 14%);
   margin: 0;
   font-family: "Sora", sans-serif;
-}
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection {
-  background: hsl(4, 100%, 68%);
-  color: hsl(0, 0%, 100%);
-}
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
-h6::selection {
-  background: hsl(4, 100%, 68%);
-  color: hsl(0, 0%, 100%);
+  font-weight: 700;
 }
 
 img {
@@ -342,6 +330,10 @@ button,
   background: transparent;
   border: none;
   cursor: pointer;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   opacity: 1;
   margin: 0;
   padding: 0;
@@ -396,16 +388,67 @@ button:focus,
   border: solid 0.0625rem hsl(4, 100%, 68%);
   border-radius: 0.25rem;
   font-weight: 600;
-  padding: 0.78125rem 1.625rem;
+  padding: 0.53125rem 0.875rem;
+}
+@media screen and (min-width: 48rem) {
+  .btn-main {
+    padding: 0.78125rem 1.625rem;
+  }
 }
 .btn-main:not([disabled]):hover {
   background: hsl(0, 0%, 100%);
   color: hsl(4, 100%, 68%);
 }
 
+.btn-signin {
+  background: hsl(0, 0%, 100%);
+  border: solid 0.0625rem hsl(210, 42%, 90%);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+}
+.btn-signin .icon {
+  width: 1.625rem;
+  height: 1.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.btn-signin .text {
+  color: hsl(227, 44%, 14%);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.btn-signin:not([disabled]):hover {
+  background: hsl(210, 42%, 90%);
+}
+
+.btn-submit {
+  background: hsl(227, 44%, 14%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem;
+  text-align: center;
+  transition: all 350ms ease-in-out;
+}
+.btn-submit:not([disabled]):hover {
+  background: #31417d;
+  color: hsl(0, 0%, 100%);
+}
+
 .header {
   background: hsl(0, 0%, 100%);
   border-bottom: solid 0.0625rem hsl(210, 42%, 90%);
+  display: flex;
+  align-items: center;
+  height: 4.375rem;
 }
 .header-nav {
   display: flex;
@@ -499,44 +542,6 @@ input[type=search]::-webkit-search-results-decoration:focus {
   outline: none;
 }
 
-.customcheck .checkprivacy:checked ~ .checklabel::after {
-  opacity: 1;
-  visibility: visible;
-}
-.customcheck .checklabel {
-  cursor: pointer;
-  position: relative;
-  padding-left: 1.875rem;
-}
-.customcheck .checklabel::before, .customcheck .checklabel::after {
-  content: "";
-  position: absolute;
-}
-.customcheck .checklabel::before {
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.125rem;
-  height: 1.125rem;
-  border-radius: 0.25rem;
-  transition: all 350ms ease-in-out;
-}
-.customcheck .checklabel::after {
-  width: 0.625rem;
-  height: 0.3125rem;
-  border: solid 0.0625rem hsl(0, 0%, 100%);
-  border-top: 0;
-  left: 0.28125rem;
-  border-right: 0;
-  top: 50%;
-  transform: translateY(-70%) rotate(-45deg);
-  opacity: 0;
-  visibility: hidden;
-  transition: transform 350ms ease-in-out;
-}
-.customcheck .checklabel .checklink {
-  transition: color 350ms ease-in-out;
-}
 .offcanvas {
   background: hsl(0, 0%, 100%);
 }
@@ -751,12 +756,18 @@ input[type=search]::-webkit-search-results-decoration:focus {
     transform: rotateX(360deg) scale(0.8);
   }
 }
-.main {
-  padding-bottom: 5rem;
+main {
+  min-height: 100vh;
+  padding: 3rem 0rem 5rem;
+}
+@media screen and (min-width: 48rem) {
+  main {
+    padding: 5rem 0rem;
+  }
 }
 @media screen and (min-width: 87.5rem) {
-  .main {
-    padding-bottom: 10rem;
+  main {
+    padding: 5rem 0rem 10rem;
   }
 }
 
@@ -768,6 +779,108 @@ table tr td {
   vertical-align: middle;
 }
 
+.authform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+.authform .passwordbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.inputbox .inputlabel {
+  color: hsl(227, 44%, 14%);
+  font-family: "Sora", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.inputbox .inputfield {
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  border: solid 0.0625rem hsl(210, 42%, 90%);
+  border-radius: 0.25rem;
+  font-family: "Sora", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.78125rem 1rem;
+  width: 100%;
+  transition: all 350ms ease-in-out;
+}
+.inputbox .inputfield:focus {
+  border-color: hsl(228, 11%, 46%);
+}
+.inputbox .inputfield::-moz-placeholder {
+  color: hsl(0, 0%, 72%);
+  font-weight: 400;
+}
+.inputbox .inputfield::placeholder {
+  color: hsl(0, 0%, 72%);
+  font-weight: 400;
+}
+
+.customcheck .checkinput:checked ~ .checklabel::before {
+  background: hsl(227, 44%, 14%);
+  border-color: hsl(227, 44%, 14%);
+}
+.customcheck .checkinput:checked ~ .checklabel::after {
+  opacity: 1;
+  visibility: visible;
+}
+.customcheck .checklabel {
+  cursor: pointer;
+  color: hsl(228, 11%, 46%);
+  font-family: "Sora", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: relative;
+  padding-left: 1.875rem;
+}
+.customcheck .checklabel::before, .customcheck .checklabel::after {
+  content: "";
+  position: absolute;
+}
+.customcheck .checklabel::before {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: hsl(0, 0%, 100%);
+  width: 1.125rem;
+  height: 1.125rem;
+  border: solid 0.0625rem hsl(210, 42%, 90%);
+  border-radius: 0.25rem;
+  transition: all 350ms ease-in-out;
+}
+.customcheck .checklabel::after {
+  width: 0.625rem;
+  height: 0.3125rem;
+  border: solid 0.125rem hsl(0, 0%, 100%);
+  border-top: 0;
+  left: 0.28125rem;
+  border-right: 0;
+  top: 50%;
+  transform: translateY(-70%) rotate(-45deg);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 350ms ease-in-out;
+}
+.customcheck .checklabel::-moz-selection {
+  background: transparent;
+  color: hsl(227, 44%, 14%);
+}
+.customcheck .checklabel::selection {
+  background: transparent;
+  color: hsl(227, 44%, 14%);
+}
+.customcheck .checklabel .checklink {
+  transition: color 350ms ease-in-out;
+}
 .desktoplist {
   margin: 0;
   padding: 0;
@@ -917,6 +1030,56 @@ table tr td {
 .pagination .page-item:hover:not(.active) .page-link {
   background: hsl(4, 100%, 68%);
   color: hsl(0, 0%, 100%);
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.auth-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.auth-header .titletext {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.auth-header .titletext .textinfo {
+  max-width: 30rem;
+}
+.auth-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.auth-body .authinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8125rem;
+}
+.auth-body .authinfo .text {
+  color: hsl(240, 6%, 73%);
+  font-family: "Sora", sans-serif;
+  font-size: 0.75rem;
+  min-width: 8.125rem;
+  text-align: center;
+}
+.auth-body .authinfo .icon {
+  width: calc(100% - 9.75rem);
+}
+.auth-body .authlink {
+  color: hsl(227, 44%, 14%);
+  font-family: "Sora", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  transition: color 350ms ease-in-out;
+}
+.auth-body .authlink:not([disabled]):hover {
+  color: hsl(4, 100%, 68%);
 }
 
 .timecontainer {

@@ -7,6 +7,10 @@ button,
 [type='submit'] {
   @include transparent-button;
   cursor: pointer;
+  font-size: size(16);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   opacity: 1;
   margin: 0;
   padding: 0;
@@ -56,9 +60,51 @@ button,
   @include border(solid, 1, $primary);
   @include radius(4);
   font-weight: 600;
-  padding: size(12.5) size(26);
+  padding: size(8.5) size(14);
+
+  @include breakpoint(mobile768) {
+    padding: size(12.5) size(26);
+  }
 
   @include hover {
     @include setBgColor($white, $primary);
+  }
+}
+
+.btn-signin {
+  background: $white;
+  @include border(solid, 1, $headerborder);
+  @include radius(4);
+  @include flex-center;
+  gap: size(8);
+  padding: size(10) size(16);
+
+  .icon {
+    @include square(26);
+    @include flex-center;
+    overflow: hidden;
+  }
+
+  .text {
+    color: $textprimary;
+    font-size: size(14);
+    font-weight: 600;
+  }
+
+  @include hover {
+    background: $headerborder;
+  }
+}
+
+.btn-submit {
+  @include setBgColor($textprimary, $white);
+  @include radius(4);
+  @include flex-center;
+  padding: size(14);
+  text-align: center;
+  @include transitionsall;
+  
+  @include hover {
+    @include setBgColor(lighten($textprimary, 20%), $white);
   }
 }

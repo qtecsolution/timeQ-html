@@ -133,18 +133,173 @@
 
           <!-- AUTH-LIST -->
           <ul class="authlist">
-            <li class="authlist-item">
+            <li class="authlist-item d-none d-lg-flex">
               <a href="login.html" class="btn-text">Sign In</a>
             </li>
 
-            <li class="authlist-item d-none d-lg-flex">
-              <a href="#" class="btn-main">Get Started</a>
+            <li class="authlist-item">
+              <a href="register.html" class="btn-main">Get Started</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- HEADER-SECTION END -->
+
+    <!-- MAIN-SECTION START -->
+    <main class="authmain">
+      <section class="authsec">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <figure class="auth-thumb">
+                <img
+                  src="../assets/images/authentication/auth-thumbnail.svg"
+                  alt="auth-thumb"
+                />
+              </figure>
+            </div>
+
+            <div class="offset-0 offset-lg-1 col-lg-6 col-xl-5">
+              <div class="auth">
+                <div class="auth-header">
+                  <div class="titletext">
+                    <h1 class="auth-title">Welcome back</h1>
+                    <div class="textinfo">
+                      <p class="authtext">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit
+                        interdorm ullamcorper sed pharetra senectus donec nunc
+                        ame
+                      </p>
+                    </div>
+                  </div>
+
+                  <button type="button" class="btn-signin w-100">
+                    <span class="icon">
+                      <svg
+                        width="26"
+                        height="26"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M23.622 10.8786H22.7493V10.8337H12.9993V15.167H19.1218C18.2286 17.6895 15.8285 19.5003 12.9993 19.5003C9.40972 19.5003 6.49935 16.5899 6.49935 13.0003C6.49935 9.4107 9.40972 6.50033 12.9993 6.50033C14.6563 6.50033 16.1638 7.12541 17.3116 8.14645L20.3758 5.08224C18.4409 3.27903 15.8528 2.16699 12.9993 2.16699C7.01664 2.16699 2.16602 7.01762 2.16602 13.0003C2.16602 18.983 7.01664 23.8337 12.9993 23.8337C18.9821 23.8337 23.8327 18.983 23.8327 13.0003C23.8327 12.2739 23.7579 11.5649 23.622 10.8786Z"
+                          fill="#FFC107"
+                        />
+                        <path
+                          d="M3.41602 7.95795L6.97531 10.5682C7.93839 8.18383 10.2708 6.50033 13.0003 6.50033C14.6572 6.50033 16.1647 7.12541 17.3125 8.14645L20.3767 5.08224C18.4418 3.27903 15.8538 2.16699 13.0003 2.16699C8.83918 2.16699 5.2306 4.5162 3.41602 7.95795Z"
+                          fill="#FF3D00"
+                        />
+                        <path
+                          d="M12.9998 23.8337C15.7981 23.8337 18.3407 22.7628 20.2631 21.0214L16.9101 18.1841C15.7859 19.0391 14.4122 19.5015 12.9998 19.5004C10.1821 19.5004 7.78955 17.7037 6.88822 15.1963L3.35547 17.9182C5.14839 21.4265 8.78947 23.8337 12.9998 23.8337Z"
+                          fill="#4CAF50"
+                        />
+                        <path
+                          d="M23.6226 10.878H22.75V10.833H13V15.1663H19.1225C18.6952 16.3669 17.9256 17.416 16.9087 18.184L16.9103 18.1829L20.2632 21.0201C20.026 21.2357 23.8333 18.4163 23.8333 12.9997C23.8333 12.2733 23.7586 11.5643 23.6226 10.878Z"
+                          fill="#1976D2"
+                        />
+                      </svg>
+                    </span>
+                    <span class="text">Sign in with Google</span>
+                  </button>
+                </div>
+
+                <div class="auth-body">
+                  <div class="authinfo">
+                    <figure class="icon">
+                      <svg
+                        width="133"
+                        height="1"
+                        viewBox="0 0 133 1"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line y1="0.5" x2="133" y2="0.5" stroke="#E2E8F0" />
+                      </svg>
+                    </figure>
+
+                    <p class="text">or Sign in with email</p>
+
+                    <figure class="icon">
+                      <svg
+                        width="133"
+                        height="1"
+                        viewBox="0 0 133 1"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          x1="4.37114e-08"
+                          y1="0.5"
+                          x2="133"
+                          y2="0.500012"
+                          stroke="#E2E8F0"
+                        />
+                      </svg>
+                    </figure>
+                  </div>
+
+                  <form class="authform">
+                    <div class="inputbox">
+                      <label for="loginemail" class="inputlabel">
+                        E-mail address
+                      </label>
+                      <input
+                        type="email"
+                        id="loginemail"
+                        class="inputfield"
+                        placeholder="E-mail address"
+                      />
+                    </div>
+
+                    <div class="passwordbox">
+                      <div class="inputbox">
+                        <label for="loginpassword" class="inputlabel">
+                          Password
+                        </label>
+                        <input
+                          type="password"
+                          id="loginpassword"
+                          class="inputfield"
+                          placeholder="Enter password"
+                        />
+                      </div>
+
+                      <div class="d-flex justify-content-between">
+                        <div class="customcheck">
+                          <input
+                            type="checkbox"
+                            name="rememberme"
+                            id="rememberme"
+                            class="checkinput"
+                            hidden
+                          />
+                          <label for="rememberme" class="checklabel">
+                            Remember me
+                          </label>
+                        </div>
+
+                        <a href="forgotpassword.html" class="authlink">
+                          Forgot password?
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="submitbox mt-5">
+                      <button type="submit" class="btn-submit w-100">
+                        Login
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN-SECTION END -->
 
     <!-- FOOTER-SECTION START -->
     <footer class="footer">

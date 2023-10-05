@@ -120,3 +120,40 @@
     }
   }
 }
+
+.accountform {
+  @include flex-center;
+  gap: size(10);
+  flex-wrap: wrap;
+
+  .inputfield {
+    height: size(48);
+    @include setBgColor($white, $textprimary);
+    @include radius(4);
+    padding: size(8) size(16);
+    max-width: 90%;
+
+    @include breakpoint(mobile768) {
+      min-width: calc(100% - size(185));
+      max-width: 100%;
+    }
+
+    &::placeholder {
+      color: $textplaceholder;
+    }
+  }
+
+  .btn-create {
+    @include setBgColor($textprimary, $white);
+    @include radius(4);
+    @include flex-center;
+    text-align: center;
+    width: size(175);
+    height: size(48);
+    @include transitionsall;
+
+    @include hover {
+      @include setBgColor(lighten($textprimary, 20%), $white);
+    }
+  }
+}

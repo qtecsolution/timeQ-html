@@ -915,6 +915,50 @@ table tr td {
   color: hsl(227, 44%, 14%);
 }
 
+.accountform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+}
+.accountform .inputfield {
+  height: 3rem;
+  background: hsl(0, 0%, 100%);
+  color: hsl(227, 44%, 14%);
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  max-width: 90%;
+}
+@media screen and (min-width: 48rem) {
+  .accountform .inputfield {
+    min-width: calc(100% - 11.5625rem);
+    max-width: 100%;
+  }
+}
+.accountform .inputfield::-moz-placeholder {
+  color: hsl(0, 0%, 72%);
+}
+.accountform .inputfield::placeholder {
+  color: hsl(0, 0%, 72%);
+}
+.accountform .btn-create {
+  background: hsl(227, 44%, 14%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10.9375rem;
+  height: 3rem;
+  transition: all 350ms ease-in-out;
+}
+.accountform .btn-create:not([disabled]):hover {
+  background: #31417d;
+  color: hsl(0, 0%, 100%);
+}
+
 .desktoplist {
   margin: 0;
   padding: 0;
@@ -1019,6 +1063,22 @@ table tr td {
   overflow: hidden;
 }
 
+.joinlist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+@media screen and (min-width: 48rem) {
+  .joinlist {
+    flex-direction: row;
+  }
+}
+.joinlist-item {
+  color: hsl(227, 44%, 14%);
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+}
+
 .pagination {
   gap: 0.875rem;
 }
@@ -1115,6 +1175,139 @@ table tr td {
 .topbar .topbarcontent .btn-remove {
   position: absolute;
   right: 0;
+}
+
+.faqsection .leftinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .faqsection .leftinfo .title {
+    font-size: 2.75rem;
+  }
+}
+.faqsection .leftinfo .info {
+  max-width: 28.75rem;
+}
+@media screen and (min-width: 62rem) {
+  .faqsection .leftinfo {
+    margin-bottom: 0rem;
+  }
+}
+.faqsection .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+}
+.faqsection .accordion-item {
+  background: hsl(0, 0%, 100%);
+  border: solid 0.0625rem hsl(210, 42%, 90%);
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 48rem) {
+  .faqsection .accordion-item {
+    padding: 1.875rem 2.25rem;
+  }
+}
+.faqsection .accordion-item:first-of-type .accordion-button, .faqsection .accordion-item:last-of-type .accordion-button {
+  border-radius: 0rem;
+}
+.faqsection .accordion-button {
+  color: hsl(227, 44%, 14%);
+  font-family: "Sora", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.faqsection .accordion-button:not(.collapsed) {
+  background: transparent;
+  box-shadow: none;
+  margin-bottom: 2rem;
+}
+.faqsection .accordion-body {
+  background: hsl(210, 20%, 98%);
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+}
+.faqsection .accordion-body .faqtext {
+  color: hsl(224, 9%, 25%);
+}
+
+.jointoday {
+  padding: 3rem 1.25rem 4rem;
+}
+@media screen and (min-width: 48rem) {
+  .jointoday {
+    padding: 5rem 1.25rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .jointoday {
+    padding: 7.5rem 0rem 10rem;
+  }
+}
+@media screen and (min-width: 87.5rem) {
+  .jointoday {
+    padding: 8.75rem 0rem 12.5rem;
+  }
+}
+.jointoday-content {
+  background: hsl(4, 100%, 68%);
+  border-radius: 1.25rem;
+  position: relative;
+  padding: 5.625rem 0rem 9rem;
+  overflow: hidden;
+}
+.jointoday-content .lefticon,
+.jointoday-content .righticon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+}
+.jointoday-content .lefticon {
+  width: 12.5rem;
+  height: 11.0625rem;
+  bottom: -0.75rem;
+  left: 0rem;
+}
+.jointoday-content .righticon {
+  width: 13.0625rem;
+  height: 10rem;
+  top: 0rem;
+  right: -0.9375rem;
+}
+.jointoday .joindetail {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.jointoday .joindetail-header, .jointoday .joindetail-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+.jointoday .joindetail-header .jointitle {
+  font-size: 2.125rem;
+}
+.jointoday .joindetail-header .textbox {
+  max-width: 85%;
+  margin-inline: auto;
+}
+@media screen and (min-width: 62rem) {
+  .jointoday .joindetail-header .textbox {
+    max-width: 51.125rem;
+  }
+}
+.jointoday .joindetail-header .textbox .jointext {
+  color: hsl(227, 44%, 14%);
+  font-family: "Inter", sans-serif;
 }
 
 .auth {

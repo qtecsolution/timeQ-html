@@ -90,3 +90,18 @@
     overflow: hidden;
   }
 }
+
+.joinlist {
+  @include flex-column;
+  gap: size(12);
+
+  @include breakpoint(mobile768) {
+    flex-direction: row;
+  }
+  
+  &-item {
+    color: $textprimary;
+    font-family: $inter;
+    font-size: size(12);
+  }
+}

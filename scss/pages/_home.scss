@@ -50,3 +50,148 @@
     }
   }
 }
+
+.faqsection {
+  .leftinfo {
+    @include flex-column;
+    gap: size(40);
+    margin-bottom: size(40);
+
+    .title {
+      @include breakpoint(mobile768) {
+        font-size: size(44);
+      }
+    }
+
+    .info {
+      max-width: size(460);
+    }
+    
+    @include breakpoint(tab992) {
+      margin-bottom: size(0);
+    }
+  }
+
+  .accordion {
+    @include flex-column;
+    gap: size(15);
+
+    &-item {
+      background: $white;
+      @include border(solid, 1, $headerborder);
+      @include radius(10);
+      padding: size(20);
+
+      @include breakpoint(mobile768) {
+        padding: size(30) size(36);
+      }
+
+      &:first-of-type,
+      &:last-of-type {      
+        .accordion-button {
+          @include radius(0);
+        }
+      }
+    }
+    
+    &-button {
+      color: $textprimary;
+      font-family: $primaryFont;
+      font-size: size(18);
+      font-weight: 600;
+
+      &:not(.collapsed) {
+        background: transparent;
+        box-shadow: none;
+        margin-bottom: size(32);
+      }
+    }
+
+    &-body {
+      background: $topbarbg;
+      @include radius(10);
+      padding: size(20);
+
+      .faqtext {
+        color: $faqtext;
+      }
+    }
+  }
+}
+
+.jointoday {
+  padding: size(48) size(20) size(64);
+  
+  @include breakpoint(mobile768) {
+    padding: size(80) size(20);
+  }
+  
+  @include breakpoint(tab992) {
+    padding: size(120) size(0) size(160);
+  }
+  
+  @include breakpoint(desktop1400) {
+    padding: size(140) size(0) size(200);
+  }
+
+  &-content {
+    background: $primary;
+    @include radius(20);
+    position: relative;
+    padding: size(90) size(0) size(144);
+    overflow: hidden;
+
+    .lefticon,
+    .righticon {
+      @include flex-center;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .lefticon {
+      width: size(200);
+      height: size(177);
+      bottom: size(-12);
+      left: size(0);
+    }
+
+    .righticon {
+      width: size(209);
+      height: size(160);
+      top: size(0);
+      right: size(-15);
+    }
+  }
+
+  .joindetail {
+    @include flex-column;
+    gap: size(48);
+
+    &-header,
+    &-body {
+      @include flex-center-column;
+      gap: size(32);
+      text-align: center;
+    }
+
+    &-header {
+      .jointitle {
+        font-size: size(34);
+      }
+
+      .textbox {
+        max-width: 85%;
+        margin-inline: auto;
+        
+        @include breakpoint(tab992) {
+          max-width: size(818);
+        }
+
+        .jointext {
+          color: $textprimary;
+          font-family: $inter;
+        }
+      }
+    }
+  }
+}

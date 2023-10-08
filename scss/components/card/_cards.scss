@@ -71,3 +71,97 @@
     }
   }
 }
+
+.cardpricing {
+  background: $white;
+  @include border(solid, 1, $headerborder);
+  @include radius(10);
+  @include flex-column;
+  gap: size(32);
+  padding: size(20);
+  position: relative;
+  @include h100;
+  
+  @include breakpoint(mobile768) {
+    padding: size(32);
+  }
+
+  @include breakpoint(tab992) {
+    padding: size(48);
+  }
+
+  &-header {
+    @include flex-column;
+    gap: size(32);
+    @include border-single(bottom, solid, 1, $headerborder);
+    padding-bottom: size(32);
+
+    .titleinfo {
+      @include flex-column;
+      gap: size(16);
+
+      .title {
+        font-size: size(34);
+      }
+
+      .info {
+        .text {
+          color: $pricingtext;
+          font-size: size(15);
+          font-family: $primaryFont;
+        }
+      }
+    }
+
+    .price {
+      color: $pricetext;
+      font-size: size(34);
+    }
+  }
+
+  &-body {
+    @include flex-column;
+    gap: size(160);
+
+    .pricinglist {
+      @include list-vertical;
+      gap: size(16);
+      min-height: size(560);
+
+      &-item {
+        @include flex-center-vert;
+        gap: size(10);
+
+        .icon {
+          @include square(22);
+          @include flex-center;
+          overflow: hidden;
+        }
+
+        .text {
+          color: $pricingtext;
+          font-size: size(15);
+          font-family: $primaryFont;
+        }
+      }
+    }
+  }
+
+  .pricingbadge {
+    @include setBgColor($primary, $white);
+    @include radius(42);
+    font-size: size(14);
+    font-weight: 600;
+    padding: size(8) size(16);
+    max-width: size(162);
+    position: absolute;
+    top: size(-8);
+    right: size(-24);
+    z-index: 100;
+    @include rotate(22.929);
+  }
+
+  &.popular {
+    border-color: $primary;
+  }
+}

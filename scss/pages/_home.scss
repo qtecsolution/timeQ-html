@@ -51,6 +51,34 @@
   }
 }
 
+.pricing {
+  padding: size(48) size(20) size(64);
+  
+  @include breakpoint(mobile768) {
+    padding: size(80) size(20);
+  }
+  
+  @include breakpoint(tab992) {
+    padding: size(120) size(0) size(160);
+  }
+
+  &-content {
+    @include flex-column;
+    gap: size(48);
+  }
+
+  &-header {
+    @include flex-center-column;
+    gap: size(48);
+    text-align: center;
+
+    .info {
+      max-width: size(555);
+      margin-inline: auto;
+    }
+  }
+}
+
 .faqsection {
   .leftinfo {
     @include flex-column;

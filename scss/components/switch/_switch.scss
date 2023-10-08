@@ -1,3 +1,62 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+.btn-switch {
+  background: $primary;
+  @include radius(24);
+  position: relative;
+  width: size(48);
+  height: size(24);
+
+  &::before,
+  &::after {
+    width: size(64);
+    color: $textsecondary;
+    font-weight: 400;
+    line-height: size(24);
+    position: absolute;
+    bottom: 0;
+  }
+
+  &::before {
+    color: $textprimary;
+    content: attr(monthtext);
+    left: size(-70);
+  }
+  
+  &::after {
+    color: $textsecondary;
+    content: attr(yeartext);
+    right: size(-70);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .handle {
+    background: $white;
+    @include square(20);
+    @include circle;
+    position: absolute;
+    top: 50%;
+    left: size(2);
+    @include translateY(-50%);
+    @include transitionsall;
+  }
+
+  &.active {
+    .handle {
+      left: calc(100% - size(22));
+      right: 0;
+    }
+
+    &::before {
+      color: $textsecondary;
+    }
+
+    &::after {
+      color: $textprimary;
+    }
+  }
+}

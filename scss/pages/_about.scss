@@ -1,3 +1,63 @@
 @use '../global' as *;
 @use '../partials' as *;
 
+.aboutbanner {
+  padding: size(48) size(0) size(64);
+  
+  @include breakpoint(tab992) {
+    padding: size(54) size(0) size(74);
+  }
+
+  .bannerdetail {
+    @include flex-column;
+    gap: size(48);
+
+    .counterbox {
+      @include flex-column;
+      gap: size(32);
+
+      @include breakpoint(mobile768) {
+        flex-direction: row;
+        align-items: center;
+      }
+  
+      @include breakpoint(tab992) {
+        gap: size(54);
+      }
+
+      .counter {
+        @include flex-column;
+        gap: size(10);
+      }
+    }
+
+    .bannerbuttons {
+      @include flex-center-vert;
+      gap: size(10);
+
+      .learninfo {
+        max-width: size(175);
+      }
+    }
+  }
+
+  .topthumb,
+  .bottomthumb {
+    @include radius(20);
+    @include flex-center;
+    @include w100;
+    overflow: hidden;
+
+    img {
+      @include wh100;
+    }
+  }
+
+  .topthumb {
+    height: size(260);
+  }
+  
+  .bottomthumb {
+    height: size(250);
+  }
+}

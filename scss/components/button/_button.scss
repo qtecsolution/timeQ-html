@@ -129,3 +129,16 @@ button,
     }
   }
 }
+
+.btn-learn {
+  @include setBgColor($textprimary, $white);
+  @include radius(4);
+  @include flex-center;
+  padding: size(11.25) size(14);
+  text-align: center;
+  @include transitionsall;
+  
+  @include hover {
+    @include setBgColor(lighten($textprimary, 20%), $white);
+  }
+}

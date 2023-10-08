@@ -51,6 +51,45 @@
   }
 }
 
+.ourclients {
+  padding: size(48) size(20) size(64);
+  
+  @include breakpoint(mobile768) {
+    padding: size(80) size(20);
+  }
+
+  &-detail {
+    @include flex-center-column;
+    gap: size(80);
+  }
+
+  &-header {
+    @include flex-center-column;
+    gap: size(20);
+    text-align: center;
+
+    .info {
+      max-width: size(555);
+      margin-inline: auto;
+    }
+  }
+
+  &-body {
+    @include flex-center;
+    gap: size(24);
+    flex-wrap: wrap;
+
+    @include breakpoint(mobile768) {
+      gap: size(36);
+    }
+
+    @include breakpoint(tab992) {
+      gap: size(60);
+      flex-wrap: nowrap;
+    }
+  }
+}
+
 .pricing {
   padding: size(48) size(20) size(64);
   

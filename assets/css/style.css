@@ -1443,6 +1443,52 @@ table tr td {
   right: 0;
 }
 
+.ourclients {
+  padding: 3rem 1.25rem 4rem;
+}
+@media screen and (min-width: 48rem) {
+  .ourclients {
+    padding: 5rem 1.25rem;
+  }
+}
+.ourclients-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+.ourclients-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+.ourclients-header .info {
+  max-width: 34.6875rem;
+  margin-inline: auto;
+}
+.ourclients-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 48rem) {
+  .ourclients-body {
+    gap: 2.25rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .ourclients-body {
+    gap: 3.75rem;
+    flex-wrap: nowrap;
+  }
+}
+
 .pricing {
   padding: 3rem 1.25rem 4rem;
 }

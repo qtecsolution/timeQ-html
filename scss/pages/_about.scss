@@ -189,11 +189,15 @@
             margin: 0;
             display: none;
           }
+
+          @include hover {
+            svg {
+              path, circle {
+                stroke: $primary;
+              }
+            }
+          }
         }
-
-        .swiper-button-prev {}
-
-        .swiper-button-next {}
       }
     }
   }

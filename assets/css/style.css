@@ -1624,6 +1624,11 @@ table tr td {
   margin: 0;
   display: none;
 }
+.reviews-content .swiper .swiperarrows .swiper-button-prev:not([disabled]):hover svg path, .reviews-content .swiper .swiperarrows .swiper-button-prev:not([disabled]):hover svg circle,
+.reviews-content .swiper .swiperarrows .swiper-button-next:not([disabled]):hover svg path,
+.reviews-content .swiper .swiperarrows .swiper-button-next:not([disabled]):hover svg circle {
+  stroke: hsl(4, 100%, 68%);
+}
 .reviews-header {
   display: flex;
   flex-direction: column;

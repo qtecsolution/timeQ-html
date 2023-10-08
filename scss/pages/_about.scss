@@ -61,3 +61,145 @@
     height: size(250);
   }
 }
+
+.visibilitycontrol {
+  padding: size(48) size(0) size(64);
+  
+  @include breakpoint(tab992) {
+    padding: size(54) size(0) size(74);
+  }
+  
+  @include breakpoint(desktop1400) {
+    padding: size(96) size(0);
+  }
+
+  .visibilitydetails {
+    @include flex-column;
+    gap: size(48);
+  
+    @include breakpoint(desktop1400) {
+      gap: size(64);
+    }
+  }
+}
+
+.companyvalue {
+  padding: size(48) size(0) size(64);
+  
+  @include breakpoint(tab992) {
+    padding: size(54) size(0) size(74);
+  }
+  
+  @include breakpoint(desktop1400) {
+    padding: size(96) size(0);
+  }
+
+  .companyvaluedetails {
+    @include flex-column;
+    gap: size(48);
+  
+    @include breakpoint(desktop1400) {
+      gap: size(64);
+    }
+  }
+
+  .valueinfo {
+    .accordion {
+      @include flex-column;
+      gap: size(20);
+
+      &-item {
+        background: $white;
+        border: 0;
+        @include border-single(bottom, solid, 1, $headerborder);
+        @include radius(0);
+        padding: size(0) size(0) size(20);
+
+        &:first-of-type,
+        &:last-of-type {      
+          .accordion-button {
+            @include radius(0);
+          }
+        }
+      }
+      
+      &-button {
+        color: $textprimary;
+        font-family: $primaryFont;
+        font-size: size(18);
+        font-weight: 600;
+
+        &:not(.collapsed) {
+          background: transparent;
+          box-shadow: none;
+          margin-bottom: size(32);
+        }
+      }
+
+      &-body {
+        @include radius(0);
+        padding: size(0);
+
+        .text {
+          color: $textsecondary;
+        }
+      }
+    }
+  }
+}
+
+.reviews {
+  padding: size(48) size(0) size(64);
+  
+  @include breakpoint(tab992) {
+    padding: size(54) size(0) size(74);
+    margin-bottom: size(80);
+  }
+  
+  @include breakpoint(desktop1400) {
+    padding: size(96) size(0);
+  }
+
+  &-content {
+    @include flex-column;
+    gap: size(48);
+  
+    @include breakpoint(desktop1400) {
+      gap: size(64);
+    }
+
+    .swiper {
+      .swiperarrows {
+        @include flex-end;
+        gap: size(12);
+        margin-bottom: size(32);
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          @include square(45);
+          @include circle;
+          @include flex-center;
+          overflow: hidden;
+          position: static;
+
+          &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            margin: 0;
+            display: none;
+          }
+        }
+
+        .swiper-button-prev {}
+
+        .swiper-button-next {}
+      }
+    }
+  }
+
+  &-header {
+    @include flex-column;
+    gap: size(20);
+  }
+}

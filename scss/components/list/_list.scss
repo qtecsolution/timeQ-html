@@ -105,3 +105,26 @@
     font-size: size(12);
   }
 }
+
+.visiblelist {
+  @include list-vertical;
+  gap: size(16);
+
+  &-item {
+    @include flex-center-vert;
+    gap: size(12);
+
+    .icon {
+      @include square(24);
+      @include circle;
+      @include flex-center;
+      overflow: hidden;
+    }
+
+    .text {
+      color: $textprimary;
+      font-family: $primaryFont;
+      font-weight: 400;
+    }
+  }
+}

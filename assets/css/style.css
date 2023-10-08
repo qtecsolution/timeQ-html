@@ -320,6 +320,7 @@ select {
 .display-6 {
   color: hsl(227, 44%, 14%);
   font-family: inherit;
+  font-weight: 700;
 }
 
 button,
@@ -475,6 +476,82 @@ button:focus,
 .btn-learn:not([disabled]):hover {
   background: #31417d;
   color: hsl(0, 0%, 100%);
+}
+
+.cardreview {
+  background: hsl(0, 0%, 100%);
+  border: solid 0.0625rem hsl(210, 42%, 90%);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 1.25rem;
+}
+@media screen and (min-width: 48rem) {
+  .cardreview {
+    padding: 1.875rem;
+  }
+}
+.cardreview-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.cardreview-header .reviewlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.cardreview-header .reviewlist-item {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cardreview-header .reviewinfo .text {
+  color: hsl(227, 44%, 14%);
+}
+.cardreview-body {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.cardreview-body .author {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cardreview-body .authorinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: calc(100% - 3.375rem);
+}
+.cardreview-body .authorinfo .name,
+.cardreview-body .authorinfo .designation {
+  color: hsl(227, 44%, 14%);
+  font-family: "Sora", sans-serif;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .cardreview-body .authorinfo .name,
+  .cardreview-body .authorinfo .designation {
+    font-size: 1rem;
+  }
+}
+.cardreview-body .authorinfo .name {
+  font-weight: 400;
+}
+.cardreview-body .authorinfo .designation {
+  font-weight: 700;
 }
 
 .header {
@@ -1095,6 +1172,34 @@ table tr td {
   font-size: 0.75rem;
 }
 
+.visiblelist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.visiblelist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.visiblelist-item .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.visiblelist-item .text {
+  color: hsl(227, 44%, 14%);
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+}
+
 .pagination {
   gap: 0.875rem;
 }
@@ -1387,6 +1492,142 @@ table tr td {
 }
 .aboutbanner .bottomthumb {
   height: 15.625rem;
+}
+
+.visibilitycontrol {
+  padding: 3rem 0rem 4rem;
+}
+@media screen and (min-width: 62rem) {
+  .visibilitycontrol {
+    padding: 3.375rem 0rem 4.625rem;
+  }
+}
+@media screen and (min-width: 87.5rem) {
+  .visibilitycontrol {
+    padding: 6rem 0rem;
+  }
+}
+.visibilitycontrol .visibilitydetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .visibilitycontrol .visibilitydetails {
+    gap: 4rem;
+  }
+}
+
+.companyvalue {
+  padding: 3rem 0rem 4rem;
+}
+@media screen and (min-width: 62rem) {
+  .companyvalue {
+    padding: 3.375rem 0rem 4.625rem;
+  }
+}
+@media screen and (min-width: 87.5rem) {
+  .companyvalue {
+    padding: 6rem 0rem;
+  }
+}
+.companyvalue .companyvaluedetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .companyvalue .companyvaluedetails {
+    gap: 4rem;
+  }
+}
+.companyvalue .valueinfo .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.companyvalue .valueinfo .accordion-item {
+  background: hsl(0, 0%, 100%);
+  border: 0;
+  border-bottom: solid 0.0625rem hsl(210, 42%, 90%);
+  border-radius: 0rem;
+  padding: 0rem 0rem 1.25rem;
+}
+.companyvalue .valueinfo .accordion-item:first-of-type .accordion-button, .companyvalue .valueinfo .accordion-item:last-of-type .accordion-button {
+  border-radius: 0rem;
+}
+.companyvalue .valueinfo .accordion-button {
+  color: hsl(227, 44%, 14%);
+  font-family: "Sora", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.companyvalue .valueinfo .accordion-button:not(.collapsed) {
+  background: transparent;
+  box-shadow: none;
+  margin-bottom: 2rem;
+}
+.companyvalue .valueinfo .accordion-body {
+  border-radius: 0rem;
+  padding: 0rem;
+}
+.companyvalue .valueinfo .accordion-body .text {
+  color: hsl(228, 11%, 46%);
+}
+
+.reviews {
+  padding: 3rem 0rem 4rem;
+}
+@media screen and (min-width: 62rem) {
+  .reviews {
+    padding: 3.375rem 0rem 4.625rem;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 87.5rem) {
+  .reviews {
+    padding: 6rem 0rem;
+  }
+}
+.reviews-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media screen and (min-width: 87.5rem) {
+  .reviews-content {
+    gap: 4rem;
+  }
+}
+.reviews-content .swiper .swiperarrows {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.reviews-content .swiper .swiperarrows .swiper-button-prev,
+.reviews-content .swiper .swiperarrows .swiper-button-next {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: static;
+}
+.reviews-content .swiper .swiperarrows .swiper-button-prev::after,
+.reviews-content .swiper .swiperarrows .swiper-button-next::after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin: 0;
+  display: none;
+}
+.reviews-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .auth {

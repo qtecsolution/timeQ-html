@@ -1,2 +1,73 @@
 @use '../../global' as *;
 @use '../../partials' as *;
+
+.cardreview {
+  background: $white;
+  @include border(solid, 1, $headerborder);
+  @include radius(10);
+  @include flex-column;
+  gap: size(96);
+  padding: size(20);
+  
+  @include breakpoint(mobile768) {
+    padding: size(30);
+  }
+
+  &-header {
+    @include flex-column;
+    gap: size(20);
+
+    .reviewlist {
+      @include list-horizontal;
+
+      &-item {
+        @include square(20);
+        @include flex-center;
+        overflow: hidden;
+      }
+    }
+
+    .reviewinfo {
+      .text {
+        color: $textprimary;
+      }
+    }
+  }
+
+  &-body {
+    @include flex-center-vert;
+    gap: size(10);
+
+    .author {
+      @include square(44);
+      @include circle;
+      @include flex-center;
+      overflow: hidden;
+    }
+
+    .authorinfo {
+      @include flex-column;
+      gap: size(4);
+      width: calc(100% - size(54));
+
+      .name,
+      .designation {
+        color: $textprimary;
+        font-family: $primaryFont;
+        font-size: size(14.4);
+  
+        @include breakpoint(desktop1400) {
+          font-size: size(16);
+        }
+      }
+
+      .name {
+        font-weight: 400;
+      }
+
+      .designation {
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,6 +1,113 @@
 @use '../../global' as *;
 @use '../../partials' as *;
 
+.cardfeature {
+  @include border(solid, 1, $headerborder);
+  @include radius(10);
+  @include flex-column;
+  gap: size(24);
+  padding: size(20);
+  @include h100;
+
+  .icon {
+    @include square(48);
+    @include radius(10);
+    @include flex-center;
+    overflow: hidden;
+  }
+
+  .title {
+    font-size: size(20);
+    font-weight: 600;
+  }
+
+  .text {
+    font-size: size(15);
+    font-weight: 400;
+  }
+
+  .featurelink {
+    @include flex-center-vert;
+    gap: size(10);
+
+    .text {
+      color: $textprimary;
+      font-family: $primaryFont;
+      font-size: size(16);
+      font-weight: 400;
+    }
+
+    .icon {
+      @include square(18);
+      @include flex-center;
+      overflow: hidden;
+    }
+
+    @include hover {
+      .text {
+        color: $primary;
+      }
+
+      .icon {
+        svg {
+          path {
+            stroke: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cardservice {
+  background: $topbarbg;
+  @include border(solid, 1, $headerborder);
+  @include radius(10);
+  @include flex-column;
+  gap: size(35);
+  padding: size(24);
+  @include h100;
+  
+  @include breakpoint(mobile768) {
+    padding: size(42) size(32);
+  }
+
+  &-header {
+    @include w100;
+    height: size(120);
+    @include flex-center;
+    overflow: hidden;
+      
+    @include breakpoint(desktop1400) {
+      height: size(160);
+    }
+
+    .cardthumb {
+      @include wh100;
+      @include flex-center;
+      overflow: hidden;
+    }
+  }
+
+  &-body {
+    @include flex-column;
+    gap: size(16);
+
+    .title {
+      font-size: size(20);
+      font-weight: 600;
+      
+      @include breakpoint(desktop1400) {
+        font-size: size(24);
+      }
+    }
+
+    .text {
+      color: $textsecondary;
+    }
+  }
+}
+
 .cardreview {
   background: $white;
   @include border(solid, 1, $headerborder);

@@ -51,6 +51,200 @@
   }
 }
 
+.homebanner {
+  background: url(../images/home-banner/bannerbg.svg) no-repeat center center/cover;
+  min-height: 100vh;
+  padding: size(48) size(0) size(64);
+  
+  @include breakpoint(mobile768) {
+    padding: size(80) size(0);
+  }
+
+  &-content {
+    @include flex-column;
+    gap: size(48);
+  
+    @include breakpoint(desktop1400) {
+      gap: size(64);
+    }
+  }
+
+  .bannerdetail {
+    @include flex-center-column;
+    gap: size(32);
+    text-align: center;
+
+    .info {
+      max-width: size(759);
+      margin-inline: auto;
+    }
+  }
+
+  .bottomcontent {
+    position: relative;
+
+    .bannerthumb {
+      position: relative;
+      z-index: 100;
+    }
+
+    .banneroverlay {
+      background: $white;
+      position: absolute;
+      bottom: size(-64);
+      left: 0;
+      @include w100;
+      height: size(250);
+  
+      @include breakpoint(mobile768) {
+        bottom: size(-80);
+      }
+    }
+  }
+}
+
+.homefeatures {
+  padding: size(48) size(20) size(64);
+  
+  @include breakpoint(mobile768) {
+    padding: size(80) size(20);
+  }
+
+  @include breakpoint(desktop1400) {
+    padding: size(115) size(20);
+  }
+
+  &-content {
+    @include flex-column;
+    gap: size(48);
+  
+    @include breakpoint(desktop1400) {
+      gap: size(64);
+    }
+  }
+
+  &-header {
+    @include flex-center-column;
+    gap: size(32);
+    text-align: center;
+  }
+}
+
+.prospecting {
+  background: $topbarbg;
+  padding: size(48) size(20) size(64);
+  
+  @include breakpoint(mobile768) {
+    padding: size(80) size(20);
+  }
+
+  @include breakpoint(desktop1400) {
+    padding: size(115) size(20);
+  }
+
+  .leftinfo {
+    @include flex-column;
+    gap: size(24);
+  }
+
+  .rightinfo {
+    @include flex-center-column;
+    gap: size(24);
+    text-align: center;
+  }
+}
+
+.ourservice {
+  padding: size(48) size(20) size(64);
+  
+  @include breakpoint(mobile768) {
+    padding: size(80) size(20);
+  }
+
+  @include breakpoint(desktop1400) {
+    padding: size(115) size(20);
+  }
+}
+
+.todolist {
+  background: $topbarbg;
+  padding: size(48) size(20) size(64);
+  
+  @include breakpoint(mobile768) {
+    padding: size(80) size(20);
+  }
+
+  .todoinfo {
+    @include flex-column;
+    gap: size(32);
+
+    .info {
+      max-width: size(460);
+    }
+
+    .todolists {
+      @include list-vertical;
+      gap: size(16);
+
+      &-item {
+        @include flex-center-vert;
+        gap: size(10);
+
+        .icon {
+          @include square(24);
+          @include flex-center;
+          overflow: hidden;
+        }
+
+        .text {
+          color: $textprimary;
+          font-family: $primaryFont;
+        }
+      }
+    }
+
+    .learninfo {
+      max-width: size(220);
+    }
+  }
+
+  .description {
+    @include flex-column;
+    gap: size(20);
+
+    .icon {
+      @include square(40);
+      @include flex-center;
+      overflow: hidden;
+    }
+
+    .title {
+      font-size: size(16);
+      font-weight: 600;
+      
+      @include breakpoint(desktop1400) {
+        font-size: size(18);
+      }
+    }
+
+    .text {
+      font-size: size(14);
+      
+      @include breakpoint(desktop1400) {
+        font-size: size(16);
+      }
+    }
+  }
+
+  .todothumb {
+    @include wh100;
+
+    img {
+      @include wh100;
+    }
+  }
+}
+
 .ourclients {
   padding: size(48) size(20) size(64);
   

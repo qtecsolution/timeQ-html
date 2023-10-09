@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="TimeQ HTML Template" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap" />
+    <meta name="author" content="Qtec Solution Limited" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeQ | Pricing</title>
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/favicon.svg"
+      type="image/svg+xml"
+    />
+    <!-- REMIX-ICON(CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    />
+    <!-- SWIPER-CSS -->
+    <link rel="stylesheet" href="assets/css/swiper/swiper-bundle.min.css" />
+    <!-- BACK-TO-TOP-CSS -->
+    <link rel="stylesheet" href="assets/css/back-top/back-top.css" />
+    <!-- BOOTSTRAP-CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <!-- TIMEQ-CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- PAGE-LOADER START -->
+    <div class="preloader" id="preloader">
+      <div class="preloader1">
+        <div class="loader loader-inner-1">
+          <div class="loader loader-inner-2">
+            <div class="loader loader-inner-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PAGE-LOADER END -->
+
+    <!-- TOPBAR-START -->
+    <div class="topbar" id="topbar">
+      <div class="container">
+        <div class="topbarcontent">
+          <div class="topbarinfo">
+            <figure class="topbaricon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#topicon)">
+                  <circle
+                    cx="1"
+                    cy="1"
+                    r="1"
+                    transform="matrix(1 0 0 -1 10.6667 5.3335)"
+                    fill="#FF6960"
+                    stroke="#141B34"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1.84948 7.42945C1.18072 8.17636 1.16633 9.30323 1.7801 10.0959C2.99807 11.669 4.33115 13.0021 5.90421 14.2201C6.69693 14.8338 7.8238 14.8194 8.57071 14.1507C10.5986 12.335 12.4557 10.4374 14.2479 8.35213C14.4251 8.14597 14.5359 7.89328 14.5608 7.62258C14.6708 6.42549 14.8968 2.97661 13.9602 2.03999C13.0235 1.10337 9.57467 1.32934 8.37757 1.43934C8.10687 1.46421 7.85419 1.57505 7.64803 1.75224C5.56274 3.54447 3.6652 5.40157 1.84948 7.42945Z"
+                    fill="#FF6960"
+                    stroke="#141B34"
+                  />
+                  <path
+                    d="M4.66667 9.3335L6.66667 11.3335"
+                    stroke="#141B34"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+
+                <defs>
+                  <clipPath id="topicon">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </figure>
+
+            <p class="topbartext">
+              Explore September's product improvements & releases
+              <a href="#" class="textlink">Read more.</a>
+            </p>
+          </div>
+
+          <button type="button" class="btn-remove">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.2504 3.75L3.75037 14.25M3.75037 3.75L14.2504 14.25"
+                stroke="#141B34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- TOPBAR-END -->
+
+    <!-- HEADER-SECTION START -->
+    <header class="header sticky-top">
+      <div class="container">
+        <nav id="header-nav" class="header-nav">
+          <!-- HAMBURGER-MENU -->
+          <div class="d-lg-none d-flex">
+            <button
+              class="btn-hamburger"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+            >
+              <i class="ri-menu-2-fill"></i>
+            </button>
+          </div>
+
+          <!-- MOBILE-MENU -->
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="mobileMenu"
+            aria-labelledby="mobileMenuLabel"
+          >
+            <div class="offcanvas-header">
+              <!-- BRAND-LOGO -->
+              <a href="index.html" class="brand-logo">
+                <img src="assets/images/logo/logo.svg" alt="brand-logo" />
+              </a>
+
+              <button
+                type="button"
+                id="close-button"
+                class="btn-close d-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="ri-close-fill"></i>
+              </button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="mobilelist">
+                <li class="mobilelist-item">
+                  <a href="index.html" class="mobilelist-link">Home</a>
+                </li>
+
+                <li class="mobilelist-item">
+                  <a href="features.html" class="mobilelist-link">Features</a>
+                </li>
+
+                <li class="mobilelist-item">
+                  <a href="about.html" class="mobilelist-link">About Us</a>
+                </li>
+
+                <li class="mobilelist-item">
+                  <a href="pricing.html" class="mobilelist-link active">
+                    Pricing
+                  </a>
+                </li>
+
+                <li class="mobilelist-item">
+                  <a href="contact.html" class="mobilelist-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- BRAND-LOGO -->
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo/logo.svg" alt="brand-logo" />
+          </a>
+
+          <!-- DESKTOP-LIST -->
+          <div class="d-none d-lg-flex">
+            <ul class="desktoplist">
+              <li class="desktoplist-item">
+                <a href="index.html" class="desktoplist-link">Home</a>
+              </li>
+
+              <li class="desktoplist-item">
+                <a href="features.html" class="desktoplist-link">Features</a>
+              </li>
+
+              <li class="desktoplist-item">
+                <a href="about.html" class="desktoplist-link">About Us</a>
+              </li>
+
+              <li class="desktoplist-item">
+                <a href="pricing.html" class="desktoplist-link active">
+                  Pricing
+                </a>
+              </li>
+
+              <li class="desktoplist-item">
+                <a href="contact.html" class="desktoplist-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- AUTH-LIST -->
+          <ul class="authlist">
+            <li class="authlist-item d-none d-lg-flex">
+              <a href="authentications/login.html" class="btn-text">
+                Sign In
+              </a>
+            </li>
+
+            <li class="authlist-item">
+              <a href="authentications/register.html" class="btn-main">
+                Get Started
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER-SECTION END -->
+
+    <!-- MAIN SECTION START -->
+    <main class="p-0">
+      <!-- PRICING-SECTION START -->
+      <section class="pricing pb-0">
+        <div class="pricing-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mx-lg-auto">
+                <div class="pricing-header">
+                  <h2 class="title">Pricing that fits your needs</h2>
+
+                  <div class="info">
+                    <p class="text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Diam ut id nisl tellus rhoncus, imperdiet consequat
+                      ornare.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 mx-lg-auto">
+                <div class="d-flex justify-content-center w-100">
+                  <button
+                    type="button"
+                    class="btn-switch"
+                    id="btn-switch"
+                    monthtext="Monthly"
+                    yeartext="Yearly"
+                  >
+                    <span class="handle"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row gx-4 gy-5">
+              <div class="col-lg-4 col-md-6">
+                <div class="cardpricing">
+                  <div class="cardpricing-header">
+                    <div class="titleinfo">
+                      <h2 class="title">Free Tier</h2>
+                      <div class="info">
+                        <p class="text">
+                          For startups with small teams that need to multitask
+                        </p>
+                      </div>
+                    </div>
+
+                    <h2 class="price">$0</h2>
+                  </div>
+
+                  <div class="cardpricing-body">
+                    <ul class="pricinglist">
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Support Ticket Management</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Internal Team Messaging</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Task Assignment</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Personal To-Do Lists</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Appointment System</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Limited Storage (up to 1GB)</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Basic Reporting</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Basic User Analytics</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Site Backups</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Email Support</span>
+                      </li>
+                    </ul>
+
+                    <button class="btn-main w-100">Get Started</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="cardpricing popular">
+                  <span class="pricingbadge">The most popular</span>
+
+                  <div class="cardpricing-header">
+                    <div class="titleinfo">
+                      <h2 class="title">Popular Tier</h2>
+                      <div class="info">
+                        <p class="text">
+                          For startups with small teams that need to multitask
+                        </p>
+                      </div>
+                    </div>
+
+                    <h2 class="price">$15</h2>
+                  </div>
+
+                  <div class="cardpricing-body">
+                    <ul class="pricinglist">
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Support Ticket Management</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Internal Team Messaging</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Task Assignment</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Personal To-Do Lists</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Appointment System</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Enhanced Storage (up to 10GB)</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Advanced Reporting</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">
+                          User Analytics and Performance Metrics
+                        </span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Priority Email Support</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">
+                          Integration with Google Workspace
+                        </span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">
+                          Access to API for Custom Integrations
+                        </span>
+                      </li>
+                    </ul>
+
+                    <button class="btn-main w-100">Get Started</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="cardpricing">
+                  <div class="cardpricing-header">
+                    <div class="titleinfo">
+                      <h2 class="title">Pro Tier</h2>
+                      <div class="info">
+                        <p class="text">
+                          For startups with small teams that need to multitask
+                        </p>
+                      </div>
+                    </div>
+
+                    <h2 class="price">$150</h2>
+                  </div>
+
+                  <div class="cardpricing-body">
+                    <ul class="pricinglist">
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Support Ticket Management</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Internal Team Messaging</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Task Assignment</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Personal To-Do Lists</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Appointment System</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">Unlimited Storage</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">
+                          Customized Reporting and Analytics
+                        </span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text"> Dedicated Account Manager </span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">24/7 Priority Support</span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">
+                          Single Sign-On (SSO) Integration
+                        </span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">
+                          Enterprise-level Security and Compliance Features
+                        </span>
+                      </li>
+
+                      <li class="pricinglist-item">
+                        <span class="icon">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18.5625 6.1875L8.9375 15.8125L4.125 11"
+                              stroke="#141B34"
+                              stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+
+                        <span class="text">
+                          Custom API Endpoints for Deep Integration
+                        </span>
+                      </li>
+                    </ul>
+
+                    <button class="btn-main w-100">Get Started</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRICING-SECTION END -->
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- JOIN-TODAY START -->
+    <section class="jointoday">
+      <div class="container">
+        <div class="jointoday-content">
+          <div class="col-lg-6 mx-lg-auto">
+            <div class="joindetail">
+              <div class="joindetail-header">
+                <h2 class="jointitle">Join for free today.</h2>
+
+                <div class="textbox">
+                  <p class="jointext">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    pretium, elit quis vehicula interdum, sem metus iaculis
+                    sapien, sed bibendum lectus .
+                  </p>
+                </div>
+              </div>
+
+              <div class="joindetail-body">
+                <form class="accountform">
+                  <input
+                    type="text"
+                    placeholder="Your email account"
+                    class="inputfield"
+                  />
+
+                  <button type="submit" class="btn-create">
+                    Create Account
+                  </button>
+                </form>
+
+                <ul class="joinlist">
+                  <li class="joinlist-item">No credit card needed</li>
+                  <li class="joinlist-item">. Unlimited time on free plan</li>
+                  <li class="joinlist-item">. Unlimited task</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT-ICON -->
+          <div class="d-none d-md-block">
+            <figure class="righticon">
+              <svg
+                width="200"
+                height="177"
+                viewBox="0 0 200 177"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#righticon)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M45.8204 8.05658C35.3309 8.05658 24.7709 13.7592 16.8162 23.717C22.3417 28.322 29.0406 31.0448 36.195 31.5956C43.7528 32.1739 54.1719 30.152 58.674 22.5318C60.4335 19.5545 60.6176 16.8004 59.2209 14.3466C56.8739 10.2272 50.7258 8.06441 45.8661 8.05658H45.8204ZM79.5891 78.0799C72.9163 70.713 61.5026 72.8718 53.6759 78.8108C47.9455 83.1586 43.6497 89.8285 41.5808 97.5883C41.5664 97.6484 41.5521 97.7098 41.5403 97.7711C41.5384 97.778 41.5364 97.7855 41.535 97.7927C41.5345 97.7951 41.5341 97.7975 41.5338 97.7998C44.6679 98.874 47.8267 99.6637 50.9243 100.144C60.021 101.559 67.7799 100.589 73.9671 97.262C78.4587 94.8473 81.6815 90.8402 82.3773 86.8069C82.9124 83.7017 81.9478 80.6839 79.5891 78.0799ZM139.009 112.543C134.059 112.543 129.313 114.8 126.253 118.935C121.726 125.054 120.839 134.081 123.988 141.935C125.108 144.729 126.72 147.456 128.78 150.042C128.908 149.988 129.036 149.936 129.163 149.882C129.414 149.779 129.668 149.676 129.914 149.565C140.42 144.853 147.338 139.491 151.065 133.171C153.301 129.378 153.904 125.099 152.72 121.433C151.639 118.084 149.214 115.5 145.711 113.963C143.526 113.005 141.247 112.543 139.009 112.543ZM198.509 173.201C178.751 175.58 158.179 171.56 141.554 161.089C137.03 158.241 133.222 155.103 130.23 151.763C141.661 146.774 149.159 140.913 153.148 133.848C157.292 126.51 155.895 118.273 149.751 113.814C143.896 109.567 135.386 109.2 129.518 112.934C122.949 117.115 119.262 125.735 120.122 134.893C120.643 140.445 122.879 145.823 126.77 150.882C119.194 153.87 111.254 155.59 103.172 155.992C101.947 156.054 100.725 156.084 99.507 156.084C82.8054 156.084 66.9679 150.384 55.5973 140.182C43.5557 129.377 38.1321 114.341 41.0586 99.9208C42.5128 100.416 43.7424 100.789 44.9146 101.097C51.7557 102.888 61.8576 104.306 71.1176 100.891C77.9509 98.3715 85.1145 92.8581 84.732 84.9417C84.5493 81.2073 82.8955 77.9141 79.9454 75.4171C76.2958 72.3302 70.9035 70.7822 65.8871 71.38C57.8137 72.3367 49.9061 77.5356 44.7318 85.2902C42.3326 88.8875 40.5561 92.8451 39.4518 97.0584C28.3357 92.7563 18.94 85.1271 12.9812 75.5595C4.89084 62.5669 4.24209 46.4274 11.2438 32.3827C12.4343 29.9954 13.8623 27.6589 15.4874 25.4348C18.8029 28.1706 22.557 30.2865 26.6492 31.7249C35.3192 34.7766 44.6104 34.4711 52.1291 30.8907C56.1455 28.9785 60.7364 24.8591 61.9373 19.9696C62.663 17.0145 62.0704 14.2382 60.1764 11.7204C55.5333 5.54647 46.1481 5.12493 38.9036 6.79045C31.086 8.5891 23.4995 13.1053 17.5381 19.5063C16.7875 20.3129 16.0331 21.1939 15.1742 22.2656C9.26495 16.6915 5.32656 9.21749 3.93233 1H1.86719C3.35713 9.91754 7.52223 18.1072 13.8493 23.9977C4.5619 36.6679 1.73065 53.0854 6.46374 66.8873C11.3783 81.2151 23.5165 93.2719 38.9571 99.1691C36.4704 111.271 39.658 124.522 47.4991 134.649C58.8893 149.361 78.2276 158.181 99.2276 158.24H99.4378C109.147 158.24 119.078 156.295 128.176 152.61C129.832 154.54 131.703 156.376 133.739 158.07C147.535 169.538 166.912 176.001 187.282 176.001C188.232 176.001 189.188 175.986 190.143 175.958C192.95 175.874 195.743 175.668 198.509 175.342V173.201Z"
+                    fill="black"
+                  />
+                  <mask
+                    id="righticonmask"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="-1"
+                    y="0"
+                    width="201"
+                    height="178"
+                  >
+                    <path
+                      d="M199.867 0H-0.132812V178H199.867V0Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M45.8204 8.05658C35.3309 8.05658 24.7709 13.7592 16.8162 23.717C22.3417 28.322 29.0406 31.0448 36.195 31.5956C43.7528 32.1739 54.1719 30.152 58.674 22.5318C60.4335 19.5545 60.6176 16.8004 59.2209 14.3466C56.8739 10.2272 50.7258 8.06441 45.8661 8.05658H45.8204ZM79.5891 78.0799C72.9163 70.713 61.5026 72.8718 53.6759 78.8108C47.9455 83.1586 43.6497 89.8285 41.5808 97.5883C41.5664 97.6484 41.5521 97.7098 41.5403 97.7711C41.5384 97.778 41.5364 97.7855 41.535 97.7927C41.5345 97.7951 41.5341 97.7975 41.5338 97.7998C44.6679 98.874 47.8267 99.6637 50.9243 100.144C60.021 101.559 67.7799 100.589 73.9671 97.262C78.4587 94.8473 81.6815 90.8402 82.3773 86.8069C82.9124 83.7017 81.9478 80.6839 79.5891 78.0799ZM139.009 112.543C134.059 112.543 129.313 114.8 126.253 118.935C121.726 125.054 120.839 134.081 123.988 141.935C125.108 144.729 126.72 147.456 128.78 150.042C128.908 149.988 129.036 149.936 129.163 149.882C129.414 149.779 129.668 149.676 129.914 149.565C140.42 144.853 147.338 139.491 151.065 133.171C153.301 129.378 153.904 125.099 152.72 121.433C151.639 118.084 149.214 115.5 145.711 113.963C143.526 113.005 141.247 112.543 139.009 112.543ZM198.509 173.201C178.751 175.58 158.179 171.56 141.554 161.089C137.03 158.241 133.222 155.103 130.23 151.763C141.661 146.774 149.159 140.913 153.148 133.848C157.292 126.51 155.895 118.273 149.751 113.814C143.896 109.567 135.386 109.2 129.518 112.934C122.949 117.115 119.262 125.735 120.122 134.893C120.643 140.445 122.879 145.823 126.77 150.882C119.194 153.87 111.254 155.59 103.172 155.992C101.947 156.054 100.725 156.084 99.507 156.084C82.8054 156.084 66.9679 150.384 55.5973 140.182C43.5557 129.377 38.1321 114.341 41.0586 99.9208C42.5128 100.416 43.7424 100.789 44.9146 101.097C51.7557 102.888 61.8576 104.306 71.1176 100.891C77.9509 98.3715 85.1145 92.8581 84.732 84.9417C84.5493 81.2073 82.8955 77.9141 79.9454 75.4171C76.2958 72.3302 70.9035 70.7822 65.8871 71.38C57.8137 72.3367 49.9061 77.5356 44.7318 85.2902C42.3326 88.8875 40.5561 92.8451 39.4518 97.0584C28.3357 92.7563 18.94 85.1271 12.9812 75.5595C4.89084 62.5669 4.24209 46.4274 11.2438 32.3827C12.4343 29.9954 13.8623 27.6589 15.4874 25.4348C18.8029 28.1706 22.557 30.2865 26.6492 31.7249C35.3192 34.7766 44.6104 34.4711 52.1291 30.8907C56.1455 28.9785 60.7364 24.8591 61.9373 19.9696C62.663 17.0145 62.0704 14.2382 60.1764 11.7204C55.5333 5.54647 46.1481 5.12493 38.9036 6.79045C31.086 8.5891 23.4995 13.1053 17.5381 19.5063C16.7875 20.3129 16.0331 21.1939 15.1742 22.2656C9.26495 16.6915 5.32656 9.21749 3.93233 1H1.86719C3.35713 9.91754 7.52223 18.1072 13.8493 23.9977C4.5619 36.6679 1.73065 53.0854 6.46374 66.8873C11.3783 81.2151 23.5165 93.2719 38.9571 99.1691C36.4704 111.271 39.658 124.522 47.4991 134.649C58.8893 149.361 78.2276 158.181 99.2276 158.24H99.4378C109.147 158.24 119.078 156.295 128.176 152.61C129.832 154.54 131.703 156.376 133.739 158.07C147.535 169.538 166.912 176.001 187.282 176.001C188.232 176.001 189.188 175.986 190.143 175.958C192.95 175.874 195.743 175.668 198.509 175.342V173.201Z"
+                      fill="black"
+                    />
+                  </mask>
+                  <g mask="url(#righticonmask)">
+                    <path
+                      d="M16.8165 23.717L16.0352 23.0929L15.4239 23.8582L16.1763 24.4852L16.8165 23.717ZM45.8664 8.05658L45.868 7.05658H45.8664V8.05658ZM41.5811 97.5883L40.6148 97.3307L40.6115 97.3432L40.6085 97.3557L41.5811 97.5883ZM41.5406 97.7711L42.5022 98.0456L42.5144 98.0028L42.5228 97.9592L41.5406 97.7711ZM41.5341 97.7998L40.5441 97.6584L40.4271 98.4775L41.2098 98.7458L41.5341 97.7998ZM123.988 141.935L124.916 141.563V141.562L123.988 141.935ZM128.78 150.042L127.998 150.665L128.469 151.256L129.166 150.964L128.78 150.042ZM129.163 149.882L128.784 148.957L128.773 148.961L129.163 149.882ZM129.914 149.565L129.505 148.653H129.504L129.914 149.565ZM198.509 173.201H199.509V172.073L198.389 172.208L198.509 173.201ZM130.23 151.763L129.83 150.847L128.562 151.4L129.485 152.43L130.23 151.763ZM126.77 150.882L127.137 151.812L128.372 151.325L127.563 150.272L126.77 150.882ZM41.0589 99.9208L41.381 98.9741L40.305 98.6081L40.0789 99.722L41.0589 99.9208ZM39.4521 97.0584L39.0912 97.991L40.1355 98.3952L40.4194 97.312L39.4521 97.0584ZM15.4877 25.4348L16.1242 24.6635L15.3061 23.9884L14.6803 24.8448L15.4877 25.4348ZM15.1745 22.2656L14.4883 22.993L15.2768 23.7368L15.9548 22.891L15.1745 22.2656ZM3.93261 1L4.91852 0.832724L4.77723 0H3.93261V1ZM1.86747 1V0H0.686523L0.881137 1.1648L1.86747 1ZM13.8496 23.9977L14.6561 24.5889L15.1818 23.8717L14.531 23.2658L13.8496 23.9977ZM38.9574 99.1691L39.9369 99.3703L40.1079 98.538L39.3142 98.2349L38.9574 99.1691ZM99.2279 158.24L99.2251 159.24H99.2279V158.24ZM128.176 152.61L128.934 151.959L128.466 151.414L127.8 151.683L128.176 152.61ZM133.739 158.07L133.099 158.839H133.1L133.739 158.07ZM198.509 175.342L198.626 176.335L199.509 176.231V175.342H198.509ZM17.5979 24.3412C25.4079 14.5643 35.701 9.05658 45.8207 9.05658V7.05658C34.9614 7.05658 24.1344 12.9541 16.0352 23.0929L17.5979 24.3412ZM36.2721 30.5986C29.3251 30.0637 22.823 27.4212 17.4568 22.9488L16.1763 24.4852C21.8609 29.2228 28.7566 32.0259 36.1186 32.5927L36.2721 30.5986ZM57.8134 22.0231C55.7206 25.5652 52.2244 27.8551 48.2614 29.1905C44.2973 30.5262 39.9412 30.8794 36.2721 30.5986L36.1186 32.5927C40.0073 32.8902 44.6395 32.5214 48.9 31.0858C53.1615 29.6498 57.1259 27.1185 59.5352 23.0405L57.8134 22.0231ZM58.3521 14.8412C59.529 16.9089 59.4386 19.273 57.8134 22.0231L59.5352 23.0405C61.4291 19.836 61.7068 16.692 60.0903 13.8519L58.3521 14.8412ZM45.8648 9.05658C48.1602 9.06027 50.7772 9.57554 53.0884 10.5773C55.4096 11.5833 57.3229 13.0348 58.3521 14.8412L60.0903 13.8519C58.7726 11.5389 56.4382 9.84933 53.8837 8.7422C51.3193 7.63073 48.4324 7.06071 45.868 7.05658L45.8648 9.05658ZM45.8207 9.05658H45.8664V7.05658H45.8207V9.05658ZM54.2806 79.6074C58.0663 76.7348 62.6976 74.7968 67.1427 74.4527C71.5684 74.11 75.7616 75.3435 78.8482 78.7512L80.3305 77.4086C76.7444 73.4494 71.8943 72.0788 66.9883 72.4586C62.1017 72.8369 57.1126 74.9479 53.0717 78.0142L54.2806 79.6074ZM42.5473 97.8459C44.566 90.2746 48.7481 83.8051 54.2806 79.6074L53.0717 78.0142C47.1435 82.5122 42.734 89.3825 40.6148 97.3307L42.5473 97.8459ZM42.5228 97.9592C42.5299 97.922 42.5396 97.8798 42.5537 97.8209L40.6085 97.3557C40.5939 97.417 40.5748 97.4975 40.5585 97.583L42.5228 97.9592ZM42.5166 97.9852C42.5133 98.0019 42.5102 98.0152 42.5079 98.0242C42.5056 98.0334 42.5036 98.0407 42.5022 98.0456L40.579 97.4967C40.573 97.5178 40.5629 97.5549 40.554 97.6002L42.5166 97.9852ZM42.524 97.9412C42.5215 97.9588 42.5188 97.9741 42.5166 97.9852L40.554 97.6002C40.5509 97.6162 40.5473 97.6362 40.5441 97.6584L42.524 97.9412ZM51.0782 99.1559C48.0423 98.6851 44.9402 97.9102 41.8583 96.8538L41.2098 98.7458C44.3961 99.8379 47.6121 100.642 50.7713 101.132L51.0782 99.1559ZM73.4939 96.3812C67.5506 99.5771 60.0267 100.548 51.0782 99.1559L50.7713 101.132C60.0163 102.57 68.0098 101.601 74.441 98.1427L73.4939 96.3812ZM81.3921 86.6369C80.7613 90.2936 77.7879 94.0727 73.4939 96.3812L74.441 98.1427C79.1301 95.6218 82.6023 91.3867 83.363 86.9769L81.3921 86.6369ZM78.8482 78.7512C81.0277 81.1574 81.8685 83.8725 81.3921 86.6369L83.363 86.9769C83.957 83.5308 82.8685 80.2104 80.3305 77.4086L78.8482 78.7512ZM127.057 119.529C129.921 115.659 134.364 113.543 139.009 113.543V111.543C133.754 111.543 128.704 113.94 125.449 118.34L127.057 119.529ZM124.916 141.562C121.878 133.988 122.763 125.334 127.057 119.529L125.449 118.34C120.69 124.773 119.799 134.174 123.06 142.307L124.916 141.562ZM129.562 149.419C127.557 146.901 125.997 144.258 124.916 141.563L123.06 142.307C124.22 145.2 125.883 148.01 127.998 150.665L129.562 149.419ZM128.773 148.961C128.646 149.015 128.535 149.06 128.394 149.119L129.166 150.964C129.281 150.916 129.426 150.856 129.552 150.803L128.773 148.961ZM129.504 148.653C129.276 148.756 129.04 148.852 128.784 148.957L129.541 150.808C129.789 150.707 130.059 150.597 130.325 150.477L129.504 148.653ZM150.203 132.663C146.626 138.729 139.921 143.981 129.505 148.653L130.324 150.478C140.918 145.726 148.05 140.253 151.926 133.679L150.203 132.663ZM151.768 121.74C152.851 125.094 152.317 129.078 150.203 132.663L151.926 133.679C154.284 129.678 154.956 125.104 153.671 121.126L151.768 121.74ZM145.309 114.878C148.576 116.313 150.783 118.689 151.768 121.74L153.671 121.126C152.494 117.478 149.851 114.688 146.113 113.047L145.309 114.878ZM139.009 113.543C141.109 113.543 143.251 113.976 145.31 114.879L146.113 113.047C143.801 112.033 141.385 111.543 139.009 111.543V113.543ZM198.389 172.208C178.837 174.562 158.499 170.58 142.087 160.243L141.021 161.935C157.859 172.541 178.666 176.597 198.629 174.194L198.389 172.208ZM142.087 160.243C137.627 157.435 133.895 154.355 130.975 151.096L129.485 152.43C132.55 155.851 136.433 159.047 141.021 161.936L142.087 160.243ZM130.63 152.68C142.159 147.648 149.879 141.67 154.019 134.34L152.277 133.357C148.438 140.155 141.163 145.901 129.83 150.847L130.63 152.68ZM154.019 134.34C158.371 126.634 156.96 117.81 150.339 113.005L149.164 114.623C154.831 118.736 156.213 126.387 152.277 133.357L154.019 134.34ZM150.339 113.005C144.168 108.529 135.213 108.125 128.981 112.091L130.054 113.778C135.56 110.275 143.624 110.604 149.164 114.623L150.339 113.005ZM128.981 112.091C122.031 116.514 118.239 125.537 119.126 134.986L121.118 134.799C120.285 125.933 123.866 117.716 130.054 113.778L128.981 112.091ZM119.126 134.986C119.667 140.752 121.988 146.305 125.977 151.492L127.563 150.272C123.769 145.341 121.618 140.138 121.118 134.799L119.126 134.986ZM126.403 149.952C118.927 152.9 111.094 154.597 103.123 154.994L103.222 156.991C111.413 156.584 119.46 154.84 127.137 151.812L126.403 149.952ZM103.123 154.994C101.914 155.054 100.708 155.084 99.5073 155.084V157.084C100.741 157.084 101.98 157.053 103.222 156.991L103.123 154.994ZM99.5073 155.084C83.0249 155.084 67.4332 149.457 56.2654 139.437L54.9297 140.926C66.5032 151.31 82.5865 157.084 99.5073 157.084V155.084ZM56.2654 139.437C44.4563 128.841 39.191 114.153 42.039 100.12L40.0789 99.722C37.0739 114.529 42.6556 129.912 54.9297 140.926L56.2654 139.437ZM40.7369 100.868C42.2091 101.368 43.4616 101.749 44.6607 102.064L45.169 100.13C44.0237 99.8287 42.8171 99.4627 41.381 98.9741L40.7369 100.868ZM44.6607 102.064C51.5746 103.874 61.9185 105.35 71.464 101.829L70.772 99.9523C61.7976 103.263 51.9366 101.901 45.1681 100.129L44.6607 102.064ZM71.464 101.829C74.9826 100.532 78.6224 98.4525 81.3495 95.6357C84.0867 92.8084 85.939 89.1948 85.7312 84.8934L83.7335 84.99C83.9082 88.605 82.3699 91.7063 79.9126 94.2446C77.4451 96.7933 74.0866 98.7304 70.772 99.9523L71.464 101.829ZM85.7312 84.8934C85.5344 80.8723 83.7455 77.3232 80.5918 74.6538L79.2997 76.1804C82.046 78.505 83.5648 81.5424 83.7335 84.99L85.7312 84.8934ZM80.5918 74.6538C76.7171 71.3765 71.0432 69.7585 65.7691 70.387L66.0051 72.373C70.7636 71.806 75.8751 73.2839 79.2997 76.1804L80.5918 74.6538ZM65.7691 70.387C57.3608 71.3835 49.2105 76.7768 43.9003 84.7352L45.5639 85.8452C50.6023 78.2944 58.2667 73.2901 66.0051 72.373L65.7691 70.387ZM43.9003 84.7352C41.4392 88.4253 39.617 92.4849 38.4848 96.8049L40.4194 97.312C41.4958 93.2052 43.2266 89.3498 45.5639 85.8452L43.9003 84.7352ZM39.813 96.1259C28.8865 91.8971 19.6677 84.4034 13.8303 75.0308L12.1326 76.0881C18.2128 85.8508 27.7855 93.6155 39.0912 97.991L39.813 96.1259ZM13.8303 75.0308C5.92914 62.3421 5.28748 46.5723 12.1391 32.8289L10.3492 31.9365C3.19726 46.2823 3.853 62.7916 12.1326 76.0881L13.8303 75.0308ZM12.1391 32.8289C13.3036 30.4937 14.7019 28.2053 16.2952 26.0247L14.6803 24.8448C13.0233 27.1126 11.5657 29.497 10.3492 31.9365L12.1391 32.8289ZM14.8513 26.2061C18.2583 29.0174 22.1158 31.1912 26.3179 32.6683L26.9815 30.7816C22.9993 29.3818 19.3482 27.3238 16.1242 24.6635L14.8513 26.2061ZM26.3179 32.6683C35.209 35.7978 44.7763 35.4998 52.5593 31.7936L51.6995 29.9878C44.4452 33.4422 35.4303 33.7555 26.9815 30.7816L26.3179 32.6683ZM52.5593 31.7936C56.7314 29.8074 61.6105 25.4939 62.9087 20.2081L60.9664 19.7311C59.8628 24.2243 55.5604 28.1497 51.6995 29.9878L52.5593 31.7936ZM62.9087 20.2081C63.7089 16.9498 63.0429 13.8671 60.9758 11.1192L59.3774 12.3214C61.0984 14.6092 61.6177 17.0792 60.9664 19.7311L62.9087 20.2081ZM60.9758 11.1192C58.4555 7.76802 54.683 6.0279 50.6878 5.33052C46.6948 4.63354 42.3995 4.96071 38.6798 5.81587L39.1279 7.76502C42.6527 6.95467 46.6723 6.65985 50.3439 7.30073C54.0131 7.94121 57.2547 9.49871 59.3774 12.3214L60.9758 11.1192ZM38.6798 5.81587C30.6499 7.66338 22.8912 12.2915 16.8066 18.8248L18.2702 20.1878C24.1084 13.9191 31.5227 9.51481 39.1279 7.76502L38.6798 5.81587ZM16.8066 18.8248C16.0357 19.6533 15.2647 20.554 14.3942 21.6402L15.9548 22.891C16.802 21.8339 17.54 20.9726 18.2702 20.1878L16.8066 18.8248ZM15.8606 21.5381C10.115 16.1184 6.27765 8.84338 4.91852 0.832724L2.9467 1.16728C4.37602 9.5916 8.41546 17.2646 14.4883 22.993L15.8606 21.5381ZM1.86747 2H3.93261V0H1.86747V2ZM0.881137 1.1648C2.40372 10.2777 6.66402 18.6742 13.1681 24.7296L14.531 23.2658C8.381 17.5401 4.3111 9.5574 2.8538 0.835204L0.881137 1.1648ZM13.043 23.4065C3.57982 36.3166 0.669487 53.073 5.5181 67.2117L7.40995 66.5629C2.79237 53.0979 5.54455 37.0192 14.6561 24.5889L13.043 23.4065ZM5.5181 67.2117C10.5385 81.848 22.9117 94.1112 38.6006 100.103L39.3142 98.2349C24.1218 92.4325 12.2187 80.5823 7.40995 66.5629L5.5181 67.2117ZM37.9778 98.9678C35.4301 111.367 38.6964 124.913 46.7087 135.261L48.2901 134.036C40.6203 124.131 37.5114 111.175 39.9369 99.3703L37.9778 98.9678ZM46.7087 135.261C58.3137 150.251 77.9619 159.18 99.2251 159.24L99.2307 157.24C78.494 157.182 59.4656 148.472 48.2901 134.036L46.7087 135.261ZM99.2279 159.24H99.4381V157.24H99.2279V159.24ZM99.4381 159.24C109.277 159.24 119.335 157.27 128.551 153.537L127.8 151.683C118.82 155.32 109.017 157.24 99.4381 157.24V159.24ZM127.417 153.262C129.111 155.235 131.022 157.11 133.099 158.839L134.379 157.302C132.384 155.642 130.553 153.844 128.934 151.959L127.417 153.262ZM133.1 158.839C147.1 170.478 166.714 177.001 187.282 177.001V175.001C167.111 175.001 147.969 168.599 134.378 157.301L133.1 158.839ZM187.282 177.001C188.242 177.001 189.208 176.986 190.173 176.957L190.114 174.958C189.169 174.986 188.222 175.001 187.282 175.001V177.001ZM190.173 176.957C193.009 176.873 195.831 176.664 198.626 176.335L198.392 174.349C195.655 174.671 192.891 174.876 190.114 174.958L190.173 176.957ZM197.509 173.201V175.342H199.509V173.201H197.509Z"
+                      fill="black"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="righticon">
+                    <rect width="200" height="177" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </figure>
+          </div>
+
+          <!-- LEFT-ICON -->
+          <div class="d-none d-md-block">
+            <figure class="lefticon">
+              <svg
+                width="209"
+                height="160"
+                viewBox="0 0 209 160"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#leftticon)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M207.132 159C206.162 142.42 199.897 125.892 188.683 112.362C179.02 100.705 166.381 92.8935 148.909 87.7773C147.113 87.2529 145.304 86.7468 143.495 86.2403C136.493 84.283 129.255 82.2582 122.673 78.9915C114.51 74.9402 108.308 68.7525 104.236 60.5983C102.269 56.6608 100.69 52.4577 99.1633 48.3906L99.1326 48.309C97.7726 44.6918 96.3667 40.9523 94.6824 37.3873C91.1053 29.8204 86.0069 23.2842 79.5249 17.9566C63.9837 5.17894 45.352 1.84856 32.4618 1.30305C21.8788 0.855196 11.4358 1.94953 1 3.84934V6.83942C15.2048 4.23584 31.8783 2.67572 48.0423 6.30882C66.2398 10.3729 81.2377 20.413 89.2231 33.7911C92.2104 38.7935 94.3343 44.4195 96.3871 49.8601C99.8921 59.1471 103.518 68.7511 111.549 75.6513C120.537 83.3708 132.01 86.5618 143.104 89.6475L143.112 89.6498L143.128 89.654C148.066 91.0279 153.169 92.448 157.92 94.2412C183.519 103.917 201.907 130.39 203.784 159H207.132Z"
+                    fill="black"
+                  />
+                  <mask
+                    id="leftticonmask"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="209"
+                    height="161"
+                  >
+                    <path
+                      d="M209 0.203125H0V160.203H209V0.203125Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M207.132 159C206.162 142.42 199.897 125.892 188.683 112.362C179.02 100.705 166.381 92.8935 148.909 87.7773C147.113 87.2529 145.304 86.7468 143.495 86.2403C136.493 84.283 129.255 82.2582 122.673 78.9915C114.51 74.9402 108.308 68.7525 104.236 60.5983C102.269 56.6608 100.69 52.4577 99.1633 48.3906L99.1326 48.309C97.7726 44.6918 96.3667 40.9523 94.6824 37.3873C91.1053 29.8204 86.0069 23.2842 79.5249 17.9566C63.9837 5.17894 45.352 1.84856 32.4618 1.30305C21.8788 0.855196 11.4358 1.94953 1 3.84934V6.83942C15.2048 4.23584 31.8783 2.67572 48.0423 6.30882C66.2398 10.3729 81.2377 20.413 89.2231 33.7911C92.2104 38.7935 94.3343 44.4195 96.3871 49.8601C99.8921 59.1471 103.518 68.7511 111.549 75.6513C120.537 83.3708 132.01 86.5618 143.104 89.6475L143.112 89.6498L143.128 89.654C148.066 91.0279 153.169 92.448 157.92 94.2412C183.519 103.917 201.907 130.39 203.784 159H207.132Z"
+                      fill="black"
+                    />
+                  </mask>
+                  <g mask="url(#leftticonmask)">
+                    <path
+                      d="M207.132 159V160H208.192L208.13 158.941L207.132 159ZM148.909 87.7773L149.19 86.8176L149.189 86.8174L148.909 87.7773ZM122.673 78.9915L123.118 78.0958L123.117 78.0957L122.673 78.9915ZM99.1633 48.3906L100.1 48.0392L100.099 48.0387L99.1633 48.3906ZM1 3.84934L0.820897 2.86551L0 3.01495V3.84934H1ZM1 6.83942H0V8.03936L1.18029 7.82303L1 6.83942ZM48.0423 6.30882L47.8231 7.28448L47.8244 7.28478L48.0423 6.30882ZM143.104 89.6475L143.373 88.6843L143.372 88.684L143.104 89.6475ZM143.112 89.6498L142.843 90.6129L142.844 90.6131L143.112 89.6498ZM143.128 89.654L142.859 90.6174L142.86 90.6175L143.128 89.654ZM203.784 159L202.786 159.065L202.848 160H203.784V159ZM208.13 158.941C207.148 142.152 200.804 125.42 189.453 111.724L187.913 113C198.989 126.364 205.176 142.687 206.134 159.058L208.13 158.941ZM189.453 111.724C179.639 99.884 166.814 91.9783 149.19 86.8176L148.628 88.737C165.948 93.8087 178.402 101.525 187.913 113L189.453 111.724ZM149.189 86.8174C147.387 86.2912 145.573 85.7835 143.764 85.2773L143.225 87.2033C145.036 87.71 146.839 88.2144 148.628 88.737L149.189 86.8174ZM143.764 85.2773C136.747 83.3155 129.601 81.3134 123.118 78.0958L122.228 79.8872C128.909 83.203 136.239 85.2506 143.225 87.2033L143.764 85.2773ZM123.117 78.0957C115.149 74.1412 109.105 68.1112 105.131 60.1516L103.342 61.045C107.51 69.3939 113.87 75.7391 122.228 79.8872L123.117 78.0957ZM105.131 60.1516C103.19 56.2686 101.629 52.1146 100.1 48.0392L98.227 48.742C99.7503 52.8008 101.347 57.0529 103.342 61.045L105.131 60.1516ZM100.099 48.0387L100.069 47.957L98.1965 48.6609L98.227 48.742L100.099 48.0387ZM100.069 47.957C98.7111 44.3462 97.2913 40.5683 95.5866 36.9601L93.7783 37.8145C95.4421 41.3363 96.8342 45.0372 98.1965 48.6609L100.069 47.957ZM95.5866 36.9601C91.9462 29.2594 86.7557 22.6052 80.1599 17.1841L78.8899 18.7291C85.258 23.9631 90.2644 30.3814 93.7783 37.8145L95.5866 36.9601ZM80.1599 17.1841C64.383 4.21263 45.5029 0.85405 32.5041 0.303941L32.4195 2.30215C45.2011 2.84307 63.5843 6.14516 78.8899 18.7291L80.1599 17.1841ZM32.5041 0.303941C21.825 -0.147976 11.3044 0.957016 0.820897 2.86551L1.1791 4.83317C11.5673 2.94204 21.9326 1.85837 32.4195 2.30215L32.5041 0.303941ZM2 6.83942V3.84934H0V6.83942H2ZM1.18029 7.82303C15.3324 5.22912 31.8512 3.69458 47.8231 7.28448L48.2616 5.33316C31.9054 1.65686 15.0773 3.24255 0.819715 5.8558L1.18029 7.82303ZM47.8244 7.28478C65.8089 11.3013 80.5464 21.2059 88.3644 34.3037L90.0818 33.2786C81.9289 19.62 66.6708 9.44452 48.2603 5.33286L47.8244 7.28478ZM88.3644 34.3037C91.2983 39.2166 93.3929 44.7572 95.4515 50.2132L97.3227 49.5071C95.2757 44.0818 93.1225 38.3704 90.0818 33.2786L88.3644 34.3037ZM95.4515 50.2132C98.9417 59.4611 102.642 69.3169 110.898 76.4098L112.201 74.8928C104.394 68.1853 100.842 58.8333 97.3227 49.5071L95.4515 50.2132ZM110.898 76.4098C120.083 84.2985 131.782 87.5363 142.836 90.6109L143.372 88.684C132.239 85.5874 120.992 82.443 112.201 74.8928L110.898 76.4098ZM142.835 90.6106L142.843 90.6129L143.381 88.6866L143.373 88.6843L142.835 90.6106ZM142.844 90.6131L142.859 90.6174L143.396 88.6907L143.38 88.6864L142.844 90.6131ZM142.86 90.6175C147.806 91.9936 152.865 93.4021 157.566 95.1767L158.273 93.3058C153.473 91.494 148.325 90.0623 143.396 88.6907L142.86 90.6175ZM157.566 95.1767C182.764 104.7 200.932 130.808 202.786 159.065L204.782 158.934C202.881 129.972 184.275 103.133 158.273 93.3058L157.566 95.1767ZM207.132 158H203.784V160H207.132V158Z"
+                      fill="black"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="leftticon">
+                    <rect width="209" height="160" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JOIN-TODAY END -->
+
+    <!-- FOOTER-SECTION START -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5 col-md-6">
+              <div class="footerinfo">
+                <div class="footerinfo-header">
+                  <!-- BRAND-LOGO -->
+                  <figure class="brand-logo">
+                    <img src="assets/images/logo/logo.svg" alt="brand-logo" />
+                  </figure>
+                </div>
+
+                <div class="footerinfo-body">
+                  <div class="info">
+                    <p class="footertext">
+                      TimeQ is a comprehensive team collaboration and task
+                      management platform designed to streamline communication,
+                      improve productivity, and enhance teamwork within
+                      organizations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="footerinfo">
+                <div class="footerinfo-header">
+                  <h5 class="footertitle">Features</h5>
+                </div>
+
+                <div class="footerinfo-body">
+                  <ul class="footerlist">
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">
+                        Support Ticket Management
+                      </a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">
+                        Internal Team Messaging
+                      </a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">Task Assignment</a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">
+                        Personal To-Do Lists
+                      </a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">
+                        Appointment System
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+              <div class="footerinfo">
+                <div class="footerinfo-header">
+                  <h5 class="footertitle">Company</h5>
+                </div>
+
+                <div class="footerinfo-body">
+                  <ul class="footerlist">
+                    <li class="footerlist-item">
+                      <a href="contact.html" class="footerlist-link">
+                        Contact Us
+                      </a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">Terms of Service</a>
+                    </li>
+
+                    <li class="footerlist-item">
+                      <a href="#" class="footerlist-link">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+              <div class="footerinfo">
+                <div class="footerinfo-header">
+                  <h5 class="footertitle">Follow us</h5>
+                </div>
+
+                <div class="footerinfo-body">
+                  <ul class="social-list">
+                    <li class="social-list-item">
+                      <a
+                        href="#"
+                        class="social-list-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Follow on Facebook"
+                      >
+                        <svg
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.33268 9.47428H10.9993L11.666 6.80762H9.33268V5.47428C9.33268 4.78762 9.33268 4.14095 10.666 4.14095H11.666V1.90095C11.4487 1.87228 10.628 1.80762 9.76135 1.80762C7.95135 1.80762 6.66602 2.91228 6.66602 4.94095V6.80762H4.66602V9.47428H6.66602V15.1409H9.33268V9.47428Z"
+                            fill="#141B34"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social-list-item">
+                      <a
+                        href="#"
+                        class="social-list-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Follow on Twitter"
+                      >
+                        <svg
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.974 4.47494C14.4607 4.70827 13.9073 4.8616 13.334 4.93494C13.9207 4.5816 14.374 4.0216 14.5873 3.34827C14.034 3.6816 13.4207 3.91494 12.774 4.04827C12.2473 3.47494 11.5073 3.1416 10.6673 3.1416C9.10068 3.1416 7.82068 4.4216 7.82068 6.0016C7.82068 6.22827 7.84734 6.44827 7.89401 6.65494C5.52068 6.53494 3.40734 5.39494 2.00068 3.66827C1.75401 4.08827 1.61401 4.5816 1.61401 5.1016C1.61401 6.09494 2.11401 6.97494 2.88734 7.47494C2.41401 7.47494 1.97401 7.3416 1.58734 7.1416V7.1616C1.58734 8.54827 2.57401 9.70827 3.88068 9.96827C3.46116 10.0831 3.02074 10.099 2.59401 10.0149C2.77508 10.5833 3.1297 11.0805 3.60802 11.4369C4.08634 11.7932 4.66431 11.9907 5.26068 12.0016C4.24976 12.8019 2.99667 13.2345 1.70734 13.2283C1.48068 13.2283 1.25401 13.2149 1.02734 13.1883C2.29401 14.0016 3.80068 14.4749 5.41401 14.4749C10.6673 14.4749 13.554 10.1149 13.554 6.33494C13.554 6.20827 13.554 6.08827 13.5473 5.9616C14.1073 5.5616 14.5873 5.05494 14.974 4.47494Z"
+                            fill="#141B34"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social-list-item">
+                      <a
+                        href="#"
+                        class="social-list-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Follow on Instagram"
+                      >
+                        <svg
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.68442 1.80844C9.17091 1.80657 9.6574 1.81146 10.1438 1.8231L10.2731 1.82777C10.4224 1.8331 10.5697 1.83977 10.7478 1.84777C11.4571 1.8811 11.9411 1.9931 12.3658 2.15777C12.8058 2.3271 13.1764 2.55644 13.5471 2.9271C13.886 3.26017 14.1483 3.66307 14.3158 4.10777C14.4804 4.53244 14.5924 5.0171 14.6258 5.72644C14.6338 5.90377 14.6404 6.05177 14.6458 6.2011L14.6498 6.33044C14.6616 6.81657 14.6667 7.30283 14.6651 7.7891L14.6658 8.28644V9.15977C14.6674 9.64626 14.6623 10.1328 14.6504 10.6191L14.6464 10.7484C14.6411 10.8978 14.6344 11.0451 14.6264 11.2231C14.5931 11.9324 14.4798 12.4164 14.3158 12.8411C14.1489 13.2863 13.8865 13.6895 13.5471 14.0224C13.2137 14.3613 12.8106 14.6236 12.3658 14.7911C11.9411 14.9558 11.4571 15.0678 10.7478 15.1011C10.5697 15.1091 10.4224 15.1158 10.2731 15.1211L10.1438 15.1251C9.6574 15.137 9.17091 15.1421 8.68442 15.1404L8.18708 15.1411H7.31442C6.82792 15.1427 6.34143 15.1376 5.85508 15.1258L5.72575 15.1218C5.56749 15.116 5.40926 15.1094 5.25108 15.1018C4.54175 15.0684 4.05775 14.9551 3.63242 14.7911C3.18754 14.624 2.78457 14.3617 2.45175 14.0224C2.11245 13.6893 1.8499 13.2861 1.68242 12.8411C1.51775 12.4164 1.40575 11.9324 1.37242 11.2231C1.36499 11.0649 1.35832 10.9067 1.35242 10.7484L1.34908 10.6191C1.33679 10.1328 1.33124 9.64627 1.33242 9.15977V7.7891C1.33056 7.30284 1.33544 6.81657 1.34708 6.33044L1.35175 6.2011C1.35708 6.05177 1.36375 5.90377 1.37175 5.72644C1.40508 5.01644 1.51708 4.5331 1.68175 4.10777C1.84933 3.66285 2.11239 3.26007 2.45242 2.92777C2.78501 2.58827 3.18772 2.32549 3.63242 2.15777C4.05775 1.9931 4.54108 1.8811 5.25108 1.84777L5.72575 1.82777L5.85508 1.82444C6.34121 1.81215 6.82747 1.8066 7.31375 1.80777L8.68442 1.80844ZM7.99908 5.14177C7.55742 5.13552 7.11892 5.21712 6.70907 5.38182C6.29921 5.54651 5.92618 5.79102 5.61165 6.10114C5.29711 6.41126 5.04735 6.7808 4.87687 7.18828C4.7064 7.59576 4.61861 8.03306 4.61861 8.47477C4.61861 8.91648 4.7064 9.35378 4.87687 9.76126C5.04735 10.1687 5.29711 10.5383 5.61165 10.8484C5.92618 11.1585 6.29921 11.403 6.70907 11.5677C7.11892 11.7324 7.55742 11.814 7.99908 11.8078C8.88314 11.8078 9.73098 11.4566 10.3561 10.8315C10.9812 10.2063 11.3324 9.35849 11.3324 8.47444C11.3324 7.59038 10.9812 6.74254 10.3561 6.11741C9.73098 5.49229 8.88314 5.14177 7.99908 5.14177ZM7.99908 6.4751C8.26475 6.47021 8.52874 6.5183 8.77561 6.61658C9.02249 6.71485 9.24731 6.86133 9.43694 7.04747C9.62656 7.2336 9.7772 7.45566 9.88005 7.70066C9.98289 7.94567 10.0359 8.20871 10.0359 8.47443C10.036 8.74015 9.98307 9.00321 9.8803 9.24825C9.77754 9.49329 9.62698 9.7154 9.43741 9.9016C9.24785 10.0878 9.02308 10.2344 8.77623 10.3327C8.52939 10.4311 8.26542 10.4792 7.99975 10.4744C7.46932 10.4744 6.96061 10.2637 6.58554 9.88865C6.21046 9.51358 5.99975 9.00487 5.99975 8.47444C5.99975 7.944 6.21046 7.4353 6.58554 7.06022C6.96061 6.68515 7.46932 6.47444 7.99975 6.47444L7.99908 6.4751ZM11.4991 4.14177C11.284 4.15038 11.0806 4.24187 10.9315 4.39708C10.7824 4.5523 10.6991 4.75919 10.6991 4.97444C10.6991 5.18968 10.7824 5.39658 10.9315 5.55179C11.0806 5.707 11.284 5.7985 11.4991 5.8071C11.7201 5.8071 11.9321 5.71931 12.0883 5.56303C12.2446 5.40675 12.3324 5.19478 12.3324 4.97377C12.3324 4.75276 12.2446 4.5408 12.0883 4.38452C11.9321 4.22823 11.7201 4.14044 11.4991 4.14044V4.14177Z"
+                            fill="#141B34"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="social-list-item">
+                      <a
+                        href="#"
+                        class="social-list-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Follow on Linkedin"
+                      >
+                        <svg
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4.6276 3.80763C4.62743 4.16125 4.48678 4.50032 4.23661 4.75025C3.98644 5.00017 3.64723 5.14048 3.2936 5.1403C2.93998 5.14012 2.60091 4.99948 2.35099 4.7493C2.10107 4.49913 1.96076 4.15992 1.96094 3.8063C1.96111 3.45268 2.10176 3.11361 2.35193 2.86369C2.60211 2.61376 2.94132 2.47346 3.29494 2.47363C3.64856 2.47381 3.98763 2.61446 4.23755 2.86463C4.48748 3.1148 4.62778 3.45401 4.6276 3.80763ZM4.6676 6.12763H2.00094V14.4743H4.6676V6.12763ZM8.88094 6.12763H6.2276V14.4743H8.85427V10.0943C8.85427 7.6543 12.0343 7.42763 12.0343 10.0943V14.4743H14.6676V9.18763C14.6676 5.0743 9.96094 5.22763 8.85427 7.24763L8.88094 6.12763Z"
+                            fill="#141B34"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="copyright">
+            <p class="textcopyright">
+              &copy; <span class="currentyear"></span> TimeQ &ndash; All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER-SECTION END -->
+
+    <!-- PAGE-LOADER-JS -->
+    <script src="assets/js/loader/loader.js"></script>
+    <!-- TOPBAR-JS -->
+    <script src="assets/js/topbar/topbar.js"></script>
+    <!-- COPYRIGHT-JS -->
+    <script src="assets/js/copyright/copyright.js"></script>
+    <!-- BOOTSTRAP-JS -->
+    <script src="assets/js/bootsrap/bootstrap.bundle.min.js"></script>
+    <!-- TOOLTIP-JS -->
+    <script src="assets/js/tooltip/tooltip.js"></script>
+    <!-- SWIPER-JS -->
+    <script src="assets/js/swiper/swiper-bundle.min.js"></script>
+    <!-- REVIEW-SLIDER -->
+    <script src="assets/js/sliders/reviewslider.js"></script>
+    <!-- TOGGLE-SWITCH -->
+    <script src="assets/js/switch/toggleswitch.js"></script>
+    <!-- BACK-TO-TOP-JS -->
+    <script src="assets/js/back-top/back-top.js"></script>
+    <script src="assets/js/back-top/backtotop.js"></script>
+  </body>
+</html>

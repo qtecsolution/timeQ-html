@@ -44,6 +44,7 @@
   --namecolor: #cccccc;
   --groupuserbg: #F1F1F1;
   --textplaceholder: #B0B4C3;
+  --creatortext: #eeeeee;
   --inputbg: #101010;
   --selectshadow: 0 0 0 .0625rem rgba(255, 255, 255, 0.16), 0 .0625rem .125rem 0 rgba(255, 255, 255, 0.06);
 }
@@ -1157,13 +1158,15 @@ textarea {
 }
 
 .supportticketbox,
-.support-ticket {
+.support-ticket,
+.similardata {
   padding: 1rem;
 }
 
 @media screen and (min-width: 62rem) {
   .supportticketbox,
-  .support-ticket {
+  .support-ticket,
+  .similardata {
     padding: 1.5rem;
   }  
 }
@@ -1900,6 +1903,119 @@ div.dataTables_wrapper div.dataTables_length select {
   text-transform: uppercase;
   margin-bottom: 0;
   text-align: center;
+}
+
+.similardata {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border: .0625rem solid var(--sideborder);
+  border-radius: .625rem;
+}
+
+.similardata-header {
+  display: flex;
+  align-items: center;
+  border-bottom: .0625rem solid var(--sideborder);
+  padding-bottom: 1.25rem;
+}
+
+.similardata-header .similartitle {
+  color: var(--creatortext);
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: .035rem;
+  text-transform: uppercase;
+}
+
+.similardata-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.similarlist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.similarlist-link {
+  display: flex;
+  gap: .5rem;
+  transition: all 500ms ease;
+}
+
+.similarlist-link .counter {
+  background: var(--resetcolor);
+  color: var(--white);
+  font-size: .75rem;
+  font-weight: 600;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 100%;
+  padding: .625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.similarlist-link .text {
+  color: var(--primary);
+  width: calc(100% - 1.75rem);
+  font-size: .8125rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.similarlist-link:hover .text {
+  color: var(--hover);
+  text-decoration: none;
+}
+
+.similardata-body .similarinfo {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.similardatainfo {
+  border-bottom: solid .0625rem var(--sideborder);
+  padding-bottom: 1.5rem;
+}
+
+.similardatainfo:last-of-type {
+  border-bottom: 0;
+}
+
+.similardata-body .similarinfo-header,
+.similardata-body .similarinfo-body {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.similardata-body .similarinfo-header .title {
+  color: var(--resetcolor);
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.similardata-body .similarinfo-header .title span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.similardata-body .similarinfo-header .text {
+  color: var(--resetcolor);
+  font-size: .875rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 48rem) {

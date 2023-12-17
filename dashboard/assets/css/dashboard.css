@@ -23,6 +23,7 @@
   --highcolor: #FF473C;
   --replybg: #F7F9FD;
   --creatortext: #0A0A0A;
+  --activetext: #00DC72;
   --pdfbg: #FFF2F1;
   --theadbg: rgba(244, 247, 252, 0.75);
   --selectshadow: 0 0 0 .0625rem rgba(104, 113, 130, 0.16), 0 .0625rem .125rem 0 rgba(0, 0, 0, 0.06);
@@ -1209,12 +1210,14 @@ textarea {
 .table-responsive::-webkit-scrollbar {
   background: transparent;
   height: .3125rem;
+  width: .5rem;
   border-radius: 2rem;
 }
 
 .table-responsive::-webkit-scrollbar-thumb {
-  background: var(--namecolor);
+  background: transparent;
   height: .3125rem;
+  width: .5rem;
   border-radius: 2rem;
 }
 
@@ -1328,7 +1331,8 @@ textarea {
   margin-top: .25rem;
 }
 
-.selectbox {
+.selectbox,
+.inputbox {
   display: flex;
   flex-direction: column;
   gap: .75rem;
@@ -1350,6 +1354,29 @@ textarea {
   border-radius: 0;
   height: 2.5rem;
   padding: .375rem .75rem;
+}
+
+.inputbox .inputlabel {
+  color: var(--linktext);
+  font-size: .8125rem;
+  font-weight: 400;
+}
+
+.inputbox .inputfield {
+  background: var(--white);
+  box-shadow: var(--selectshadow);
+  border: solid .0625rem transparent;
+  color: var(--linktext);
+  font-size: .75rem;
+  font-weight: 400;
+  border-radius: 0;
+  height: 2.5rem;
+  padding: .375rem .75rem;
+  transition: all 500ms ease;
+}
+
+.inputbox .inputfield:focus {
+  border-color: var(--primary);
 }
 
 .form-check-input:focus {
@@ -1776,6 +1803,103 @@ input[type="file"] {
 .btn-pdf:hover .text  {
   color: var(--pdfbg);
   text-decoration: none;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+  width: 4rem !important;
+}
+
+
+/* .dataTables_length,
+.dataTables_paginate,
+.dataTables_info {
+  max-width: 10rem;
+} */
+
+.mycategorytable .dataTables_paginate,
+.mycategorytable .dataTables_info {
+  max-width: 10rem;
+}
+
+.mycategorytable .dataTables_paginate {
+  margin-left: auto !important;
+}
+
+.mycategorytable .dataTables_info {
+  padding: 0 !important;
+  margin-top: -1.5rem;
+}
+
+.table-responsive {
+  overflow-y: scroll;
+}
+
+.mycategorytable .table thead {
+  background: var(--theadbg);
+  border-top-left-radius: .625rem;
+  border-top-right-radius: .625rem;
+}
+
+.mycategorytable .table thead tr th {
+  color: var(--resetcolor);
+  font-size: .6875rem;
+  font-weight: 600;
+  letter-spacing: .0275rem;
+  text-transform: uppercase;
+}
+
+.mycategorytable .table tbody {
+  border-bottom-left-radius: .625rem;
+  border-bottom-right-radius: .625rem;
+}
+
+.mycategorytable .table tbody .actions {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+}
+
+.mycategorytable .table>:not(caption)>*>* {
+  padding: .625rem;
+}
+
+.activestatus,
+.inactivestatus {
+  border-radius: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .6875rem;
+  font-weight: 500;
+  letter-spacing: .0225rem;
+  padding: .25rem .625rem;
+  text-align: center;
+}
+
+.activestatus {
+  background: var(--openbadgebg);
+  color: var(--activetext);
+}
+
+.inactivestatus {
+  background: var(--highbg);
+  color: var(--highcolor);
+}
+
+.deleteinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteinfo .title {
+  color: var(--linktext);
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: .035rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 48rem) {

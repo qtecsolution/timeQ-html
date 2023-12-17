@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>TimeQ - Support Tickets | Ticket Details</title>
+    <title>TimeQ - Support Tickets | Category</title>
 	  <!-- Favicon-->
     <link rel="icon" href="assets/images/logo/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/plugin/datatables/responsive.dataTables.min.css">
@@ -251,7 +251,7 @@
 							</li>
 							
 							<li class="sumenu-item">
-								<a href="ticket-details.html" class="submenu-link active">
+								<a href="ticket-details.html" class="submenu-link">
 									<span class="icon">
 										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M9.75 4.5H6.375C4.51104 4.5 3 6.01104 3 7.875C3 9.73896 4.51104 11.25 6.375 11.25H14.25" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -277,7 +277,7 @@
 							</li>
 
 							<li class="sumenu-item">
-								<a href="category.html" class="submenu-link">
+								<a href="category.html" class="submenu-link active">
 									<span class="icon">
 										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M9.75 4.5H6.375C4.51104 4.5 3 6.01104 3 7.875C3 9.73896 4.51104 11.25 6.375 11.25H14.25" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -669,250 +669,503 @@
 		<div class="supportticketbox">
 			<div class="support-ticket">
 				<div class="support-ticket-header">
-					<h2 class="supporttitle">Support Tickets Details</h2>
+					<h2 class="supporttitle">Support Ticket Category</h2>
 
-					<button type="button" class="btn-create" data-bs-toggle="modal" data-bs-target="#openTickets">
+					<button type="button" class="btn-create" data-bs-toggle="modal" data-bs-target="#createCategory">
 						<span class="icon me-2">
 							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M2.66666 3.3335L13.3333 3.3335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M2.66666 8L13.3333 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M2.66666 12.667L13.3333 12.667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.74999 2.75C8.74999 2.33579 8.4142 2 7.99999 2C7.58578 2 7.24999 2.33579 7.24999 2.75V7.24997H2.75C2.33579 7.24997 2 7.58575 2 7.99997C2 8.41418 2.33579 8.74997 2.75 8.74997H7.24999L7.25 13.25C7.25 13.6642 7.58579 14 8 14C8.41421 14 8.75 13.6642 8.75 13.25L8.74999 8.74997H13.25C13.6642 8.74997 14 8.41418 14 7.99997C14 7.58575 13.6642 7.24997 13.25 7.24997H8.74999V2.75Z" fill="white"/>
 							</svg>
 						</span>
-						Ticket View
+						Add category
 					</button>
 				</div>
 	
 				<div class="support-ticket-body">
-					<div class="d-flex align-items-center justify-content-between gap-3 flex-wrap flex-lg-nowrap">
-						<div class="leftinfo">
-							<div class="status">
-								<span class="title">Status : </span>
-								<span class="openbadge">Open</span>
-								<button class="btn-edit">
-									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#editicon)">
-											<path d="M9.38251 2.59046C9.8793 2.05222 10.1277 1.78309 10.3916 1.62611C11.0285 1.24734 11.8128 1.23556 12.4603 1.59504C12.7286 1.74403 12.9847 2.00558 13.4967 2.52867C14.0088 3.05176 14.2648 3.31331 14.4107 3.58745C14.7626 4.24891 14.7511 5.05002 14.3803 5.70063C14.2266 5.97027 13.9631 6.22401 13.4362 6.7315L7.16713 12.7697C6.16862 13.7314 5.66937 14.2123 5.04541 14.456C4.42145 14.6997 3.73551 14.6818 2.36362 14.6459L2.17696 14.641C1.75931 14.6301 1.55049 14.6246 1.4291 14.4869C1.30771 14.3491 1.32428 14.1364 1.35743 13.7109L1.37542 13.4799C1.46871 12.2825 1.51536 11.6838 1.74918 11.1456C1.983 10.6075 2.38633 10.1705 3.19299 9.2965L9.38251 2.59046Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-											<path d="M8.66675 2.66699L13.3334 7.33366" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-											<path d="M9.33337 14.667L14.6667 14.667" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</g>
-										<defs>
-											<clipPath id="editicon">
-												<rect width="16" height="16" fill="white"/>
-											</clipPath>
-										</defs>
-									</svg>
-								</button>
-							</div>
-
-							<div class="status">
-								<span class="title">Creator : </span>
-								<span class="creatorname">Mr Employee</span>
-							</div>
-
-							<div class="status">
-								<span class="title">Priority : </span>
-								<span class="badge-table medium">Medium</span>
-							</div>
-						</div>
-
-						<form class="searchform">
-							<button class="btn-search">
-								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M10.6821 11.7458C9.66576 12.5361 8.38866 13.0067 7.00167 13.0067C3.68704 13.0067 1 10.3189 1 7.00335C1 3.68779 3.68704 1 7.00167 1C10.3163 1 13.0033 3.68779 13.0033 7.00335C13.0033 8.39059 12.533 9.66794 11.743 10.6845L14.7799 13.7186C15.0731 14.0115 15.0734 14.4867 14.7806 14.7799C14.4878 15.0731 14.0128 15.0734 13.7196 14.7805L10.6821 11.7458ZM11.5029 7.00335C11.5029 9.49002 9.48765 11.5059 7.00167 11.5059C4.5157 11.5059 2.50042 9.49002 2.50042 7.00335C2.50042 4.51668 4.5157 2.50084 7.00167 2.50084C9.48765 2.50084 11.5029 4.51668 11.5029 7.00335Z" fill="#868FA0"/>
-								</svg>
-							</button>
-							<input type="search" placeholder="Search..." class="searchfield"/>
-						</form>
-					</div>
-
-					<div class="row g-3">
-						<div class="col-lg-6">
-							<div class="ticketdetails">
-								<div class="table-responsive">
-									<table class="table">
-										<tbody>
-										  <tr>
-											<td>
-												<span class="d-flex justify-content-between">
-													<span class="title">Ticket id</span> 
-													<span class="text-end">:</span>
-												</span>
-											</td>
-
-											<td>TC-10001</td>
-										  </tr>
-
-										  <tr>
-											<td>
-												<span class="d-flex justify-content-between">
-													<span class="title">Project</span> 
-													<span class="text-end">:</span>
-												</span>
-											</td>
-
-											<td>Solar Power Revolution</td>
-										  </tr>
-
-										  <tr>
-											<td>
-												<span class="d-flex justify-content-between">
-													<span class="title">Category</span> 
-													<span class="text-end">:</span>
-												</span>
-											</td>
-
-											<td>Billing Support</td>
-										  </tr>
-
-										  <tr>
-											<td>
-												<span class="d-flex justify-content-between">
-													<span class="title">Creator</span> 
-													<span class="text-end">:</span>
-												</span>
-											</td>
-
-											<td>Mr Employee (employee@gmail.com)</td>
-										  </tr>
-
-										  <tr>
-											<td>
-												<span class="d-flex justify-content-between">
-													<span class="title">Support Agents</span> 
-													<span class="text-end">:</span>
-												</span>
-											</td>
-
-											<td>Mr Admin , Mr Employee</td>
-										  </tr>
-
-										  <tr>
-											<td>
-												<span class="d-flex justify-content-between">
-													<span class="title">Subject</span> 
-													<span class="text-end">:</span>
-												</span>
-											</td>
-
-											<td>Test Subject</td>
-										  </tr>
-
-										  <tr>
-											<td>
-												<span class="d-flex justify-content-between">
-													<span class="title">Details</span> 
-													<span class="text-end">:</span>
-												</span>
-											</td>
-
-											<td>
-												TimeQ is designed to be an all-in-one team 
-												collaboration and task management solution, 
-												empowering organizations to work 
-												efficiently and cohesively
-											</td>
-										  </tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-6">
-							<div class="ticketchat">
-								<div class="ticketchat-header">
-									<h5 class="title">Ticket chat</h5>
-								</div>
-
-								<div class="ticketchat-body">
-									<div class="replyattachment">
-										<div class="messagereplybox">
-											<textarea placeholder="Reply" class="replyinput"></textarea>
-										</div>
-
-										<div class="attachments">
-											<h5 class="title">Attachment :</h5>
-
-											<div class="d-flex align-items-center justify-content-between">
-												<input type="file" name="" id=""/>
-
-												<button type="button" class="btn-create">Sent</button>
-											</div>
-										</div>
-									</div>
-
-									<div class="replylist">
-										<div class="myreply">
-											<div class="myreply-header">
-												<div class="d-flex align-items-center gap-4">
-													<div class="userinfobox">
-														<figure class="useravatar">
-															<img src="assets/images/avatar/avatar-1.png" alt="avatar"/>
-														</figure>
-														<h6 class="name">Mr Admin</h6>
-													</div>
-
-													<p class="time">02:43 pm</p>
-												</div>
-
-												<p class="date">15-11-2023</p>
-											</div>
-
-											<div class="myreply-body">
-												<div class="info">
-													<p class="text">
-														TimeQ is designed to be an all-in-one team 
-														collaboration and task management solution,
-														empowering organizations to work efficiently
-														and cohesively. By implementing the above 
-														features and technology stack, the platform 
-														will revolutionize teamwork and streamline 
-														task handling for enhanced productivity.
-													</p>
-												</div>
-											</div>
-										</div>
-
-										<div class="myreply">
-											<div class="myreply-header">
-												<div class="d-flex align-items-center gap-4">
-													<div class="userinfobox">
-														<figure class="useravatar">
-															<img src="assets/images/avatar/avatar-2.png" alt="avatar"/>
-														</figure>
-														<h6 class="name">Mr Admin</h6>
-													</div>
-
-													<p class="time">02:43 pm</p>
-												</div>
-
-												<p class="date">15-11-2023</p>
-											</div>
-
-											<div class="myreply-body">
-												<div class="info">
-													<p class="text">
-														Create appointment bookings, find the information in given docs.
-													</p>
-												</div>
-
-												<button class="btn-pdf">
-													<span class="icon">
-														<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M8.35294 1.83301C11.015 1.83301 12.346 1.83301 13.173 2.61406C14 3.39511 14 4.65218 14 7.16634V9.83301C14 12.3472 14 13.6042 13.173 14.3853C12.346 15.1663 11.015 15.1663 8.35294 15.1663H7.64706C4.98501 15.1663 3.65399 15.1663 2.82699 14.3853C2 13.6042 2 12.3472 2 9.83301L2 7.16634C2 4.65218 2 3.3951 2.82699 2.61406C3.65399 1.83301 4.98501 1.83301 7.64706 1.83301L8.35294 1.83301Z" stroke="#FF645A" stroke-linecap="round"/>
-															<path d="M5.33301 5.16602H10.6663" stroke="#FF645A" stroke-linecap="round"/>
-															<path d="M5.33301 8.5H10.6663" stroke="#FF645A" stroke-linecap="round"/>
-															<path d="M5.33301 11.833L7.99967 11.833" stroke="#FF645A" stroke-linecap="round"/>
-														</svg>
-													</span>
-													<span class="text">Appointment bookings info.pdf</span>
+					<div class="mycategorytable">
+						<div class="table-responsive">
+							<table class="table" id="category-table">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>CATEGORY NAME</th>
+										<th>STATUS</th>
+										<th>ACTION</th>
+									</tr>
+								</thead>
+	
+								<tbody>
+									<tr>
+										<th role="row">1</th>
+										
+										<td>General Inquiry</td>
+	
+										<td>
+											<span class="activestatus">Active</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
 												</button>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+										</td>
+									</tr>
+	
+									<tr>
+										<th role="row">2</th>
+										
+										<td>Billing and Payment</td>
+	
+										<td>
+											<span class="inactivestatus">Inactive</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
+												</button>
+											</div>
+										</td>
+									</tr>
+	
+									<tr>
+										<th role="row">3</th>
+										
+										<td>Account Access and Authentication</td>
+	
+										<td>
+											<span class="activestatus">Active</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
+												</button>
+											</div>
+										</td>
+									</tr>
+	
+									<tr>
+										<th role="row">4</th>
+										
+										<td>Feature Request</td>
+	
+										<td>
+											<span class="inactivestatus">Inactive</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
+												</button>
+											</div>
+										</td>
+									</tr>
+	
+									<tr>
+										<th role="row">5</th>
+										
+										<td>Bug Report</td>
+	
+										<td>
+											<span class="activestatus">Active</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
+												</button>
+											</div>
+										</td>
+									</tr>
+	
+									<tr>
+										<th role="row">6</th>
+										
+										<td>Integration Assistance</td>
+	
+										<td>
+											<span class="inactivestatus">Inactive</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
+												</button>
+											</div>
+										</td>
+									</tr>
+	
+									<tr>
+										<th role="row">7</th>
+										
+										<td>Performance and Speed</td>
+	
+										<td>
+											<span class="activestatus">Active</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
+												</button>
+											</div>
+										</td>
+									</tr>
+	
+									<tr>
+										<th role="row">8</th>
+										
+										<td>User Interface (UI) Feedback</td>
+	
+										<td>
+											<span class="inactivestatus">Inactive</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
+												</button>
+											</div>
+										</td>
+									</tr>
+	
+									<tr>
+										<th role="row">9</th>
+										
+										<td>Data Security and Privacy Concern</td>
+	
+										<td>
+											<span class="activestatus">Active</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
+												</button>
+											</div>
+										</td>
+									</tr>
+	
+									<tr>
+										<th role="row">10</th>
+										
+										<td>IT Support</td>
+	
+										<td>
+											<span class="inactivestatus">Inactive</span>
+										</td>
+	
+										<td>
+											<div class="actions">
+												<button type="button" class="btn-action">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M15.75 13.125C15.75 14.5747 14.5747 15.75 13.125 15.75C11.6753 15.75 10.5 14.5747 10.5 13.125C10.5 11.6753 11.6753 10.5 13.125 10.5C14.5747 10.5 15.75 11.6753 15.75 13.125Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M13.125 10.5H4.875C3.42525 10.5 2.25 11.6753 2.25 13.125C2.25 14.5747 3.42525 15.75 4.875 15.75H13.125C14.5747 15.75 15.75 14.5747 15.75 13.125C15.75 11.6753 14.5747 10.5 13.125 10.5Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M2.25 4.875C2.25 6.32475 3.42525 7.5 4.875 7.5C6.32475 7.5 7.5 6.32475 7.5 4.875C7.5 3.42525 6.32475 2.25 4.875 2.25C3.42525 2.25 2.25 3.42525 2.25 4.875Z" stroke="#686D82" stroke-width="1.5"/>
+														<path d="M4.875 2.25H13.125C14.5747 2.25 15.75 3.42525 15.75 4.875C15.75 6.32475 14.5747 7.5 13.125 7.5H4.875C3.42525 7.5 2.25 6.32475 2.25 4.875C2.25 3.42525 3.42525 2.25 4.875 2.25Z" stroke="#686D82" stroke-width="1.5"/>
+													</svg>
+												</button>
+	
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#editCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g>
+															<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+															<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+														</g>
+														<defs>
+															<clipPath>
+																<rect width="18" height="18" fill="white"/>
+															</clipPath>
+														</defs>
+													</svg>
+												</button>
+												
+												<button type="button" class="btn-action" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteCategory">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+														<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+													</svg>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</div>
@@ -921,34 +1174,33 @@
     </div>
 </div>
 
-<!-- OPEN-TICKETS -->
-<div class="modal fade ticketmodal" id="openTickets" tabindex="-1" aria-labelledby="openTickets" aria-hidden="true">
+<!-- ADD-CATEGORY -->
+<div class="modal fade ticketmodal" id="createCategory" tabindex="-1" aria-labelledby="createCategory" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 	  <div class="modal-content">
 		<div class="modal-header">
-			<div class="d-flex align-items-center gap-2">
-				<h5 class="modaltitle">Support ticket status :</h5>
-				<span class="openbadge">Open</span>
-			</div>
+			<h5 class="modaltitle">Add Category</h5>
 
 		  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M12.6671 3.33301L3.33374 12.6663M3.33374 3.33301L12.6671 12.6663" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 				</svg>
-		  	</button>
+		 	</button>
 		</div>
 
 		<div class="modal-body">
 			<div class="ticketstatus">
-				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" role="switch" id="supportticket">
-					<label class="form-check-label" for="supportticket">
-						Want to close support ticket?
-					</label>
+				<div class="inputbox">
+					<label for="ctgname" class="inputlabel">Category Name <span class="text-danger">*</span> :</label>
+					<input type="text" id="ctgname" class="inputfield" placeholder="Category Name" />
 				</div>
 
-				<div class="messagereplybox">
-					<textarea placeholder="Reply" class="replyinput"></textarea>
+				<div class="selectbox">
+					<label class="selectlabel" for="selectresult">Status :</label>
+					<select id="selectresult" class="form-select form-select-lg" aria-label="Select Status">
+						<option selected>Active</option>
+						<option value="1">Inactive</option>
+					</select>
 				</div>
 			</div>
 		</div>
@@ -961,10 +1213,97 @@
 	</div>
 </div>
 
+<!-- EDIT-CATEGORY -->
+<div class="modal fade ticketmodal" id="editCategory" tabindex="-1" aria-labelledby="editCategory" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	  <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modaltitle">Edit Category</h5>
+
+		  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.6671 3.33301L3.33374 12.6663M3.33374 3.33301L12.6671 12.6663" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+		 	</button>
+		</div>
+
+		<div class="modal-body">
+			<div class="ticketstatus">
+				<div class="inputbox">
+					<label for="editctgname" class="inputlabel">Category Name <span class="text-danger">*</span> :</label>
+					<input type="text" id="editctgname" class="inputfield" placeholder="Category Name" />
+				</div>
+
+				<div class="selectbox">
+					<label class="selectstatus" for="selectresult">Status :</label>
+					<select id="selectstatus" class="form-select form-select-lg" aria-label="Select Status">
+						<option selected>Active</option>
+						<option value="1">Inactive</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-footer">
+		  <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+		  <button type="button" class="btn-create">Submit</button>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<!-- DELETE-CATEGORY -->
+<div class="modal fade ticketmodal" id="deleteCategory" tabindex="-1" aria-labelledby="deleteCategory" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	  <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modaltitle">Delete Category</h5>
+
+		  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.6671 3.33301L3.33374 12.6663M3.33374 3.33301L12.6671 12.6663" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+		 	</button>
+		</div>
+
+		<div class="modal-body">
+			<div class="deleteinfo">
+				<h5 class="title">Are you sure want to delete?</h5>
+			</div>
+		</div>
+
+		<div class="modal-footer justify-content-center">
+			<button type="button" class="btn-create">Yes</button>
+			<button type="button" class="btn-cancel" data-bs-dismiss="modal">No</button>
+		</div>
+	  </div>
+	</div>
+</div>
+
 <!-- Jquery Core Js -->
 <script src="assets/bundles/libscripts.bundle.js"></script>
 <!-- Jquery Page Js -->
 <script src="../js/template.js"></script>
+<!-- Plugin Js-->
+<script src="assets/bundles/dataTables.bundle.js"></script>
+
+<script>
+	$(document).ready( function () {
+		$('#category-table').DataTable({
+			// responsive: true,
+			dom: 'lrtpi',
+			"emptyTable": "No data available in table",
+    		"info": "Showing _START_ to _END_ of _TOTAL_ entries",
+			language: {
+				info: '1-10 of 17',
+				'paginate': {
+					'previous': '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.50038 8.10684C4.2456 8.30703 4.2456 8.69297 4.50038 8.89316L10.1911 13.3644C10.5192 13.6222 11 13.3885 11 12.9713L11 4.02873C11 3.61152 10.5192 3.37781 10.1911 3.63557L4.50038 8.10684Z" fill="#BCC2CE"/></svg>',
+					'next': '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4996 8.10684C11.7544 8.30703 11.7544 8.69297 11.4996 8.89316L5.80891 13.3644C5.48085 13.6222 5 13.3885 5 12.9713L5 4.02873C5 3.61152 5.48085 3.37781 5.80891 3.63557L11.4996 8.10684Z" fill="#464F60"/></svg>'
+				}
+  			}
+		});
+	});
+</script>
 
 </body>
 </html>

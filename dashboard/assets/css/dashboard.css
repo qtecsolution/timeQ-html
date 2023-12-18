@@ -1335,7 +1335,8 @@ textarea {
 }
 
 .selectbox,
-.inputbox {
+.inputbox,
+.messagereplybox {
   display: flex;
   flex-direction: column;
   gap: .75rem;
@@ -2016,6 +2017,63 @@ div.dataTables_wrapper div.dataTables_length select {
   color: var(--resetcolor);
   font-size: .875rem;
   font-weight: 600;
+}
+
+.myresults .table>:not(caption)>*>* {
+  padding: .625rem;
+}
+
+.inputbox .inputfield.resultinput {
+  border-radius: .375rem;
+}
+
+.colorinputbox {
+  display: flex;
+  align-items: center;
+  gap: .875rem;
+}
+
+.colorinputbox .inputlabel {
+  color: var(--linktext);
+  font-size: .8125rem;
+  font-weight: 400;
+}
+
+.prioritycolor {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  border: 0;
+  outline: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+.colorcode {
+  color: var(--linktext);
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: .0225rem;
+}
+
+.tawk-button {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+@media screen and (max-width: 62rem) {
+  .header {
+    z-index: 999999999999;
+  }
 }
 
 @media screen and (min-width: 48rem) {

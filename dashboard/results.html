@@ -673,15 +673,464 @@
 				</div>
 	
 				<div class="support-ticket-body">
-
+					<div class="myresults">
+						<div class="row g-4">
+							<div class="col-lg-7">
+								<div class="table-responsive">
+									<div class="table-responsive">
+										<table class="table" id="delete-table">
+											<thead>
+												<tr>
+													<th>#</th>
+													<th>TITLE</th>
+													<th>ACTION</th>
+												</tr>
+											</thead>
+				
+											<tbody>
+												<tr>
+													<th role="row">1</th>
+													
+													<td>Login Error Resolved</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<th role="row">2</th>
+													
+													<td>Billing Discrepancy Clarified</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<th role="row">3</th>
+													
+													<td>Bug Fix Implemented</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<th role="row">4</th>
+													
+													<td>Integration Guidance Provided</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<th role="row">5</th>
+													
+													<td>Performance Optimization Applied</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<th role="row">6</th>
+													
+													<td>Account Access Restored</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<th role="row">7</th>
+													
+													<td>Password Reset Successful</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<th role="row">8</th>
+													
+													<td>Data Security Measures Clarified</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<th role="row">9</th>
+													
+													<td>Appointment System Functionality Implemented</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												
+												<tr>
+													<th role="row">10</th>
+													
+													<td>UI Feedback Reviewed for Implementation</td>
+							
+													<td>
+														<div class="actions">			
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#editResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<g>
+																		<path d="M10.5553 2.91409C11.1142 2.30856 11.3936 2.0058 11.6906 1.82919C12.4071 1.40307 13.2893 1.38982 14.0178 1.79424C14.3197 1.96185 14.6077 2.25609 15.1838 2.84457C15.7598 3.43305 16.0479 3.72729 16.212 4.03569C16.6079 4.77984 16.5949 5.68109 16.1777 6.41303C16.0049 6.71637 15.7085 7.00183 15.1157 7.57276L8.06297 14.3657C6.93966 15.4477 6.378 15.9886 5.67605 16.2628C4.97409 16.537 4.2024 16.5168 2.65902 16.4764L2.44903 16.4709C1.97918 16.4587 1.74425 16.4525 1.60769 16.2975C1.47113 16.1426 1.48977 15.9032 1.52706 15.4246L1.54731 15.1647C1.65226 13.8177 1.70473 13.1441 1.96778 12.5387C2.23083 11.9332 2.68458 11.4416 3.59207 10.4584L10.5553 2.91409Z" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M9.75 3L15 8.25" stroke="#686D82" stroke-width="1.5" stroke-linejoin="round"/>
+																		<path d="M10.5 16.5L16.5 16.5" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																	<defs>
+																		<clipPath>
+																			<rect width="18" height="18" fill="white"/>
+																		</clipPath>
+																	</defs>
+																</svg>
+															</button>
+															
+															<button type="button" class="btn-action" data-bs-toggle="modal" data-bs-target="#deleteResult">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M14.625 4.125L14.1602 11.6438C14.0415 13.5648 13.9821 14.5253 13.5006 15.2159C13.2625 15.5573 12.956 15.8455 12.6005 16.062C11.8816 16.5 10.9192 16.5 8.99456 16.5C7.06734 16.5 6.10373 16.5 5.38429 16.0612C5.0286 15.8443 4.722 15.5556 4.48401 15.2136C4.00266 14.5219 3.94459 13.5601 3.82846 11.6364L3.375 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M6.75 8.80127H11.25" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M7.875 11.7407H10.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																	<path d="M2.25 4.125H15.75M12.0417 4.125L11.5296 3.0688C11.1895 2.36719 11.0195 2.01639 10.7261 1.7976C10.6611 1.74907 10.5922 1.70591 10.5201 1.66853C10.1953 1.5 9.80545 1.5 9.02575 1.5C8.22648 1.5 7.82684 1.5 7.49662 1.67559C7.42343 1.71451 7.3536 1.75942 7.28783 1.80988C6.99109 2.03753 6.82533 2.40116 6.49381 3.12844L6.03955 4.125" stroke="#686D82" stroke-width="1.5" stroke-linecap="round"/>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+	
+							<div class="col-lg-5">
+								<div class="ticketchat">
+									<div class="ticketchat-header">
+										<h5 class="title">Support Ticket Results Add</h5>
+									</div>
+	
+									<div class="ticketchat-body">
+										<div class="replyattachment border-bottom-0">
+											<div class="d-flex flex-column gap-4">
+												<div class="inputbox">
+													<label for="modaldescription" class="inputlabel">Name <span class="text-danger">*</span> :</label>
+													<input type="text" id="editctgname" class="inputfield resultinput" placeholder="Low" />
+												</div>
+												
+												<div class="messagereplybox">
+													<label for="modaldescription" class="inputlabel">Description :</label>
+													<textarea id="modaldescription" class="replyinput" placeholder="Description"></textarea>
+												</div>
+		
+												<div class="d-flex justify-content-end">
+													<button type="button" class="btn-create">Save</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
     </div>
 </div>
 
-<!-- OPEN-TICKETS -->
+<!-- EDIT-RESULT -->
+<div class="modal fade ticketmodal" id="editResult" tabindex="-1" aria-labelledby="editResult" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	  <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modaltitle">Edit Result</h5>
 
+		  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.6671 3.33301L3.33374 12.6663M3.33374 3.33301L12.6671 12.6663" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+		 	</button>
+		</div>
+
+		<div class="modal-body">
+			<div class="ticketstatus">
+				<div class="inputbox">
+					<label for="modaldescription" class="inputlabel">Name <span class="text-danger">*</span> :</label>
+					<input type="text" id="editctgname" class="inputfield resultinput" placeholder="Low" />
+				</div>
+				
+				<div class="messagereplybox">
+					<label for="modaldescription" class="inputlabel">Description :</label>
+					<textarea id="modaldescription" class="replyinput" placeholder="Description"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-footer">
+		  <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+		  <button type="button" class="btn-create">Submit</button>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<!-- DELETE-RESULT -->
+<div class="modal fade ticketmodal" id="deleteResult" tabindex="-1" aria-labelledby="deleteResult" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	  <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modaltitle">Delete Result</h5>
+
+		  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.6671 3.33301L3.33374 12.6663M3.33374 3.33301L12.6671 12.6663" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+		 	</button>
+		</div>
+
+		<div class="modal-body">
+			<div class="deleteinfo">
+				<h5 class="title">Are you sure want to delete?</h5>
+			</div>
+		</div>
+
+		<div class="modal-footer justify-content-center">
+			<button type="button" class="btn-create">Yes</button>
+			<button type="button" class="btn-cancel" data-bs-dismiss="modal">No</button>
+		</div>
+	  </div>
+	</div>
+</div>
 
 <!-- Jquery Core Js -->
 <script src="assets/bundles/libscripts.bundle.js"></script>

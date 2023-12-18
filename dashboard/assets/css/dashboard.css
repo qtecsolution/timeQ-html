@@ -128,6 +128,21 @@ textarea:focus {
   justify-content: center;
 }
 
+.sidebar.sidebar-mini {
+  padding-top: 0 !important;
+}
+
+.sidebar .brand-icon, .sidebar.sidebar-mini .brand-icon {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border-bottom: .0625rem solid var(--sideborder);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .sidebar .submenu {
   list-style: none;
   display: flex;
@@ -873,8 +888,8 @@ textarea {
 }
 
 .btn-chat {
-  width: 2rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -884,6 +899,12 @@ textarea {
 .btn-chat svg {
   width: 100%;
   height: 100%;
+}
+
+.avatar.lg {
+  width: 2.5rem;
+  min-width: 2.5rem;
+  height: 2.5rem;
 }
 
 .btn-chat:hover svg path {
@@ -1225,9 +1246,26 @@ textarea {
 }
 
 .page-item.active .page-link {
-  background: var(--primary) !important;
-  border-color: var(--primary) !important;
-  color: var(--white) !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  color: var(--linktext) !important;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.dataTables_filter .form-control {
+  background: var(--white);
+  border-color: var(--white);
+  box-shadow: 0px 0px 0px 1px rgba(104, 113, 130, 0.16), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.previous,
+.next {
+  background: var(--white) !important;
+  border-radius: .375rem;
+  box-shadow: 0px 2px 5px 0px rgba(89, 96, 120, 0.10), 0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .btn-close {
@@ -1458,6 +1496,11 @@ textarea {
   padding: .25rem .75rem;
 }
 
+.similarboder {
+  border-bottom: .0625rem solid var(--sideborder);
+  padding-bottom: .875rem;
+}
+
 @media screen and (min-width: 62rem) {
   .support-ticket-body .leftcontent {
     flex-wrap: nowrap;
@@ -1607,6 +1650,11 @@ textarea {
 
 [data-theme="dark"] .support-ticket-body .leftinfo .status .btn-edit:hover svg g path {
   stroke: var(--primary);
+}
+
+.ticketdetails {
+  border: .0625rem solid var(--sideborder);
+  border-radius: .625rem;
 }
 
 .ticketdetails .table {
@@ -2070,6 +2118,26 @@ input[type="color"]::-webkit-color-swatch {
   border-color: var(--primary) !important;
 }
 
+.header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.header .navbar {
+  width: 100%;
+}
+
+.sidebar .brand-icon {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: .0625rem solid var(--sideborder);
+  position: sticky;
+  top: 0;
+  background: var(--white);
+}
+
 @media screen and (max-width: 62rem) {
   .header {
     z-index: 999999999999;
@@ -2083,5 +2151,11 @@ input[type="color"]::-webkit-color-swatch {
 
   .ticketchat {
     padding: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .header .navbar {
+    padding-left: .75rem;
   }
 }

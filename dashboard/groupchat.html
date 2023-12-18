@@ -19,8 +19,8 @@
 
 <div id="mytask-layout" class="theme-indigo">
    <!-- sidebar -->
-   <div class="sidebar p-0 py-4 m-0">
-		<div class="d-flex flex-column h-100">
+   <div class="sidebar p-0 pb-4 m-0">
+		<div class="d-flex flex-column">
 			<a href="index.html" class="brand-icon">
 				<img src="assets/images/logo/logo.svg" class="full-logo" alt="brand-logo"/>
 				<img src="assets/images/logo/logo-white.svg" class="whitelogo" alt="brand-logo"/>
@@ -676,12 +676,12 @@
                                 <div class="mb-5">
                                     <h3 class="chattitle">Chat</h3>
                                 </div>
+                            </div>
 
-                                <div class="nav nav-pills justify-content-between text-center" role="tablist">
-                                    <a class="flex-fill nav-link active" data-bs-toggle="tab" href="#chat-recent" role="tab" aria-selected="true">All Chat</a>
-                                    <a class="flex-fill nav-link" data-bs-toggle="tab" href="#chat-groups" role="tab" aria-selected="false">Group Chat</a>
-                                    <a class="flex-fill nav-link" data-bs-toggle="tab" href="#chat-contact" role="tab" aria-selected="false">Contacts</a>
-                                </div>
+                            <div class="nav nav-pills justify-content-between text-center" role="tablist">
+                                <a class="flex-fill nav-link active" data-bs-toggle="tab" href="#chat-recent" role="tab" aria-selected="true">All Chat</a>
+                                <a class="flex-fill nav-link" data-bs-toggle="tab" href="#chat-groups" role="tab" aria-selected="false">Group Chat</a>
+                                <a class="flex-fill nav-link" data-bs-toggle="tab" href="#chat-contact" role="tab" aria-selected="false">Contacts</a>
                             </div>
 
                             <div class="tab-content border-top">
@@ -1549,7 +1549,7 @@
                                     </a>
 
                                     <div class="d-flex">
-                                        <div class="d-none d-lg-flex gap-2">
+                                        <div class="d-none d-lg-flex gap-3">
                                             <button type="button" class="btn-chat">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.31656 12.7468C3.26858 13.3611 0.520848 14.6153 2.1944 16.1848C3.01192 16.9515 3.92242 17.4998 5.06715 17.4998H11.5992C12.7439 17.4998 13.6544 16.9515 14.4719 16.1848C16.1455 14.6153 13.3978 13.3611 12.3498 12.7468C9.89229 11.3064 6.77405 11.3064 4.31656 12.7468Z" stroke="#686D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1680,7 +1680,7 @@
                                                             I will check it and get back to you soon
                                                         </p>
             
-                                                        <p class="datetime">
+                                                        <p class="datetime mt-2">
                                                             Today, 04:45 PM
                                                         </p>
                                                     </div>
@@ -1754,7 +1754,7 @@
                                                         I will check it and get back to you soon
                                                     </p>
         
-                                                    <p class="datetime">
+                                                    <p class="datetime text-end mt-2">
                                                         Today, 04:45 PM
                                                     </p>
                                                 </div>
@@ -1778,7 +1778,7 @@
                                                             I will check it and get back to you soon
                                                         </p>
             
-                                                        <p class="datetime">
+                                                        <p class="datetime mt-2">
                                                             Today, 04:45 PM
                                                         </p>
                                                     </div>
@@ -1852,9 +1852,61 @@
                                                         I will check it and get back to you soon
                                                     </p>
         
-                                                    <p class="datetime">
+                                                    <p class="datetime text-end mt-2">
                                                         Today, 04:45 PM
                                                     </p>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="d-flex flex-column gap-2">
+                                            <div class="groupuser">
+                                                <figure class="thumb">
+                                                    <img src="assets/images/avatar/avatar-2.png" alt="user-thumb"/>
+                                                </figure>
+        
+                                                <p class="usrname">Olivia Williams</p>
+                                            </div>
+        
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="leftcontent">
+                                                    <div class="chatbox">
+                                                        <div class="audiobox">
+                                                            <img src="assets/images/audio.png" class="img-fluid" alt="audio"/>
+                                                        </div>
+            
+                                                        <p class="datetime mt-2">
+                                                            Today, 04:45 PM
+                                                        </p>
+                                                    </div>
+                                                    
+                                                    <div class="dropdown">
+                                                        <button class="btn-chatdropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.992 12H12.001" stroke="#141B34" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M11.9842 18H11.9932" stroke="#141B34" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M11.9998 6H12.0088" stroke="#141B34" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+            
+                                                        <ul class="dropdown-menu">
+                                                            <li class="p-0">
+                                                                <a class="dropdown-item" href="#">
+                                                                    Create Task
+                                                                </a>
+                                                            </li>
+                                                            <li class="p-0">
+                                                                <a class="dropdown-item" href="#">
+                                                                    Create Todo
+                                                                </a>
+                                                            </li>
+                                                            <li class="p-0">
+                                                                <a class="dropdown-item" href="#">
+                                                                    Create Ticket
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1915,7 +1967,7 @@
 <script src="assets/bundles/libscripts.bundle.js"></script>
 
 <!-- Jquery Page Js -->
-<script src="../js/template.js"></script>
+<script src="./js/template.js"></script>
 
 </body>
 </html>

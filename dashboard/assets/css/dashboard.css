@@ -1261,11 +1261,45 @@ textarea {
   box-shadow: 0px 0px 0px 1px rgba(104, 113, 130, 0.16), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
 
+.paginate_button {
+  width: 1.5rem !important;
+  height: 1.25rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  border-radius: 0;
+}
+
+.pagination {
+  gap: .625rem;
+}
+
+.page-item {
+  cursor: pointer;
+}
+
+.pagination .page-link {
+  width: 1.5rem !important;
+  height: 1.25rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
 .previous,
 .next {
   background: var(--white) !important;
   border-radius: .375rem;
   box-shadow: 0px 2px 5px 0px rgba(89, 96, 120, 0.10), 0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.page-item.disabled {
+  box-shadow: none;
 }
 
 .btn-close {

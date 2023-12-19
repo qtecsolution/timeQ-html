@@ -1904,19 +1904,6 @@ div.dataTables_wrapper div.dataTables_length select {
   background-position: right .75rem center;
 }
 
-.support-ticket-body .table thead .sorting {
-  min-width: 5rem;
-}
-
-.mycategorytable .dataTables_paginate,
-.mycategorytable .dataTables_info {
-  max-width: 10rem;
-}
-
-.mycategorytable .dataTables_paginate {
-  margin-left: auto !important;
-}
-
 .mycategorytable .dataTables_info {
   padding: 0 !important;
   margin-top: -1.5rem;
@@ -2190,6 +2177,28 @@ input[type="color"]::-webkit-color-swatch {
   gap: .25rem;
 }
 
+.chatcard-left {
+  border-top-left-radius: .625rem;
+  border-bottom-left-radius: .625rem;
+  border: .0625rem solid var(--sideborder) !important;
+}
+
+.chatcard-right {
+  border-top-right-radius: .625rem;
+  border-bottom-right-radius: .625rem;
+  border: .0625rem solid var(--sideborder) !important;
+}
+
+.dataTables_length .form-select {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.card-chat-body .chat-history {
+  height: auto;
+}
+
 @media screen and (min-width: 48rem) {
   .ticketdetails .table {
     padding: 1.25rem;
@@ -2197,6 +2206,24 @@ input[type="color"]::-webkit-color-swatch {
 
   .ticketchat {
     padding: 1.25rem;
+  }
+
+  .dataTables_wrapper .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dataTables_wrapper .bottom .dataTables_info {
+    order: 2;
+  }
+
+  .dataTables_wrapper .bottom .dataTables_length {
+    order: 0;
+  }
+
+  .dataTables_wrapper .bottom .dataTables_paginate {
+    order: 1;
   }
 }
 
@@ -2227,18 +2254,6 @@ input[type="color"]::-webkit-color-swatch {
   }
 }
 
-.chatcard-left {
-  border-top-left-radius: .625rem;
-  border-bottom-left-radius: .625rem;
-  border: .0625rem solid var(--sideborder) !important;
-}
-
-.chatcard-right {
-  border-top-right-radius: .625rem;
-  border-bottom-right-radius: .625rem;
-  border: .0625rem solid var(--sideborder) !important;
-}
-
 @media screen and (min-width: 118.75rem) {
   .navbar>.container-xxl {
     margin-left: 3.5rem;
@@ -2246,6 +2261,6 @@ input[type="color"]::-webkit-color-swatch {
   }
 
   .solarinfo {
-    margin-left: -1.5rem;
+    margin-left: -3.5rem;
   }
 }

@@ -886,6 +886,8 @@
 	$(document).ready( function () {
 		$('#patient-table').DataTable({
 			responsive: true,
+			// dom: 'lrtip',
+			dom: '<"top">rt<"bottom"irlp>',
 			language: {
 				'paginate': {
 					'previous': '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.50038 8.10684C4.2456 8.30703 4.2456 8.69297 4.50038 8.89316L10.1911 13.3644C10.5192 13.6222 11 13.3885 11 12.9713L11 4.02873C11 3.61152 10.5192 3.37781 10.1911 3.63557L4.50038 8.10684Z" fill="#BCC2CE"/></svg>',

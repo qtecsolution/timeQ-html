@@ -9,6 +9,8 @@
     <title>TimeQ - Support Tickets | Priority</title>
 	  <!-- Favicon-->
     <link rel="icon" href="assets/images/logo/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/plugin/datatables/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="assets/plugin/datatables/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="assets/css/my-task.style.min.css">
 	<!-- NEW-STYLES -->
     <link rel="stylesheet" href="assets/css/dashboard.css">
@@ -18,7 +20,7 @@
 
 <div id="mytask-layout" class="theme-indigo">
    <!-- sidebar -->
-   <div class="sidebar p-0 pb-4 m-0">
+   <div class="sidebar p-0 pb-4 m-0" id="sidebar">
 		<div class="d-flex flex-column">
 			<a href="index.html" class="brand-icon">
 				<img src="assets/images/logo/logo.svg" class="full-logo" alt="brand-logo"/>
@@ -676,7 +678,7 @@
 							<div class="col-lg-7">
 								<div class="table-responsive">
 									<div class="table-responsive">
-										<table class="table" id="delete-table">
+										<table class="table" id="priority-table">
 											<thead>
 												<tr>
 													<th>#</th>
@@ -826,7 +828,7 @@
 													<input type="text" id="editctgname" class="inputfield resultinput" placeholder="Priority Name" />
 												</div>
 
-                                                <div class="selectbox">
+                                                <div class="selectbox d-none">
                                                     <label class="selectlabel" for="selectstatus">Status :</label>
                                                     <select id="selectstatus" class="form-select form-select-lg" aria-label="Select Status">
                                                         <option selected="">Active</option>
@@ -845,7 +847,9 @@
                                                     </label>
 
                                                     <div class="d-flex align-items-center gap-2">
-                                                        <input type="color" id="prioritycolor" class="prioritycolor" value="#FF645A" />
+                                                        <div class="colorbox">
+                                                            <input type="color" id="prioritycolor" class="prioritycolor" value="#FF645A" />
+                                                        </div>
                                                         <p class="colorcode">#FF645A</p>
                                                     </div>
                                                 </div>
@@ -907,7 +911,9 @@
                     </label>
 
                     <div class="d-flex align-items-center gap-2">
-                        <input type="color" id="prioritycolor" class="prioritycolor" value="#FF645A" />
+                        <div class="colorbox">
+                            <input type="color" id="prioritycolor-2" class="prioritycolor" value="#FF645A" />
+                        </div>
                         <p class="colorcode">#FF645A</p>
                     </div>
                 </div>
@@ -954,6 +960,16 @@
 <script src="assets/bundles/libscripts.bundle.js"></script>
 <!-- Jquery Page Js -->
 <script src="./js/template.js"></script>
+<!-- Plugin Js-->
+<script src="assets/bundles/dataTables.bundle.js"></script>
+
+<script>
+    $(document).ready( function () {
+		$('#priority-table').DataTable({
+            dom: 'rrrrr',
+		});
+	});
+</script>
 
 </body>
 </html>

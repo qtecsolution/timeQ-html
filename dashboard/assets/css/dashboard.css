@@ -86,6 +86,7 @@ textarea:focus {
   background: var(--white);
   min-height: 100vh;
   border-right: .0625rem solid var(--sideborder);
+  overflow-y: scroll;
 }
 
 .sidebar .brand-icon,
@@ -2121,14 +2122,21 @@ div.dataTables_wrapper div.dataTables_length select {
   font-weight: 400;
 }
 
+.colorbox {
+  background: var(--primary);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
 .prioritycolor {
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
-  width: 1.5rem;
-  height: 1.5rem;
-  overflow: hidden;
-  border: 0;
+  background: var(--primary);
+  border-radius: 100%;
+  border-color: var(--primary);
   outline: none;
 }
 
@@ -2153,7 +2161,6 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .header {
-  height: 4rem;
   display: flex;
   align-items: center;
 }
@@ -2172,10 +2179,10 @@ input[type="color"]::-webkit-color-swatch {
   background: var(--white);
 }
 
-@media screen and (max-width: 62rem) {
-  .header {
-    z-index: 999999999999;
-  }
+.table tbody tr td .actions {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
 }
 
 @media screen and (min-width: 48rem) {
@@ -2189,7 +2196,17 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 @media screen and (min-width: 62rem) {
+  .header {
+    height: 4rem;
+  }
+
   .header .navbar {
     padding-left: .75rem;
+  }
+}
+
+@media screen and (max-width: 62rem) {
+  #u5c35cripvi1702961351081.widget-visible {
+    display: none !important;
   }
 }

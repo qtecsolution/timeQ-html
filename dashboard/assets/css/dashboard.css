@@ -400,6 +400,7 @@ textarea:focus {
 .header {
   background: var(--white);
   border-bottom: .0625rem solid var(--sideborder);
+  z-index: 9999999999;
 }
 
 .chatbody .nav-pills {
@@ -2199,6 +2200,11 @@ input[type="color"]::-webkit-color-swatch {
   height: auto;
 }
 
+.chat-header {
+  position: sticky;
+  top: 0;
+}
+
 @media screen and (min-width: 48rem) {
   .ticketdetails .table {
     padding: 1.25rem;
@@ -2234,6 +2240,10 @@ input[type="color"]::-webkit-color-swatch {
 
   .header .navbar {
     padding-inline: .75rem;
+  }
+
+  .card-chat-body .chat-history {
+    max-height: 20rem;
   }
 }
 

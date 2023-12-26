@@ -2205,6 +2205,10 @@ input[type="color"]::-webkit-color-swatch {
   top: 0;
 }
 
+.dropdown-menu {
+  z-index: 50000;
+}
+
 @media screen and (min-width: 48rem) {
   .ticketdetails .table {
     padding: 1.25rem;
@@ -2242,8 +2246,26 @@ input[type="color"]::-webkit-color-swatch {
     padding-inline: .75rem;
   }
 
+  .chatbody {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+
   .card-chat-body .chat-history {
-    max-height: 20rem;
+    max-height: 13rem;
+  }
+}
+
+@media screen and (min-width: 87.5rem) {
+  .card-chat-body .chat-history {
+    max-height: 12rem;
+  }
+}
+
+@media screen and (min-width: 120rem) {
+  .card-chat-body .chat-history {
+    max-height: 25rem;
   }
 }
 

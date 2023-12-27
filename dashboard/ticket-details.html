@@ -689,7 +689,7 @@
 							<div class="status">
 								<span class="title">Status : </span>
 								<span class="openbadge">Open</span>
-								<button class="btn-edit">
+								<button type="button" class="btn-edit" data-bs-toggle="modal" data-bs-target="#editTickets">
 									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#editicon)">
 											<path d="M9.38251 2.59046C9.8793 2.05222 10.1277 1.78309 10.3916 1.62611C11.0285 1.24734 11.8128 1.23556 12.4603 1.59504C12.7286 1.74403 12.9847 2.00558 13.4967 2.52867C14.0088 3.05176 14.2648 3.31331 14.4107 3.58745C14.7626 4.24891 14.7511 5.05002 14.3803 5.70063C14.2266 5.97027 13.9631 6.22401 13.4362 6.7315L7.16713 12.7697C6.16862 13.7314 5.66937 14.2123 5.04541 14.456C4.42145 14.6997 3.73551 14.6818 2.36362 14.6459L2.17696 14.641C1.75931 14.6301 1.55049 14.6246 1.4291 14.4869C1.30771 14.3491 1.32428 14.1364 1.35743 13.7109L1.37542 13.4799C1.46871 12.2825 1.51536 11.6838 1.74918 11.1456C1.983 10.6075 2.38633 10.1705 3.19299 9.2965L9.38251 2.59046Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
@@ -949,6 +949,95 @@
 
 				<div class="messagereplybox">
 					<textarea placeholder="Reply" class="replyinput"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-footer">
+		  <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+		  <button type="button" class="btn-create">Submit</button>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<!-- EDIT-TICKETS -->
+<div class="modal fade ticketmodal" id="editTickets" tabindex="-1" aria-labelledby="editTickets" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+	  <div class="modal-content">
+		<div class="modal-header">
+			<div class="d-flex align-items-center">
+				<h5 class="modaltitle">Edit Ticket Details</h5>
+			</div>
+
+		  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.6671 3.33301L3.33374 12.6663M3.33374 3.33301L12.6671 12.6663" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+		  	</button>
+		</div>
+
+		<div class="modal-body">
+			<div class="ticketstatus">
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" role="switch" id="supportticket">
+					<label class="form-check-label" for="supportticket">
+						Want to close support ticket?
+					</label>
+				</div>
+
+                <div class="selectbox">
+					<label class="selectlabel" for="selectstatus">Status :</label>
+					<select id="selectstatus" class="form-select form-select-lg" aria-label="Select Status">
+                        <option selected>Select Status</option>
+						<option value="1">Open</option>
+						<option value="2">Close</option>
+					</select>
+				</div>
+
+                <div class="selectbox">
+					<label class="selectlabel" for="selectpriority">Priority :</label>
+					<select id="selectpriority" class="form-select form-select-lg" aria-label="Select Priority">
+                        <option selected>Select Priority</option>
+						<option value="1">High</option>
+						<option value="2">Medium</option>
+						<option value="3">Low</option>
+					</select>
+				</div>
+
+                <div class="inputbox">
+					<label for="projname" class="inputlabel">Project :</label>
+					<input type="text" id="projname" class="inputfield" placeholder="Project Name">
+				</div>
+
+                <div class="selectbox">
+					<label class="selectlabel" for="selectcategory">Category :</label>
+					<select id="selectcategory" class="form-select form-select-lg" aria-label="Select Category">
+                        <option selected>Select Category</option>
+						<option value="1">Billing Support</option>
+						<option value="2">Medium</option>
+						<option value="3">Low</option>
+					</select>
+				</div>
+
+                <div class="inputbox">
+					<label for="creatorname" class="inputlabel">Creator Name :</label>
+					<input type="text" id="creatorname" class="inputfield" placeholder="Mr Employee">
+				</div>
+
+                <div class="inputbox">
+					<label for="supportagents" class="inputlabel">Support Agents :</label>
+					<input type="text" id="supportagents" class="inputfield" placeholder="Mr Admin">
+				</div>
+
+                <div class="inputbox">
+					<label for="subjectname" class="inputlabel">Subject :</label>
+					<input type="text" id="subjectname" class="inputfield" placeholder="Subject">
+				</div>
+
+				<div class="messagereplybox">
+                    <label class="selectlabel" for="detailsmessage">Details :</label>
+					<textarea placeholder="Enter details" id="detailsmessage" class="replyinput"></textarea>
 				</div>
 			</div>
 		</div>

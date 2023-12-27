@@ -717,7 +717,7 @@
 							</div>
 						</div>
 
-						<form class="searchform">
+						<form class="searchform d-none">
 							<button class="btn-search">
 								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M10.6821 11.7458C9.66576 12.5361 8.38866 13.0067 7.00167 13.0067C3.68704 13.0067 1 10.3189 1 7.00335C1 3.68779 3.68704 1 7.00167 1C10.3163 1 13.0033 3.68779 13.0033 7.00335C13.0033 8.39059 12.533 9.66794 11.743 10.6845L14.7799 13.7186C15.0731 14.0115 15.0734 14.4867 14.7806 14.7799C14.4878 15.0731 14.0128 15.0734 13.7196 14.7805L10.6821 11.7458ZM11.5029 7.00335C11.5029 9.49002 9.48765 11.5059 7.00167 11.5059C4.5157 11.5059 2.50042 9.49002 2.50042 7.00335C2.50042 4.51668 4.5157 2.50084 7.00167 2.50084C9.48765 2.50084 11.5029 4.51668 11.5029 7.00335Z" fill="#868FA0"/>
@@ -884,17 +884,22 @@
 
 <script>
 	$(document).ready( function () {
-		$('#patient-table').DataTable({
+		const ticketview = $('#patient-table').DataTable({
 			responsive: true,
 			// dom: 'lrtip',
-			dom: '<"top">rt<"bottom"irlp>',
+			dom: 'f<"top">rt<"bottom"irlp>',
 			language: {
 				'paginate': {
 					'previous': '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.50038 8.10684C4.2456 8.30703 4.2456 8.69297 4.50038 8.89316L10.1911 13.3644C10.5192 13.6222 11 13.3885 11 12.9713L11 4.02873C11 3.61152 10.5192 3.37781 10.1911 3.63557L4.50038 8.10684Z" fill="#BCC2CE"/></svg>',
 					'next': '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4996 8.10684C11.7544 8.30703 11.7544 8.69297 11.4996 8.89316L5.80891 13.3644C5.48085 13.6222 5 13.3885 5 12.9713L5 4.02873C5 3.61152 5.48085 3.37781 5.80891 3.63557L11.4996 8.10684Z" fill="#464F60"/></svg>'
 				}
-  			}
+  			},
+			// "searching": true
 		});
+
+		$('#myInputTextField').keyup(function(){
+			ticketview.search($(this).val()).draw() ;
+		})
 	});
 </script>
 

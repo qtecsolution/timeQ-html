@@ -1249,6 +1249,17 @@ textarea {
   border-radius: 2rem;
 }
 
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar {
+  width: .5rem;
+}
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-thumb {
+  background: var(--resetcolor);
+  height: .3125rem;
+  width: .5rem;
+  border-radius: 2rem;
+}
+
 .page-item.active .page-link {
   background: transparent !important;
   border-color: transparent !important;
@@ -2207,6 +2218,10 @@ input[type="color"]::-webkit-color-swatch {
 
 .dropdown-menu {
   z-index: 50000;
+}
+
+.modal {
+  z-index: 99999999999;
 }
 
 @media screen and (min-width: 48rem) {

@@ -2208,7 +2208,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .card-chat-body .chat-history {
-  height: auto;
+  max-height: 10rem;
 }
 
 .chat-header {
@@ -2282,9 +2282,21 @@ input[type="color"]::-webkit-color-swatch {
   }
 }
 
+@media screen and (min-width: 100rem) {
+  .card-chat-body .chat-history {
+    max-height: 15rem;
+  }
+}
+
+@media screen and (min-width: 106.25rem) {
+  .card-chat-body .chat-history {
+    max-height: 20rem;
+  }
+}
+
 @media screen and (min-width: 120rem) {
   .card-chat-body .chat-history {
-    max-height: 25rem;
+    max-height: 28rem;
   }
 }
 

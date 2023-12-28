@@ -2260,6 +2260,10 @@ input[type="color"]::-webkit-color-swatch {
   text-align: left;
 }
 
+.btn-text:hover {
+  color: var(--primary);
+}
+
 .secretchat {
   color: var(--linktext);
   font-size: .875rem;

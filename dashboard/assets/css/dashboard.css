@@ -2224,6 +2224,10 @@ input[type="color"]::-webkit-color-swatch {
   z-index: 99999999999;
 }
 
+.select2-dropdown {
+  z-index: 9999999999999;
+}
+
 @media screen and (min-width: 48rem) {
   .ticketdetails .table {
     padding: 1.25rem;

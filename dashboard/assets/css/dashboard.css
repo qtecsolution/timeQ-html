@@ -2398,3 +2398,64 @@ input[type="color"]::-webkit-color-swatch {
     margin-left: -3.5rem;
   }
 }
+
+.callbox {
+  min-width: 20rem;
+  max-width: 30rem;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.callbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.callbox-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.callicon {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-inline: auto;
+  padding: 3rem;
+}
+
+.callicon img {
+  max-width: 100%;
+}
+
+.callbox button {
+  color: #ddd;
+  padding: .75rem 2rem;
+  font-weight: 600;
+  border-radius: .375rem;
+}
+
+.callbox button:hover {
+  color: var(--white);
+}
+
+.calltitle {
+  font-size: 18px;
+  color: #212529;
+  font-weight: 600;
+}
+
+.calltime {
+  font-size: 15px;
+  color: #212529;
+  font-weight: 600;
+}

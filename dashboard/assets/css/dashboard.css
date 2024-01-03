@@ -2495,14 +2495,8 @@ input[type="color"]::-webkit-color-swatch {
   font-weight: 600;
 }
 
-.sidebar,
-.body,
-.header {
+.body {
   z-index: 100000 !important;
-}
-
-.modal {
-  z-index: 1000000 !important;
 }
 
 @media only screen and (max-width: 991px) {

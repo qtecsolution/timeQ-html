@@ -2495,8 +2495,8 @@ input[type="color"]::-webkit-color-swatch {
   }
 }
 
-@media screen and (max-width: 35.9375rem) {
+/* @media screen and (max-width: 35.9375rem) {
   .chatlist-toggle {
-    /* margin-right: -2rem; */
+    margin-right: -2rem;
   }
-}
+} */

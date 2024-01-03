@@ -926,8 +926,8 @@ textarea {
 }
 
 .btn-mobchat .icon {
-  width: 2rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -980,11 +980,27 @@ textarea {
 .btn-mobtext {
   display: flex;
   align-items: center;
+  gap: .25rem;
   padding: .25rem 1rem;
+}
+
+.btn-mobtext .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-mobtext .text {
   font-size: .8125rem;
 }
 
-.btn-mobtext:hover {
+.btn-mobtext:hover .icon svg path {
+  fill: var(--primary);
+}
+
+.btn-mobtext:hover .text {
   color: var(--primary);
 }
 
@@ -2258,9 +2274,28 @@ input[type="color"]::-webkit-color-swatch {
   padding: .25rem .5rem;
   width: 100%;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
-.btn-text:hover {
+.btn-text .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-text .text {
+  font-size: .8125rem;
+}
+
+.btn-text:hover .icon svg path {
+  fill: var(--primary)
+}
+
+.btn-text:hover .text {
   color: var(--primary);
 }
 
@@ -2458,4 +2493,21 @@ input[type="color"]::-webkit-color-swatch {
   font-size: 15px;
   color: #212529;
   font-weight: 600;
+}
+
+.sidebar,
+.body,
+.header {
+  z-index: 100000 !important;
+}
+
+.modal {
+  z-index: 1000000 !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .card-chat.open {
+    top: 0;
+    z-index: 9999999;
+  }
 }

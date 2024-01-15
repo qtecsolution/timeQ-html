@@ -569,6 +569,13 @@ textarea:focus {
   width: calc(100% - 3.875rem);
 }
 
+.groupchat .groupchat-details .namebox {
+  width: calc(100% - 3rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .groupchat .groupchat-details .name {
   color: var(--namecolor);
   font-size: .875rem;
@@ -596,6 +603,8 @@ textarea:focus {
   color: var(--namecolor);
   font-size: .75rem;
   font-weight: 400;
+  width: 3rem;
+  text-align: right;
 }
 
 .groupchat .groupchat-details .message {
@@ -605,6 +614,7 @@ textarea:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 99%;
 }
 
 .btn-createchat {
@@ -1576,6 +1586,61 @@ textarea {
   padding-bottom: .875rem;
 }
 
+.inputlabel {
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.addinfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.addinfo .form-control {
+  width: calc(100% - 9rem);
+  height: 2.375rem;
+}
+
+.btn-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-size: .875rem;
+  font-weight: 600;
+  width: 8rem;
+  background: var(--tabcolor);
+  color: var(--white);
+  height: 2.375rem;
+  border-radius: .3125rem;
+  transition: all 500ms ease;
+}
+
+.btn-add:hover {
+  background: var(--resetcolor);
+}
+
+.viewinfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.viewinfo .form-control {
+  /* width: calc(100% - 9rem); */
+  height: 2.375rem;
+}
+
+.btn-trash {
+  font-size: 1rem;
+  transition: all 500ms ease;
+}
+
+.btn-trash:hover {
+  color: var(--hover);
+}
+
 @media screen and (min-width: 62rem) {
   .support-ticket-body .leftcontent {
     flex-wrap: nowrap;
@@ -2243,10 +2308,10 @@ input[type="color"]::-webkit-color-swatch {
   }
 }
 
-.chat-header {
+/* .chat-header {
   position: sticky;
   top: 0;
-}
+} */
 
 .dropdown-menu {
   z-index: 50000;
@@ -2494,6 +2559,48 @@ input[type="color"]::-webkit-color-swatch {
   background: var(--white);
   padding: .75rem;
   z-index: 100;
+}
+
+.btn-translate,
+.btn-edited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+  max-width: 4.5rem;
+}
+
+.btn-translate .icon,
+.btn-edited .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.btn-translate .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-translate .text,
+.btn-edited .text {  
+  color: var(--namecolor);
+  font-size: .6875rem;
+  font-weight: 400;
+}
+
+.btn-translate:hover .text {
+  color: var(--hover);
+}
+
+.btn-translate:hover .icon svg path {
+  fill: var(--hover);
+}
+
+.btn-edited .icon {
+  width: .875rem;
+  height: .875rem;
 }
 
 @media screen and (max-width: 991px) {

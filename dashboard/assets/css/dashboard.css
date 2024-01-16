@@ -483,7 +483,7 @@ textarea:focus {
 }
 
 .chatuser .chatuser-details .namebox {
-  width: calc(100% - 3rem);
+  width: calc(100% - 4rem);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -493,7 +493,6 @@ textarea:focus {
   color: var(--namecolor);
   font-size: .875rem;
   font-weight: 500;
-  width: 3rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -508,6 +507,7 @@ textarea:focus {
   color: var(--namecolor);
   font-size: .75rem;
   font-weight: 400;
+  width: 4rem;
 }
 
 .chatuser .chatuser-details .messagebox {
@@ -581,7 +581,7 @@ textarea:focus {
 }
 
 .groupchat .groupchat-details .namebox {
-  width: calc(100% - 3rem);
+  width: calc(100% - 4rem);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -618,7 +618,7 @@ textarea:focus {
   color: var(--namecolor);
   font-size: .75rem;
   font-weight: 400;
-  width: 3rem;
+  width: 4rem;
   text-align: right;
 }
 

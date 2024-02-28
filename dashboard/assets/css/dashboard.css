@@ -1412,6 +1412,35 @@ textarea {
   background: #F7F7FA;
 }
 
+#all-todo-body .all-todo .task-name .todo-popup {
+  width: 209px !important;
+  height: 198px !important;
+  border-radius: 10px;
+  border: 0.5px solid rgba(31, 41, 55, 0.15);
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(31, 41, 55, 0.15);
+  padding: 20px 15px 15px 15px;
+  gap: 16px;
+}
+
+#all-todo-body .all-todo .task-name .todo-popup div {
+  border-bottom: 1px solid #E3E4E8;
+  padding-bottom: 13px;
+  margin-bottom: 19px;
+}
+
+#all-todo-body .all-todo .task-name .todo-popup li {
+  gap: 8px;
+}
+
+#all-todo-body .all-todo .task-name .todo-popup h4 {
+  color: #0A0A0A;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
+
 #all-todo-body .all-todo .task-edit {
   height: 100px;
   border-radius: 8px;

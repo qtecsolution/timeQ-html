@@ -1387,6 +1387,7 @@ textarea {
 #all-todo-body .inProgress-header .images,
 #all-todo-body .upcoming-header .images,
 #all-todo-body .completed-header .images {
+  position: relative;
   gap: 12px;
 }
 
@@ -1513,6 +1514,19 @@ textarea {
 
 #all-todo-body .completed-header h4 {
   color: #157B1A;
+}
+
+.dropdown .dropdown-menu {
+  padding: 16px 15px 15px 16px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(31, 41, 55, 0.15);
+  background: #FFF;
+  box-shadow: 0px 0px 15px 0px rgba(31, 41, 55, 0.10);
+  transform: translate(-97px, 20px) !important;
+}
+
+.dropdown .dropdown-menu.last {
+  transform: translate(43px, 20px) !important;
 }
 
 /* all-todo-list end */

@@ -844,7 +844,22 @@
               <div class="todos-header d-flex justify-content-between">
                 <h4>To do (5)</h4>
                 <div class="images d-flex align-items-center ">
-                  <img src="./assets/images/todo-list/threedots.svg" alt="">
+                  <div class="dropdown">
+                    <a class="" href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/threedots.svg" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <img src="./assets/images/todo-list/pencil.svg" alt="">
+                        <span>Rename</span>
+                      </li>
+                      <li>
+                        <img src="./assets/images/todo-list/change-color.svg" alt="">
+                        <span>Change color</span>
+                      </li>
+                    </ul>
+                  </div>
                   <img src="./assets/images/todo-list/grayplus.svg" alt="">
                 </div>
               </div>
@@ -897,14 +912,6 @@
                 <img src="./assets/images/todo-list/edit.svg" alt="">
               </div>
 
-              <div class="task-name d-flex justify-content-between ">
-                <label for="gym">
-                  <input type="radio" name="" id="gym">
-                  <span>Go to gym</span>
-                </label>
-                <img src="./assets/images/todo-list/edit.svg" alt="">
-              </div>
-
               <div class="task-add">
                 <p><span>+</span>Add Task</p>
               </div>
@@ -914,7 +921,22 @@
               <div class="inProgress-header d-flex justify-content-between ">
                 <h4>In Progress (1)</h4>
                 <div class="images d-flex align-items-center ">
-                  <img src="./assets/images/todo-list/threedots.svg" alt="">
+                  <div class="dropdown">
+                    <a class="" href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/threedots.svg" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <img src="./assets/images/todo-list/pencil.svg" alt="">
+                        <span>Rename</span>
+                      </li>
+                      <li>
+                        <img src="./assets/images/todo-list/change-color.svg" alt="">
+                        <span>Change color</span>
+                      </li>
+                    </ul>
+                  </div>
                   <img src="./assets/images/todo-list/grayplus.svg" alt="">
                 </div>
               </div>
@@ -935,7 +957,22 @@
               <div class="upcoming-header d-flex justify-content-between">
                 <h4>UPCOMING (1)</h4>
                 <div class="images d-flex align-items-center ">
-                  <img src="./assets/images/todo-list/threedots.svg" alt="">
+                  <div class="dropdown">
+                    <a class="" href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/threedots.svg" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <img src="./assets/images/todo-list/pencil.svg" alt="">
+                        <span>Rename</span>
+                      </li>
+                      <li>
+                        <img src="./assets/images/todo-list/change-color.svg" alt="">
+                        <span>Change color</span>
+                      </li>
+                    </ul>
+                  </div>
                   <img src="./assets/images/todo-list/grayplus.svg" alt="">
                 </div>
               </div>
@@ -957,7 +994,22 @@
               <div class="completed-header d-flex justify-content-between">
                 <h4>COMPLETED (1)</h4>
                 <div class="images d-flex align-items-center ">
-                  <img src="./assets/images/todo-list/threedots.svg" alt="">
+                  <div class="dropdown">
+                    <a class="" href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/threedots.svg" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu last">
+                      <li>
+                        <img src="./assets/images/todo-list/pencil.svg" alt="">
+                        <span>Rename</span>
+                      </li>
+                      <li>
+                        <img src="./assets/images/todo-list/change-color.svg" alt="">
+                        <span>Change color</span>
+                      </li>
+                    </ul>
+                  </div>
                   <img src="./assets/images/todo-list/grayplus.svg" alt="">
                 </div>
               </div>
@@ -967,10 +1019,7 @@
                   <input type="radio" name="" id="">
                   <span>Go to gym</span>
                 </label>
-
               </div>
-
-
             </div>
           </div>
         </div>
@@ -978,7 +1027,13 @@
     </div>
   </div>
 
-
+  <script>
+    // When the user clicks on div, open the popup
+    function showpopup() {
+      let popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+  </script>
   <!-- Jquery Core Js -->
   <script src="assets/bundles/libscripts.bundle.js"></script>
   <!-- Jquery Page Js -->

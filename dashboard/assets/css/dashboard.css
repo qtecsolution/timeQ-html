@@ -1391,6 +1391,18 @@ textarea {
   gap: 12px;
 }
 
+#all-todo-body .todos-header .color-dropdown .dropdown-menu,
+#all-todo-body .inProgress-header .color-dropdown .dropdown-menu,
+#all-todo-body .upcoming-header .color-dropdown .dropdown-menu {
+  transform: translate(-265px, 20px) !important;
+  /* width: 100%; */
+  /* background-color: none !important; */
+}
+
+#all-todo-body .completed-header .color-dropdown .dropdown-menu {
+  transform: translate(17px, 20px) !important;
+}
+
 #all-todo-body .todos-header .images img,
 #all-todo-body .inProgress-header .images img,
 #all-todo-body .upcoming-header .images img,
@@ -1440,6 +1452,241 @@ textarea {
   font-weight: 700;
   letter-spacing: 0.56px;
   text-transform: uppercase;
+}
+
+.dropdown-menu .add-status {
+  width: 100%;
+}
+
+.add-status .add-status-name {
+  border-radius: 8px;
+  border: 1px solid #6366F1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+.add-status .add-status-name label input {
+  outline: none;
+  border: none;
+  font-size: 15px;
+}
+
+.add-status .add-status-name label input::placeholder {
+  color: #686D82;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.14px;
+  text-transform: capitalize;
+}
+
+.add-status .add-status-name button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #6366F1;
+  padding: 10px;
+  color: #FFF;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+}
+
+.add-status .add-color {
+  width: 264px;
+  height: 173px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(31, 41, 55, 0.15);
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(31, 41, 55, 0.15);
+  margin-top: 10px;
+  padding: 17px 8px 16px 16px;
+}
+
+.add-status .add-color .closed {
+  cursor: pointer;
+
+}
+
+.add-status .add-color .set-color {
+  margin-right: 6px;
+  margin: 20px 6px 10px 0;
+
+}
+
+.add-status .add-color .inner-color {
+  margin-top: 0;
+  gap: 9px;
+
+}
+
+.add-status .add-color .inner-color2 {
+  margin-top: 30px;
+  gap: 9px;
+
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.checkbox-label1,
+.checkbox-label2,
+.checkbox-label3,
+.checkbox-label4,
+.checkbox-label5,
+.checkbox-label6,
+.checkbox-label7,
+.checkbox-label8,
+.checkbox-label9,
+.checkbox-label10,
+.checkbox-label11,
+.checkbox-label12,
+.checkbox-label13,
+.checkbox-label14 {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label1::before,
+.checkbox-label2::before,
+.checkbox-label3::before,
+.checkbox-label4::before,
+.checkbox-label5::before,
+.checkbox-label6::before,
+.checkbox-label7::before,
+.checkbox-label8::before,
+.checkbox-label9::before,
+.checkbox-label10::before,
+.checkbox-label11::before,
+.checkbox-label12::before,
+.checkbox-label13::before,
+.checkbox-label14::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+.checkbox-label1::before {
+  background-color: #EF4444;
+}
+
+.checkbox-label2::before {
+  background-color: #F97316;
+
+}
+
+.checkbox-label3::before {
+  background-color: #FACC15;
+
+}
+
+.checkbox-label4::before {
+  background-color: #4ADE80;
+
+}
+
+.checkbox-label5::before {
+  background-color: #2DD4BF;
+
+}
+
+.checkbox-label6::before {
+  background-color: #3B82F6;
+
+}
+
+.checkbox-label7::before {
+  background-color: #6366F1;
+
+}
+
+.checkbox-label8::before {
+  background-color: #EC4899;
+
+}
+
+.checkbox-label9::before {
+  background-color: #F43F5E;
+
+}
+
+.checkbox-label10::before {
+  background-color: #D946EF;
+
+}
+
+.checkbox-label11::before {
+  background-color: #8B5CF6;
+
+}
+
+.checkbox-label12::before {
+  background-color: #0EA5E9;
+
+}
+
+.checkbox-label13::before {
+  background-color: #10B981;
+
+}
+
+.checkbox-label14::before {
+  background-color: #84CC16;
+
+}
+
+.checkbox-label1::after,
+.checkbox-label2::after,
+.checkbox-label3::after,
+.checkbox-label4::after,
+.checkbox-label5::after,
+.checkbox-label6::after,
+.checkbox-label7::after,
+.checkbox-label8::after,
+.checkbox-label9::after,
+.checkbox-label10::after,
+.checkbox-label11::after,
+.checkbox-label12::after,
+.checkbox-label13::after,
+.checkbox-label14::after {
+  content: '';
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  border-radius: 100%;
+  top: -5px;
+  left: -5px;
+  border: 1px solid rgba(31, 41, 55, 0.15);
+  display: none;
+}
+
+input[type="radio"]:checked+.checkbox-label1::after,
+input[type="radio"]:checked+.checkbox-label2::after,
+input[type="radio"]:checked+.checkbox-label3::after,
+input[type="radio"]:checked+.checkbox-label4::after,
+input[type="radio"]:checked+.checkbox-label5::after,
+input[type="radio"]:checked+.checkbox-label6::after,
+input[type="radio"]:checked+.checkbox-label7::after,
+input[type="radio"]:checked+.checkbox-label8::after,
+input[type="radio"]:checked+.checkbox-label9::after,
+input[type="radio"]:checked+.checkbox-label10::after,
+input[type="radio"]:checked+.checkbox-label11::after,
+input[type="radio"]:checked+.checkbox-label12::after,
+input[type="radio"]:checked+.checkbox-label13::after,
+input[type="radio"]:checked+.checkbox-label14::after {
+  display: block;
 }
 
 #all-todo-body .all-todo .task-edit {

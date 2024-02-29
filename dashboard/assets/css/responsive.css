@@ -35,9 +35,9 @@
   }
 
   .all-todo-list .all-todo-nav .todo-button {
-    gap: 5px;
+    gap: 4px;
   }
   .all-todo-list .all-todo-nav .todo-button button {
-    font-size: 14px;
+    font-size: 13px;
 }
 }

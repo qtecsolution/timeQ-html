@@ -1,0 +1,36 @@
+@media screen and (max-width: 100rem) {
+  #all-todo-body .all-todo .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 87.5rem) {
+  #all-todo-body .all-todo .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 62rem) {
+  #all-todo-body .all-todo .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  #all-todo-body .all-todo .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .all-todo-list .all-todo-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dropdown .dropdown-menu {
+    transform: translate(44px, 20px) !important;
+  }
+
+  #all-todo-body .all-todo .task-name .todo-popup {
+    transform: translate(16px, 26px) !important;
+  }
+}

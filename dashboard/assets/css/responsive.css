@@ -33,4 +33,11 @@
   #all-todo-body .all-todo .task-name .todo-popup {
     transform: translate(16px, 26px) !important;
   }
+
+  .all-todo-list .all-todo-nav .todo-button {
+    gap: 5px;
+  }
+  .all-todo-list .all-todo-nav .todo-button button {
+    font-size: 14px;
+}
 }

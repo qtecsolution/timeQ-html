@@ -40,12 +40,12 @@
   }
 
   .all-todo-list .all-todo-nav .todo-button {
-    gap: 4px;
+    gap: 6px;
   }
 
   .all-todo-list .all-todo-nav .todo-button button {
     font-size: 13px;
-    padding: 10px 15PX !important;
+    padding: 5px 9px !important;
   }
 
   #all-todo-body.all-todo-list {

@@ -12,36 +12,40 @@ body {
   align-items: flex-start;
 }
 
-#staticBackdrop .modal-dialog-centered .inner-modal-content {
+/* #staticBackdrop .modal-dialog-centered {
   min-width: 100%;
   min-height: 100%;
+} */
+
+#staticBackdrop .modal-header {
+  border: none;
 }
 
-#staticBackdrop .inner-modal-content .header-text h2 {
+#staticBackdrop .header-text h2 {
   color: #141B34;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
-#staticBackdrop .inner-modal-content .inner-modal-body {
+#staticBackdrop .inner-modal-body {
   grid-template-columns: 2fr 1fr;
 }
 
-#staticBackdrop .inner-modal-content .todo-status {
+#staticBackdrop .todo-status {
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
 }
 
-#staticBackdrop .inner-modal-content .todo-status .title {
+#staticBackdrop .todo-status .title {
   color: #686D82;
   font-size: 14px;
   text-transform: capitalize;
   /* margin-left: 5px; */
 }
 
-#staticBackdrop .inner-modal-content .status .innder-button button {
+#staticBackdrop .status .innder-button button {
   /* width: 124px; */
   border-radius: 4px;
   background: #4CAF50;
@@ -54,26 +58,26 @@ body {
   margin-top: 11px;
 }
 
-#staticBackdrop .inner-modal-content .status .innder-button button span {
+#staticBackdrop .status .innder-button button span {
   border-right: 1px dashed #fff;
   padding: 8px 7px 8px 6px;
 }
 
-#staticBackdrop .inner-modal-content .status .innder-button button img {
+#staticBackdrop .status .innder-button button img {
   padding: 8px 5px 8px 7px;
 }
 
-#staticBackdrop .inner-modal-content .date img {
+#staticBackdrop .date img {
   width: 17px;
   align-self: flex-start;
   margin-top: 3px;
 }
 
-#staticBackdrop .inner-modal-content .date {
+#staticBackdrop .date {
   gap: 5px;
 }
 
-#staticBackdrop .inner-modal-content .date p {
+#staticBackdrop .date p {
   color: #141B34;
   font-size: 14px;
   font-weight: 600;
@@ -82,35 +86,34 @@ body {
 }
 
 
-#staticBackdrop .inner-modal-content .activity-side {
+#staticBackdrop .activity-side {
   border: 1px solid #E3E4E8;
   height: 480px;
   position: relative;
 }
 
-#staticBackdrop .inner-modal-content .activity-side .activity-header {
+#staticBackdrop .activity-side .activity-header {
   border-bottom: 1px solid #E3E4E8;
   padding: 12px 15px;
   align-items: center;
   /* position: fixed; */
 }
 
-#staticBackdrop .inner-modal-content .activity-side ul {
+#staticBackdrop .activity-side ul {
   overflow: scroll;
 }
 
-#staticBackdrop .inner-modal-content .activity-side {
+#staticBackdrop .activity-side {
   position: relative;
 }
 
-#staticBackdrop .inner-modal-content .activity-side .textarea {
+#staticBackdrop .activity-side .textarea {
   background-color: #fff;
   padding: 16px 20px;
   border-top: 1px solid #E3E4E8;
   position: fixed;
   bottom: 50px;
   width: 380px;
-
 }
 
 #staticBackdrop .activity-side .textarea .inner-textarea {

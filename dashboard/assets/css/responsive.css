@@ -1,30 +1,35 @@
-@media screen and (max-width: 100rem) {
+@media screen and (max-width: 1200px) {
   #all-todo-body .all-todo .grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media screen and (max-width: 87.5rem) {
+@media screen and (max-width: 992px) {
   #all-todo-body .all-todo .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media screen and (max-width: 62rem) {
+@media screen and (max-width: 768px) {
   #all-todo-body .all-todo .grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 48rem) {
-  #all-todo-body .all-todo .grid {
-    grid-template-columns: repeat(1, 1fr);
   }
 
   .all-todo-list .all-todo-nav {
     flex-direction: column;
     gap: 20px;
   }
+}
+
+@media screen and (max-width: 576px) {
+  #all-todo-body .all-todo .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* .all-todo-list .all-todo-nav {
+    flex-direction: column;
+    gap: 20px;
+  } */
 
   .dropdown .dropdown-menu {
     transform: translate(44px, 20px) !important;
@@ -37,7 +42,12 @@
   .all-todo-list .all-todo-nav .todo-button {
     gap: 4px;
   }
+
   .all-todo-list .all-todo-nav .todo-button button {
     font-size: 13px;
-}
+  }
+
+  #all-todo-body.all-todo-list {
+    margin: 15px;
+  }
 }

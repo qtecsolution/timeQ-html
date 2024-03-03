@@ -45,9 +45,16 @@
 
   .all-todo-list .all-todo-nav .todo-button button {
     font-size: 13px;
+    padding: 10px 15PX !important;
   }
 
   #all-todo-body.all-todo-list {
-    margin: 15px;
+    margin: 12px;
+  }
+
+  #all-todo-body .todos-header .color-dropdown .dropdown-menu,
+  #all-todo-body .inProgress-header .color-dropdown .dropdown-menu,
+  #all-todo-body .upcoming-header .color-dropdown .dropdown-menu {
+    transform: translate(15px, 20px) !important;
   }
 }

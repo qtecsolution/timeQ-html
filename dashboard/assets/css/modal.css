@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+#staticBackdrop .modal-dialog-centered {
+  min-height: 91vh;
+  background: #F6F5F5;
+  min-width: 1200px;
+  border-radius: 24px;
+  align-items: flex-start;
+}
+
+#staticBackdrop .modal-dialog-centered .inner-modal-content {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#staticBackdrop .inner-modal-content .header-text h2 {
+  color: #141B34;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+#staticBackdrop .inner-modal-content .inner-modal-body {
+  grid-template-columns: 2fr 1fr;
+}
+
+#staticBackdrop .inner-modal-content .todo-status {
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+}
+
+#staticBackdrop .inner-modal-content .todo-status .title {
+  color: #686D82;
+  font-size: 14px;
+  text-transform: capitalize;
+  /* margin-left: 5px; */
+}
+
+#staticBackdrop .inner-modal-content .status .innder-button button {
+  /* width: 124px; */
+  border-radius: 4px;
+  background: #4CAF50;
+  /* padding: 10px 12px; */
+  cursor: pointer;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 11px;
+}
+
+#staticBackdrop .inner-modal-content .status .innder-button button span {
+  border-right: 1px dashed #fff;
+  padding: 8px 7px 8px 6px;
+}
+
+#staticBackdrop .inner-modal-content .status .innder-button button img {
+  padding: 8px 5px 8px 7px;
+}
+
+#staticBackdrop .inner-modal-content .date img {
+  width: 17px;
+  align-self: flex-start;
+  margin-top: 3px;
+}
+
+#staticBackdrop .inner-modal-content .date {
+  gap: 5px;
+}
+
+#staticBackdrop .inner-modal-content .date p {
+  color: #141B34;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+
+#staticBackdrop .inner-modal-content .activity-side {
+  border: 1px solid #E3E4E8;
+  height: 480px;
+  position: relative;
+}
+
+#staticBackdrop .inner-modal-content .activity-side .activity-header {
+  border-bottom: 1px solid #E3E4E8;
+  padding: 12px 15px;
+  align-items: center;
+  /* position: fixed; */
+}
+
+#staticBackdrop .inner-modal-content .activity-side ul {
+  overflow: scroll;
+}
+
+#staticBackdrop .inner-modal-content .activity-side {
+  position: relative;
+}
+
+#staticBackdrop .inner-modal-content .activity-side .textarea {
+  background-color: #fff;
+  padding: 16px 20px;
+  border-top: 1px solid #E3E4E8;
+  position: fixed;
+  bottom: 50px;
+  width: 380px;
+
+}
+
+#staticBackdrop .activity-side .textarea .inner-textarea {
+  border-radius: 7px;
+  border: 1px solid rgba(255, 100, 90, 0.65);
+  background: #FFF;
+}
+
+#staticBackdrop .activity-side .inner-textarea input {
+  outline: none;
+  border: none;
+  padding: 18px;
+}
+
+#staticBackdrop .activity-side .inner-textarea .textarea-footer {
+  border-radius: 5px;
+  background: #F8F8F8;
+  padding: 10px 12px;
+}
+
+#staticBackdrop .activity-side .inner-textarea .textarea-footer .b {
+  color: #686D82;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#staticBackdrop .activity-side .inner-textarea .textarea-footer .i {
+  color: #686D82;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#staticBackdrop .activity-side .inner-textarea .textarea-footer .s {
+  color: #686D82;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+#staticBackdrop .activity-side .inner-textarea .textarea-footer button {
+  padding: 6px 14px;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FF645A;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.16px;
+}

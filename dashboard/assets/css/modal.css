@@ -6,16 +6,12 @@ body {
 
 #staticBackdrop .modal-dialog-centered {
   min-height: 91vh;
-  background: #F6F5F5;
   min-width: 1200px;
   border-radius: 24px;
   align-items: flex-start;
 }
 
-/* #staticBackdrop .modal-dialog-centered {
-  min-width: 100%;
-  min-height: 100%;
-} */
+
 
 #staticBackdrop .modal-header {
   border: none;
@@ -26,7 +22,6 @@ body {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
-  /* margin-bottom: 30px; */
 }
 
 #staticBackdrop .inner-modal-body {
@@ -42,14 +37,11 @@ body {
   color: #686D82;
   font-size: 14px;
   text-transform: capitalize;
-  /* margin-left: 5px; */
 }
 
 #staticBackdrop .status .innder-button button {
-  /* width: 124px; */
   border-radius: 4px;
   background: #4CAF50;
-  /* padding: 10px 12px; */
   cursor: pointer;
   color: #FFF;
   font-size: 14px;
@@ -85,6 +77,30 @@ body {
   text-transform: capitalize;
 }
 
+#staticBackdrop .inner-modal-body .description {
+  width: 96%;
+  margin-top: 30px;
+  border-radius: 12px;
+  background: #F7F7FA;
+}
+
+#staticBackdrop .inner-modal-body .description form {
+  padding: 30px 13px;
+}
+
+#staticBackdrop .inner-modal-body .description input {
+  width: 95%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#staticBackdrop .inner-modal-body .description input::placeholder {
+  color: #ADAFB5;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
 
 #staticBackdrop .activity-side {
   border: 1px solid #E3E4E8;

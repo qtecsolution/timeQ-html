@@ -76,8 +76,14 @@
     transform: translate(15px, 20px) !important;
   }
 
+  #staticBackdrop .todo-status {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+  }
+
   #staticBackdrop .modal-dialog-centered {
     min-height: 91vh;
-    min-width: 400px;
+    min-width: 380px;
   }
 }

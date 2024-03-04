@@ -113,17 +113,6 @@ function activate() {
     "beforeend",
     `
 		<style>
-			.time-picker {
-				position: absolute;
-				display: inline-block;
-				padding: 10px;
-				border-radius: 6px;
-        border-radius: 8px;
-        border: 0.5px solid rgba(31, 41, 55, 0.15);
-        background: #FFF;
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
-			}
-
 			.time-picker__select {
 				-webkit-appearance: none;
 				-moz-appearance: none;
@@ -166,6 +155,7 @@ function activate() {
 
 function show(timePickable) {
   const picker = buildPicker(timePickable);
+  picker.className = "inner-time-picker";
   const { bottom: top, left } = timePickable.getBoundingClientRect();
 
   picker.style.top = `${66}px`;

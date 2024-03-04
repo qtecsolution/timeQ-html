@@ -253,3 +253,68 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+
+.inner-time-picker {
+  position: absolute;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 6px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(31, 41, 55, 0.15);
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.inner-modal-body .write-description {}
+
+.inner-modal-body .write-description .inner-description {
+  width: 95%;
+  border-radius: 12px;
+  background: #F7F7FA;
+}
+
+.write-description .inner-description textarea {
+  height: 200px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #D8D1F4;
+  padding-left: 15px;
+}
+
+.write-description .inner-description .write-description-footer {
+  padding: 21px 10px 15px 15px;
+}
+
+.write-description .inner-description .write-description-footer .left-section {
+  gap: 52px;
+}
+
+.write-description .inner-description .write-description-footer img {
+  cursor: pointer;
+}
+
+.write-description .inner-description .write-description-footer .right-section {
+  gap: 48px;
+}
+
+.write-description .write-description {
+  margin-top: 23px;
+  width: 95%;
+  gap: 20px;
+}
+
+.write-description .write-description .save-button {
+  padding: 10px;
+  border-radius: 8px;
+  background: #FF645A;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.write-description .write-description .cancel-button {
+  color: #464F60;
+  font-size: 14px;
+  font-weight: 600;
+}

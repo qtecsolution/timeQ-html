@@ -67,12 +67,8 @@ $(function () {
   });
 
   // light and dark theme setting js
-  var toggleSwitch = document.querySelector(
-    '.theme-switch input[type="checkbox"]'
-  );
-  var toggleHcSwitch = document.querySelector(
-    '.theme-high-contrast input[type="checkbox"]'
-  );
+  var toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+  var toggleHcSwitch = document.querySelector('.theme-high-contrast input[type="checkbox"]');
   var currentTheme = localStorage.getItem("theme");
   if (currentTheme) {
     document.documentElement.setAttribute("data-theme", currentTheme);
@@ -111,3 +107,152 @@ var Tawk_API = Tawk_API || {},
   s1.setAttribute("crossorigin", "*");
   s0.parentNode.insertBefore(s1, s0);
 })();
+
+function activate() {
+  document.head.insertAdjacentHTML(
+    "beforeend",
+    `
+		<style>
+			.time-picker {
+				position: absolute;
+				display: inline-block;
+				padding: 10px;
+				border-radius: 6px;
+        border-radius: 8px;
+        border: 0.5px solid rgba(31, 41, 55, 0.15);
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+			}
+
+			.time-picker__select {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				outline: none;
+				text-align: center;
+				border: 1px solid #dddddd;
+				border-radius: 6px;
+				padding: 6px 10px;
+				background: #ffffff;
+				cursor: pointer;
+				font-family: 'Heebo', sans-serif;
+			}
+		</style>
+	`
+  );
+
+  document.querySelectorAll(".time-pickable").forEach((timePickable) => {
+    let activePicker = null;
+
+    timePickable.addEventListener("focus", () => {
+      if (activePicker) return;
+
+      activePicker = show(timePickable);
+
+      const onClickAway = ({ target }) => {
+        if (target === activePicker || target === timePickable || activePicker.contains(target)) {
+          return;
+        }
+
+        document.removeEventListener("mousedown", onClickAway);
+        document.getElementById("time-picker").removeChild(activePicker);
+        activePicker = null;
+      };
+
+      document.addEventListener("mousedown", onClickAway);
+    });
+  });
+}
+
+function show(timePickable) {
+  const picker = buildPicker(timePickable);
+  const { bottom: top, left } = timePickable.getBoundingClientRect();
+
+  picker.style.top = `${66}px`;
+  picker.style.left = `${371}px`;
+
+  document.getElementById("time-picker").appendChild(picker);
+
+  return picker;
+}
+
+function buildPicker(timePickable) {
+  const picker = document.createElement("div");
+  const hourOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(numberToOption);
+  const minuteOptions = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55].map(numberToOption);
+
+  picker.classList.add("time-picker");
+  picker.innerHTML = `
+		<select class="time-picker__select">
+			${hourOptions.join("")}
+		</select>
+		:
+		<select class="time-picker__select">
+			${minuteOptions.join("")}
+		</select>
+		<select class="time-picker__select">
+			<option value="am">am</option>
+			<option value="pm">pm</option>
+		</select>
+	`;
+
+  const selects = getSelectsFromPicker(picker);
+
+  selects.hour.addEventListener(
+    "change",
+    () => (timePickable.value = getTimeStringFromPicker(picker))
+  );
+  selects.minute.addEventListener(
+    "change",
+    () => (timePickable.value = getTimeStringFromPicker(picker))
+  );
+  selects.meridiem.addEventListener(
+    "change",
+    () => (timePickable.value = getTimeStringFromPicker(picker))
+  );
+
+  if (timePickable.value) {
+    const { hour, minute, meridiem } = getTimePartsFromPickable(timePickable);
+
+    selects.hour.value = hour;
+    selects.minute.value = minute;
+    selects.meridiem.value = meridiem;
+  }
+
+  return picker;
+}
+
+function getTimePartsFromPickable(timePickable) {
+  const pattern = /^(\d+):(\d+) (am|pm)$/;
+  const [hour, minute, meridiem] = Array.from(timePickable.value.match(pattern)).splice(1);
+
+  return {
+    hour,
+    minute,
+    meridiem,
+  };
+}
+
+function getSelectsFromPicker(timePicker) {
+  const [hour, minute, meridiem] = timePicker.querySelectorAll(".time-picker__select");
+
+  return {
+    hour,
+    minute,
+    meridiem,
+  };
+}
+
+function getTimeStringFromPicker(timePicker) {
+  const selects = getSelectsFromPicker(timePicker);
+
+  return `${selects.hour.value}:${selects.minute.value} ${selects.meridiem.value}`;
+}
+
+function numberToOption(number) {
+  const padded = number.toString().padStart(2, "0");
+
+  return `<option value="${padded}">${padded}</option>`;
+}
+
+activate();

@@ -71,7 +71,9 @@ body {
   gap: 5px;
 }
 
-#staticBackdrop .date p {
+#staticBackdrop .date p,
+#time::placeholder,
+#time {
   color: #141B34;
   font-size: 14px;
   font-weight: 600;
@@ -242,4 +244,12 @@ body {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: -0.16px;
+}
+
+#time {
+  outline: none;
+  border: none;
+  width: 100px;
+  background-color: transparent;
+  cursor: pointer;
 }

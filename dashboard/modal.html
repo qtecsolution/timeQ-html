@@ -806,134 +806,15 @@
         </nav>
       </div>
 
-
-      <!-- Button trigger modal -->
-      <!-- <div class="d-flex justify-content-center align-items-center h-75">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          Launch demo modal
-        </button>
-      </div>
-
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="p-4 inner-modal-content">
-            <div class="header-text">
-              <h2>Go to Gym</h2>
-            </div>
-
-            <div class="inner-modal-body d-grid">
-              <div class="todo-status d-grid ">
-                <div class="status">
-                  <img src="./assets/images/modal/status.svg">
-                  <span class="title">status</span>
-                  <div class="innder-button">
-                    <button class="d-flex align-items-center ">
-                      <span>Completed</span>
-                      <img src="./assets/images/modal/play.svg">
-                    </button>
-                  </div>
-                </div>
-
-                <div class="date d-flex g-2 ">
-                  <img src="./assets/images/modal/calendar.svg">
-                  <div class="">
-                    <span class="title">Date</span>
-                    <p>01 Feb, 2024</p>
-                  </div>
-                </div>
-
-                <div class="date d-flex g-2 ">
-                  <img src="./assets/images/modal/clock.svg">
-                  <div class="">
-                    <span class="title">Time</span>
-                    <p>8:00 PM</p>
-                  </div>
-                </div>
-
-                <div class="date d-flex g-2 ">
-                  <img src="./assets/images/modal/priority.svg">
-                  <div class="">
-                    <span class="title">Priority</span>
-                    <p>Completed</p>
-                  </div>
-                </div>
-
-                <div class="date d-flex g-2 ">
-                  <img src="./assets/images/modal/category.svg">
-                  <div class="">
-                    <span class="title">Category</span>
-                    <p>Shopping</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="activity-side">
-                <div class="activity-header d-flex justify-content-between ">
-                  <h2>Activity</h2>
-                  <img src="./assets/images/modal/search.svg">
-                </div>
-
-                <ul>
-                  <li>
-                    You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                  </li>
-                  <li>
-                    You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                  </li>
-                  <li>
-                    You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                  </li>
-                  <li>
-                    You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                  </li>
-                  <li>
-                    You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                  </li>
-                  <li>
-                    You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                  </li>
-                  <li>
-                    You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                  </li>
-                  <li>
-                    You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                  </li>
-                </ul>
-
-                <div class="textarea">
-                  <div class="inner-textarea">
-                    <div class="">
-                      <input type="text" placeholder="Enter your text">
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center textarea-footer">
-                      <div class="d-flex align-items-center gap-3 ">
-                        <span class="b">B</span>
-                        <span class="i">I</span>
-                        <span class="s">s</span>
-                        <img src="./assets/images/modal/paperclip.svg" alt="">
-                      </div>
-                      <div class="d-flex align-items-center gap-2">
-                        <img src="./assets//images//modal/link.svg" alt="">
-                        <img src="./assets//images//modal/smile.svg" alt="">
-                        <button>Send</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
       <!-- Button trigger modal -->
       <div class="d-flex align-items-center justify-content-center w-100 h-100 ">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           Open modal
         </button>
+
       </div>
+
+
 
       <!-- Modal -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -969,9 +850,14 @@
 
                     <div class="date d-flex g-2 ">
                       <img src="./assets/images/modal/clock.svg">
-                      <div class="">
+                      <div id="time-picker">
                         <span class="title">Time</span>
-                        <p>8:00 PM</p>
+                        <p>
+                          <label for="time">
+                            <input id="time" placeholder="8:00 PM" type="text" class="time-pickable" readonly>
+                          </label>
+                        </p>
+
                       </div>
                     </div>
 

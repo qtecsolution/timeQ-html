@@ -8,6 +8,19 @@
   #all-todo-body .all-todo .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  #staticBackdrop .activity-side {
+    margin-top: 20px;
+  }
+
+  #staticBackdrop .inner-modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  #staticBackdrop .modal-dialog-centered {
+    min-height: 91vh;
+    min-width: 900px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -18,6 +31,11 @@
   .all-todo-list .all-todo-nav {
     flex-direction: column;
     gap: 20px;
+  }
+
+  #staticBackdrop .modal-dialog-centered {
+    min-height: 91vh;
+    min-width: 700px;
   }
 }
 
@@ -56,5 +74,10 @@
   #all-todo-body .inProgress-header .color-dropdown .dropdown-menu,
   #all-todo-body .upcoming-header .color-dropdown .dropdown-menu {
     transform: translate(15px, 20px) !important;
+  }
+
+  #staticBackdrop .modal-dialog-centered {
+    min-height: 91vh;
+    min-width: 400px;
   }
 }

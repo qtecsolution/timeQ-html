@@ -5,13 +5,15 @@ body {
 }
 
 #staticBackdrop .modal-dialog-centered {
-  min-height: 91vh;
-  min-width: 1200px;
+
+  min-width: 95%;
   border-radius: 24px;
   align-items: flex-start;
 }
 
-
+.modal .modal-content {
+  min-height: 1159px;
+}
 
 #staticBackdrop .modal-header {
   border: none;
@@ -104,7 +106,7 @@ body {
 
 #staticBackdrop .activity-side {
   border: 1px solid #E3E4E8;
-  height: 480px;
+  height: 999px;
   position: relative;
 }
 
@@ -117,7 +119,7 @@ body {
 
 #staticBackdrop .activity-side ul {
   overflow-y: scroll;
-  height: 250px;
+  height: 750px;
   padding-top: 24px;
 }
 

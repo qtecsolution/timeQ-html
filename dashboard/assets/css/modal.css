@@ -317,3 +317,89 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
+
+.select-menu .select-btn {
+  cursor: pointer;
+}
+
+.select-menu .select-btn span {
+  color: #141B34;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+
+.select-menu .options {
+  position: absolute;
+  width: 200px;
+  overflow-y: auto;
+  max-height: 295px;
+  padding: .5px;
+  margin-top: 10px;
+  background: #fff;
+  animation-name: fadeInDown;
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  border-radius: 8px;
+  border: 0.5px solid rgba(31, 41, 55, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(31, 41, 55, 0.15);
+}
+
+.select-menu .options .option {
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  /* border-radius: 8px; */
+  align-items: center;
+  background: #fff;
+}
+
+.select-menu .options .option:hover,
+.select-menu .options .option .option-text:hover {
+  background: #EFF1FA;
+  color: #141B3A;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.select-menu .options .option .option-text {
+  color: #464F60;
+  font-size: 14px;
+}
+
+
+.select-menu.active .options {
+  display: block;
+  opacity: 0;
+  z-index: 10;
+  animation-name: fadeInUp;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 30px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+}

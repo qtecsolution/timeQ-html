@@ -262,3 +262,27 @@ options.forEach((option) => {
     optionMenu.classList.remove("active");
   });
 });
+
+
+
+// 
+let selectContainer = document.querySelector(".select-container");
+let select = document.querySelector(".select");
+let input = document.getElementById("input");
+let options1 = document.querySelectorAll(".select-container .option");
+
+select.onclick = () => {
+  selectContainer.classList.toggle("active");
+};
+
+options1.forEach((e) => {
+  e.addEventListener("click", () => {
+    input.value = e.innerText;
+    selectContainer.classList.remove("active");
+    options1.forEach((e) => {
+      e.classList.remove("selected");
+    });
+    e.classList.add("selected");
+  });
+});
+

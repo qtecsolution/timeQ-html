@@ -403,3 +403,74 @@ body {
     opacity: 0;
   }
 }
+
+/* ---------------------------- */
+.priority .select-container {
+  position: relative;
+  width: 200px;
+}
+
+.priority .select-container .select input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #141B34;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.priority .select-container .select input::placeholder {
+  color: #141B34;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.priority .select-container .option-container {
+  position: relative;
+  height: 0;
+  overflow-y: scroll;
+  transition: 0.0s;
+  border-radius: 8px;
+  background: #FFF;
+}
+
+.priority .select-container.active .option-container {
+  height: 139px;
+  width: 200px;
+  position: absolute;
+}
+
+.priority .select-container .option-container::-webkit-scrollbar {
+  width: 1px;
+}
+
+.priority .select-container .option-container .option {
+  position: relative;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.priority .select-container .option-container .option.selected {
+  background: #EFF1FA;
+  pointer-events: none;
+}
+
+.priority .select-container .option-container .option:hover {
+  background: #EFF1FA;
+  padding-left: 20px;
+}
+
+.priority .select-container .option-container .option label {
+  font-size: 1.1rem;
+  color: #000;
+  cursor: pointer;
+}

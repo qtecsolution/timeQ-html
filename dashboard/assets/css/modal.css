@@ -35,6 +35,71 @@ body {
   justify-content: space-between;
 }
 
+/* #staticBackdrop .todo-status .control input {
+  padding-left: -10px;
+  color: #141B34;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  background: transparent;
+  width: 100px;
+}
+
+#staticBackdrop .todo-status .control input::placeholder {
+  color: #141B34;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#staticBackdrop .todo-status .datepicker-dropdown .datepicker-picker {
+  padding: 20px 20px 20px 20px;
+  border-radius: 11px;
+  border: 0.5px solid rgba(31, 41, 55, 0.15);
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(31, 41, 55, 0.15);
+}
+
+.datepicker .days-of-week {
+  display: flex;
+  margin: 20px 0;
+  padding-bottom: 16px;
+}
+
+.datepicker-header .datepicker-controls .button {
+  color: #141B34;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.datepicker .dow {
+  color: #464F60;
+  text-align: center;
+  font-size: 13px;
+}
+
+.datepicker-cell.prev:not(.disabled),
+.datepicker-cell.next:not(.disabled) {
+  color: hsl(0, 0%, 48%);
+  display: none;
+}
+
+.datepicker-cell.day {
+  font-size: 14px;
+}
+
+.datepicker-cell.day {
+  font-size: 14px;
+  transition: all .4s ease;
+}
+
+.datepicker-cell.day:hover {
+  background-color: #485fc7;
+  color: #fff;
+  cursor: pointer;
+} */
+
 #staticBackdrop .todo-status .title {
   color: #686D82;
   font-size: 14px;
@@ -128,6 +193,7 @@ body {
 #staticBackdrop .activity-side ul .hide {
   margin: 15px 0 15px -15px;
 }
+
 #staticBackdrop .activity-side ul .Show {
   margin: 0px 0 15px -15px;
 }
@@ -446,7 +512,7 @@ body {
 /* ---------------------------- */
 .priority .select-container {
   position: relative;
-  width: 200px;
+  width: 60px;
 }
 
 .priority .select-container .select input {

@@ -12,13 +12,9 @@
   <link rel="stylesheet" href="assets/plugin/datatables/responsive.dataTables.min.css">
   <link rel="stylesheet" href="assets/plugin/datatables/dataTables.bootstrap5.min.css">
   <link rel="stylesheet" href="assets/css/my-task.style.min.css">
-
-  <!-- Datepicker style-->
-  <!-- <link rel="stylesheet" href="assets/css/datepicker-bulma.css"> -->
-
   <!-- NEW-STYLES -->
   <link rel="stylesheet" href="assets/css/dashboard.css">
-  <link rel="stylesheet" href="assets/css/modal.css">
+  <link rel="stylesheet" href="assets/css/todo-categories.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
@@ -809,432 +805,63 @@
           </div>
         </nav>
       </div>
-      <!-- Button trigger modal -->
-      <div class="d-flex align-items-center justify-content-center w-100 h-100 ">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          Open modal
-        </button>
-      </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header header-text">
-              <h2 class="modal-title" id="staticBackdropLabel">Go to Gym</h2>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-            </div>
-            <div class="modal-body">
-              <div class="inner-modal-body d-grid  ">
-                <div>
-                  <div class="todo-status d-grid   ">
-                    <div class="status">
-                      <img src="./assets/images/modal/status.svg">
-                      <span class="title">status</span>
-                      <div class="innder-button">
-                        <button class="d-flex align-items-center ">
-                          <span>Completed</span>
-                          <img src="./assets/images/modal/play.svg">
-                        </button>
-                      </div>
-                    </div>
+      <div class="main-body">
+        <div class="body-header">
+          <h1>Categories</h1>
+          <button>
+            <img src="" alt="">
+            <span> Task View</span>
+          </button>
+        </div>
 
-                    <div class="date d-flex g-2 ">
-                      <img src="./assets/images/modal/calendar.svg">
-                      <div class="">
-                        <span class="title">Date</span>
-                        <p>01 Feb, 2024</p>
-                      </div>
-                    </div>
-
-                    <div class="date d-flex g-2 ">
-                      <img src="./assets/images/modal/clock.svg">
-                      <div id="time-picker">
-                        <span class="title">Time</span>
-                        <p>
-                          <label for="time">
-                            <input id="time" placeholder="8:00 PM" type="text" class="time-pickable" readonly>
-                          </label>
-                        </p>
-
-                      </div>
-                    </div>
-
-                    <div class="date d-flex g-2 ">
-                      <img src="./assets/images/modal/priority.svg">
-                      <div class="priority">
-                        <span class="title">Priority</span>
-                        <div class="select-container">
-                          <div class="select">
-                            <input type="text" id="input" placeholder="High" onfocus="this.blur();">
-                          </div>
-                          <div class="option-container">
-                            <div class="option">
-                              <label class="d-flex align-items-center gap-2 ">
-                                <img src="./assets/images/modal/high.svg" alt=""> High
-                              </label>
-                            </div>
-                            <div class="option">
-                              <label class="d-flex align-items-center gap-2 ">
-                                <img src="./assets/images/modal/Medium.svg" alt="">
-                                Medium
-                              </label>
-                            </div>
-                            <div class="option">
-                              <label class="d-flex align-items-center gap-2 ">
-                                <img src="./assets/images/modal/low.svg" alt="">
-                                Low
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="date d-flex g-2 ">
-                      <img src="./assets/images/modal/category.svg">
-                      <div class="">
-                        <span class="title">Category</span>
-                        <div class="select-menu">
-                          <div class="select-btn">
-                            <span class="sBtn-text">Shopping</span>
-                          </div>
-
-                          <ul class="options">
-                            <li class="option">
-                              <span class="option-text d-flex align-items-center gap-2">
-                                <img src="./assets/images/modal/double-right.svg"> Work
-                              </span>
-                            </li>
-
-                            <li class="option">
-                              <span class="option-text d-flex align-items-center gap-2 ps-3">
-                                <img src="./assets/images/modal/double-right.svg"> Shopping
-                              </span>
-                            </li>
-
-                            <li class="option">
-                              <span class="option-text d-flex align-items-center gap-2">
-                                <img src="./assets/images/modal/double-right.svg"> Education
-                              </span>
-                            </li>
-
-                            <li class="option">
-                              <span class="option-text d-flex align-items-center gap-2 ps-3">
-                                <img src="./assets/images/modal/double-right.svg"> Practice
-                              </span>
-                            </li>
-                            <li class="option">
-                              <span class="option-text d-flex align-items-center gap-2">
-                                <img src="./assets/images/modal/double-right.svg"> Work
-                              </span>
-                            </li>
-
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="description">
-                    <form class="d-flex align-items-center gap-2 ">
-                      <img src="./assets/images/modal/description.svg" alt="">
-                      <input type="text" name="" id="" placeholder="Add Description">
-                    </form>
-                  </div>
-
-                  <div class="write-description">
-                    <div class="inner-description">
-                      <div class="">
-                        <textarea name="" placeholder="Write something" id="" cols="30" rows="10"></textarea>
-                      </div>
-
-                      <div class="write-description-footer">
-
-                        <div class="d-flex justify-content-between align-items-center ">
-
-                          <div class="d-flex align-items-center left-section">
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame.svg" alt="">
-                              <img src="./assets/images/modal/Frame (1).svg" alt="">
-                              <img src="./assets/images/modal/Frame (2).svg" alt="">
-                              <img src="./assets/images/modal/Frame (3).svg" alt="">
-                            </div>
-
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame (4).svg" alt="">
-                              <img src="./assets/images/modal/Frame (5).svg" alt="">
-                              <img src="./assets/images/modal/Frame (6).svg" alt="">
-                            </div>
-
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame (7).svg" alt="">
-                              <img src="./assets/images/modal/Frame (8).svg" alt="">
-                              <img src="./assets/images/modal/Frame (9).svg" alt="">
-                            </div>
-                          </div>
-
-                          <div class="d-flex align-items-center right-section">
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame (10).svg" alt="">
-                              <img src="./assets/images/modal/Frame (11).svg" alt="">
-                            </div>
-
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame (12).svg" alt="">
-                              <img src="./assets/images/modal/Frame (13).svg" alt="">
-                              <img src="./assets/images/modal/Frame (14).svg" alt="">
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="write-description d-flex flex-row-reverse ">
-                      <button class="save-button">Save</button>
-                      <button class="cancel-button">Cancel</button>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="activity-side">
-                  <div class="activity-header d-flex justify-content-between ">
-                    <h2>Activity</h2>
-                    <img src="./assets/images/modal/search.svg">
-                  </div>
-
-                  <ul>
-
-                    <div class="d-flex gap-2 hide Show">
-                      <img src="./assets/images/modal/right.svg">
-                      <p class="text">Show More</p>
-                    </div>
-
-                    <li class="pb-3">
-                      You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                    </li>
-
-                    <li class="pb-3">
-                      You created this task 10:14 am
-                    </li>
-
-                    <li class="pb-3">
-                      You set the due date to Today 10:14 am
-                    </li>
-
-                    <li class="pb-3">
-                      You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                    </li>
-                    <li class="pb-3">
-                      You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                    </li>
-                    <li class="pb-3">
-                      You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                    </li>
-                    <li class="pb-3">
-                      You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                    </li>
-
-                    <div class="d-flex gap-2 hide">
-                      <img src="./assets/images/modal/chevron-right.svg">
-                      <p class="text">Hide</p>
-                    </div>
-                    <li>
-                      You changed due date from Feb 15, 1:30am to Feb 15, 1 am
-                    </li>
-
-                    <div class="reply-section">
-                      <div class="p-3">
-                        <div class="d-flex justify-content-between ">
-                          <div class="d-flex gap-2 ">
-                            <div class="mt-1">
-                              <img src="./assets/images/modal/Ellipse 1.png" alt="">
-                            </div>
-                            <div class="text">
-                              <p>Mr Employee</p>
-                              <span>06-02-24, 3:20 pm</span>
-                            </div>
-                          </div>
-
-
-                          <div class="dropdown reply-option">
-                            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <img class="align-self-start" src="./assets/images/modal/threedots.svg" alt="">
-                            </a>
-
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item d-flex align-items-center gap-2 " href="#">
-                                  <img src="./assets/images/modal/pencil.svg" alt="">
-                                  <span>Edit</span>
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                  <img src="./assets/images/modal/trash.svg" alt="">
-                                  <span>Delete</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-
-                        </div>
-
-                        <form action="">
-                          <input type="text" placeholder="Enter your text" name="" id="">
-                        </form>
-                      </div>
-
-                      <div class="d-flex justify-content-between reply-footer p-3 ">
-                        <div class="d-flex align-items-center gap-2 image">
-                          <img src="./assets/images/modal/thumbs-up.svg" alt="">
-                          <img src="./assets/images/modal/smile.svg" alt="">
-                        </div>
-                        <div class="reply">
-                          <p>reply</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="reply-section">
-                      <div class="p-3">
-                        <div class="d-flex justify-content-between ">
-                          <div class="d-flex gap-2 ">
-                            <div class="mt-1">
-                              <img src="./assets/images/modal/Ellipse 1.png" alt="">
-                            </div>
-                            <div class="text">
-                              <p>Mr Employee</p>
-                              <span>06-02-24, 3:20 pm</span>
-                            </div>
-                          </div>
-
-
-                          <div class="dropdown reply-option">
-                            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <img class="align-self-start" src="./assets/images/modal/threedots.svg" alt="">
-                            </a>
-
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item d-flex align-items-center gap-2 " href="#">
-                                  <img src="./assets/images/modal/pencil.svg" alt="">
-                                  <span>Edit</span>
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                  <img src="./assets/images/modal/trash.svg" alt="">
-                                  <span>Delete</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-
-                        </div>
-
-                        <form action="">
-                          <input type="text" placeholder="Enter your text" name="" id="">
-                        </form>
-                      </div>
-
-                      <div class="d-flex justify-content-between reply-footer p-3 ">
-                        <div class="d-flex align-items-center gap-2 image">
-                          <img src="./assets/images/modal/thumbs-up.svg" alt="">
-                          <img src="./assets/images/modal/smile.svg" alt="">
-                        </div>
-                        <div class="reply">
-                          <p>reply</p>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </ul>
-
-                  <div class="textarea">
-                    <div class="inner-textarea">
-                      <div class="">
-                        <input type="text" placeholder="Enter your text">
-                      </div>
-
-                      <div class="d-flex justify-content-between align-items-center textarea-footer">
-                        <div class="d-flex align-items-center gap-3 ">
-                          <span class="b">B</span>
-                          <span class="i">I</span>
-                          <span class="s">s</span>
-                          <img src="./assets/images/modal/paperclip.svg" alt="">
-                        </div>
-                        <div class="d-flex align-items-center gap-2">
-                          <img src="./assets//images//modal/link.svg" alt="">
-                          <img src="./assets//images//modal/smile.svg" alt="">
-                          <button>Send</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="body-content">
+          <div class="">
+            <span></span>
+            <img src="" alt="">
           </div>
+
+          <ul>
+            <li>
+              <span></span>
+              <div class="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
+
     </div>
+  </div>
 
 
-    <!-- Jquery Core Js -->
-    <script src="assets/bundles/libscripts.bundle.js"></script>
+  <!-- Jquery Core Js -->
+  <script src="assets/bundles/libscripts.bundle.js"></script>
+  <!-- Jquery Page Js -->
+  <script src="./js/template.js"></script>
+  <!-- Plugin Js-->
+  <script src="assets/bundles/dataTables.bundle.js"></script>
 
-    <!-- Plugin Js-->
-    <script src="assets/bundles/dataTables.bundle.js"></script>
-    <!-- Datepicker js-->
-    <!-- <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
-
-    <script src="./js/page/datepicker.min.js"></script>
-    <script src="./js/page/live-demo.js"></script> -->
-
-    <!-- Jquery Page Js -->
-    <script src="./js/template.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $('#category-table').DataTable({
-          // responsive: true,
-          dom: '<"top">rt<"bottom"irlp>',
-          "emptyTable": "No data available in table",
-          "info": "Showing _START_ to _END_ of _TOTAL_ entries",
-          language: {
-            info: '1-10 of 17',
-            'paginate': {
-              'previous': '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.50038 8.10684C4.2456 8.30703 4.2456 8.69297 4.50038 8.89316L10.1911 13.3644C10.5192 13.6222 11 13.3885 11 12.9713L11 4.02873C11 3.61152 10.5192 3.37781 10.1911 3.63557L4.50038 8.10684Z" fill="#BCC2CE"/></svg>',
-              'next': '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4996 8.10684C11.7544 8.30703 11.7544 8.69297 11.4996 8.89316L5.80891 13.3644C5.48085 13.6222 5 13.3885 5 12.9713L5 4.02873C5 3.61152 5.48085 3.37781 5.80891 3.63557L11.4996 8.10684Z" fill="#464F60"/></svg>'
-            }
+  <script>
+    $(document).ready(function () {
+      $('#category-table').DataTable({
+        // responsive: true,
+        dom: '<"top">rt<"bottom"irlp>',
+        "emptyTable": "No data available in table",
+        "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+        language: {
+          info: '1-10 of 17',
+          'paginate': {
+            'previous': '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.50038 8.10684C4.2456 8.30703 4.2456 8.69297 4.50038 8.89316L10.1911 13.3644C10.5192 13.6222 11 13.3885 11 12.9713L11 4.02873C11 3.61152 10.5192 3.37781 10.1911 3.63557L4.50038 8.10684Z" fill="#BCC2CE"/></svg>',
+            'next': '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4996 8.10684C11.7544 8.30703 11.7544 8.69297 11.4996 8.89316L5.80891 13.3644C5.48085 13.6222 5 13.3885 5 12.9713L5 4.02873C5 3.61152 5.48085 3.37781 5.80891 3.63557L11.4996 8.10684Z" fill="#464F60"/></svg>'
           }
-        });
+        }
       });
-
-      initialize();
-      hljs.highlightAll();
-      document.getElementById('types').querySelectorAll('input').forEach((el) => {
-        el.addEventListener('change', onChangeType);
-      });
-      document.getElementById('direction').querySelectorAll('input').forEach((el) => {
-        el.addEventListener('change', onChangeDirection);
-      });
-      const optsForm = document.getElementById('options');
-      optsForm.querySelectorAll('input[type=text], input[type=radio], select').forEach((el) => {
-        el.addEventListener('change', onChangeInputOption);
-      });
-      optsForm.querySelectorAll('textarea').forEach((el) => {
-        el.addEventListener('change', onChangeTextareaOption);
-      });
-      optsForm.querySelectorAll('.checkbox').forEach((el) => {
-        el.addEventListener('click', onClickCheckboxOptions);
-      });
-      switchPicker('input');
-    </script>
+    });
+  </script>
 
 </body>
 

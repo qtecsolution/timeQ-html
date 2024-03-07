@@ -263,8 +263,6 @@ options.forEach((option) => {
   });
 });
 
-
-
 // 
 let selectContainer = document.querySelector(".select-container");
 let select = document.querySelector(".select");
@@ -285,4 +283,3 @@ options1.forEach((e) => {
     e.classList.add("selected");
   });
 });
-

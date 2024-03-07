@@ -1,0 +1,36 @@
+.main-body {
+  background: #F7F7FA;
+  padding: 24px;
+}
+
+.main-body .inner-body {
+  border-radius: 10px;
+  border: 1px solid #E3E4E8;
+  background: #FFF;
+  height: 1211px;
+}
+
+.main-body .body-header {
+  padding: 20px;
+  border-bottom: 1px solid #E3E4E8;
+}
+
+.main-body .body-header h1 {
+  color: #0A0A0A;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.main-body .body-header button {
+  padding: 10px;
+  gap: 10px;
+  border-radius: 8px;
+  background: #FF645A;
+}
+
+.main-body .body-header button span {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 148.6%;
+}

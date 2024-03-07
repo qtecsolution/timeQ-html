@@ -34,3 +34,189 @@
   font-weight: 600;
   line-height: 148.6%;
 }
+
+.main-body .priorities-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  padding: 20px;
+}
+
+.main-body .priorities-body .priorities-head {
+  border-radius: 10px 10px 0px 0px;
+  background: rgba(244, 247, 252, 0.75);
+  margin-top: 23px;
+}
+
+.main-body .priorities-body .priorities-head p {
+  color: #464F60;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.52px;
+  text-transform: uppercase;
+}
+
+.main-body .priorities-body .priorities-head,
+.main-body .priorities-body .priorities-list {
+  padding: 14px 80px 14px 20px;
+}
+
+.main-body .priorities-body .priorities-list {
+  border-radius: 10px;
+  border: 1px solid #E3E4E8;
+  background: #FFF;
+}
+
+.main-body .priorities-body ul {
+  padding-left: 0;
+}
+
+.main-body .priorities-body .priorities-list p {
+  width: 100px;
+}
+
+.main-body .priorities-body .priorities-list input {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-body .priorities-body .priorities-list img {
+  cursor: pointer;
+}
+
+.main-body .priorities-body .priorities-list .topest,
+.main-body .priorities-body .priorities-list .top,
+.main-body .priorities-body .priorities-list .hight,
+.main-body .priorities-body .priorities-list .medium,
+.main-body .priorities-body .priorities-list .low,
+.main-body .priorities-body .priorities-list .lowest {
+  padding: 1px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.42px;
+  text-transform: capitalize;
+}
+
+.main-body .priorities-body .priorities-list .topest {
+  background: #FFF1F0;
+  color: #FF473C;
+}
+
+.main-body .priorities-body .priorities-list .top {
+  background: #DBFFFC;
+  color: #48C9BF;
+}
+
+.main-body .priorities-body .priorities-list .hight {
+  background: #F0F5FF;
+  color: #377DF5;
+}
+
+.main-body .priorities-body .priorities-list .medium {
+  background: #F8F1F9;
+  color: #B427CF;
+}
+
+.main-body .priorities-body .priorities-list .low {
+  background: #FFF7E0;
+  color: #E7B51C;
+}
+
+.main-body .priorities-body .priorities-list .lowest {
+  background: #FFE7EF;
+  color: #F02D6C;
+}
+
+.main-body .priorities-body .create-priority {
+  border-radius: 10px;
+  border: 1px solid #EFEFEF;
+  background: #FFF;
+  padding: 20px 25px 25px 25px;
+  margin-top: 23px;
+}
+
+.main-body .priorities-body .create-priority .create-priority-head {
+  border-bottom: 1px solid #E3E4E8;
+}
+
+.main-body .priorities-body .create-priority .create-priority-head p {
+  color: #0A0A0A;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
+
+.main-body .priorities-body .create-priority .create-priority-head img {
+  cursor: pointer;
+}
+
+.main-body .priorities-body .create-priority form {
+  padding: 17px 0 20px 0;
+}
+
+.main-body .priorities-body .create-priority form label {
+  color: #464F60;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.main-body .priorities-body .create-priority form .star {
+  color: #FF645A;
+}
+
+.main-body .priorities-body .create-priority form .title {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 0px 0px 1px rgba(104, 113, 130, 0.16), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  outline: none;
+  border: none;
+}
+
+.main-body .priorities-body .create-priority form .color {
+  border-radius: 34px;
+  width: 23px;
+  height: 24px;
+  cursor: pointer;
+  padding: 3px;
+  background-color: #FF645A;
+  border: none;
+  outline: none;
+}
+
+.main-body .priorities-body .create-priority form .color::placeholder {
+  border-radius: 34px;
+  width: 23px;
+  height: 24px;
+}
+
+.main-body .priorities-body .create-priority form textarea {
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: #F7F9FD;
+  outline: none;
+  border: none;
+}
+
+
+.main-body .create-priority .create-priority-button .close {
+  color: #464F60;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 148.6%;
+}
+
+.main-body .create-priority .create-priority-button .create {
+  padding: 10px;
+  border-radius: 8px;
+  background: #FF645A;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 148.6%;
+}

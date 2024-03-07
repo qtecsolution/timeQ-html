@@ -816,9 +816,116 @@
             </button>
           </div>
 
+          <div class="priorities-body">
+            <div>
+              <ul class="d-flex flex-column gap-3">
+
+                <div class="priorities-head d-flex justify-content-between ">
+                  <p style="width: 100px;"><span>#</span> NAME</p>
+                  <p>color</p>
+                  <p>action</p>
+                </div>
+
+                <li class="priorities-list d-flex justify-content-between ">
+                  <p><span class="topest">Topest</span></p>
+                  <input type="color" name="" id="" value="#FF645A">
+                  <div class="d-flex gap-3">
+                    <img src="./assets/images/todo-priorities/edit.svg">
+                    <img src="./assets/images/todo-priorities/delete.svg">
+                  </div>
+                </li>
+
+                <li class="priorities-list d-flex justify-content-between ">
+                  <p><span class="top">Top</span></p>
+                  <input type="color" id="" name="" value="#48C9BF">
+
+                  <div class="d-flex gap-3">
+                    <img src="./assets/images/todo-priorities/edit.svg">
+                    <img src="./assets/images/todo-priorities/delete.svg">
+                  </div>
+                </li>
+                <li class="priorities-list d-flex justify-content-between ">
+                  <p><span class="hight">Hight</span></p>
+                  <input type="color" id="" name="" value="#377DF5">
+
+                  <div class="d-flex gap-3">
+                    <img src="./assets/images/todo-priorities/edit.svg">
+                    <img src="./assets/images/todo-priorities/delete.svg">
+                  </div>
+                </li>
+                <li class="priorities-list d-flex justify-content-between ">
+                  <p><span class="medium">Medium</span></p>
+                  <input type="color" id="" name="" value="#C134DC">
+
+                  <div class="d-flex gap-3">
+                    <img src="./assets/images/todo-priorities/edit.svg">
+                    <img src="./assets/images/todo-priorities/delete.svg">
+                  </div>
+                </li>
+                <li class="priorities-list d-flex justify-content-between ">
+                  <p><span class="low">Low</span></p>
+                  <input type="color" id="" name="" value="#E7B51C">
+
+                  <div class="d-flex gap-3">
+                    <img src="./assets/images/todo-priorities/edit.svg">
+                    <img src="./assets/images/todo-priorities/delete.svg">
+                  </div>
+                </li>
+                <li class="priorities-list d-flex justify-content-between ">
+                  <p><span class="lowest">Lowest</span></p>
+                  <input type="color" id="" name="" value="#F02D6C">
+
+                  <div class="d-flex gap-3">
+                    <img src="./assets/images/todo-priorities/edit.svg">
+                    <img src="./assets/images/todo-priorities/delete.svg">
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="create-priority">
+              <div class="create-priority-head d-flex justify-content-between pb-3 ">
+                <p>Create priority</p>
+                <img src="./assets/images/todo-priorities/close.svg" alt="">
+              </div>
+
+              <form class="">
+                <div class="d-flex flex-column gap-3 ">
+                  <label for="title">
+                    Priority Title <span class="star">*</span> :
+                  </label>
+                  <input class="title" type="text" name="title" id="title" placeholder="Low">
+                </div>
+
+                <div class="d-flex flex-column gap-3 pt-3 ">
+                  <label for="description">
+                    Description :
+                  </label>
+                  <textarea name="description" id="description" cols="30" rows="7" placeholder="Explain the Priority"></textarea>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 pt-3 ">
+                  <label for="color">
+                    Color <span class="star">*</span> :
+                  </label>
+                  <input class="color" type="color" name="color" id="color" value="#FF645A">
+                  <span>#FF645A</span>
+                </div>
+              </form>
+
+              <div class="create-priority-button d-flex justify-content-end gap-3 ">
+                <button class="close">Close</button>
+                <button class="create">Create</button>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
+
+
 
     </div>
   </div>

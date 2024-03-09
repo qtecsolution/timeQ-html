@@ -15,6 +15,7 @@
   <!-- NEW-STYLES -->
   <link rel="stylesheet" href="assets/css/dashboard.css">
   <link rel="stylesheet" href="assets/css/today.css">
+  <link rel="stylesheet" href="assets/css/datepicker/jquery.datepicker2.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
@@ -818,11 +819,12 @@
 
             <div class="d-flex gap-4">
               <label for="">
-                <input type="text" name="" id="" placeholder="From Date">
+                <input type="text" name="from_date" id="from_date" data-select="datepicker"
+                  placeholder="From Date">
               </label>
 
               <label for="">
-                <input type="text" name="" id="" placeholder="To Date">
+                <input type="text" name="to_date" id="to_date" data-select="datepicker" placeholder="To Date">
               </label>
 
               <label for="d-flex align-items-center gap-3">
@@ -953,6 +955,8 @@
   <script src="assets/bundles/libscripts.bundle.js"></script>
   <!-- Jquery Page Js -->
   <script src="./js/template.js"></script>
+  <script src="./js/datepicker.min.js"></script>
+  <script src="./js/datepicker.js"></script>
   <!-- Plugin Js-->
   <script src="assets/bundles/dataTables.bundle.js"></script>
 

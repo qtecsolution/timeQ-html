@@ -1,7 +1,30 @@
+@media screen and (max-width: 1500px) {
+  .today .inner-today .today-header label {
+    width: 160px;
+  }
+
+  .today .inner-today .today-header label input {
+    width: 100px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #all-todo-body .all-todo .grid {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .today .inner-today .today-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .today .inner-today .date-picker {
+    justify-content: space-between;
+  }
+  .today .inner-today .today-header label {
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -21,6 +44,12 @@
     min-height: 91vh;
     min-width: 900px;
   }
+
+  .today .inner-today .today-header,
+  .today .inner-today .today-header .date-picker {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -37,17 +66,18 @@
     min-height: 91vh;
     min-width: 700px;
   }
+
+  .today .inner-today .today-header,
+  .today .inner-today .today-header .date-picker {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
   #all-todo-body .all-todo .grid {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  /* .all-todo-list .all-todo-nav {
-    flex-direction: column;
-    gap: 20px;
-  } */
 
   .dropdown .dropdown-menu {
     transform: translate(44px, 20px) !important;
@@ -86,4 +116,16 @@
     min-height: 91vh;
     min-width: 380px;
   }
+
+  .today {
+    margin: 8px;
+  }
+
+  .today .inner-today .today-header,
+  .today .inner-today .today-header .date-picker {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
 }

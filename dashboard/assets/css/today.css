@@ -30,7 +30,7 @@
 }
 
 .today .inner-today .today-header label {
-  width: 250px;
+  /* width: 250px; */
   padding: 6px 12px;
   border-radius: 6px;
   background: #FFF;
@@ -60,7 +60,6 @@
 .today .inner-today .today-header .add-btn {
   justify-content: center;
   align-items: center;
-  gap: 10px;
   border-radius: 8px;
   background: #FF645A;
   color: #FFF;

@@ -55,6 +55,11 @@
   .today .inner-today .today-header label input {
     width: 90%;
   }
+
+  .main-body .priorities-body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -80,6 +85,11 @@
 
   .today .inner-today .today-header label input {
     width: 90%;
+  }
+
+  .main-body .priorities-body {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -148,4 +158,14 @@
   .today .inner-today .today-body .todo-right .text .inner-text {
     align-items: flex-start;
   }
+
+  .main-body .priorities-body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .main-body .body-content .main-list .main-list1 {
+    padding-left: 10px;
+  }
+
 }

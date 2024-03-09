@@ -220,3 +220,34 @@
   font-weight: 600;
   line-height: 148.6%;
 }
+
+.priorities-list .modal-title {
+  color: #0A0A0A;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
+
+.priorities-list .modal-body .inner-content p {
+  color: #464F60;
+  text-align: center;
+  margin-top: 42px;
+  font-size: 16px;
+  line-height: 148.6%;
+}
+
+.priorities-list .modal-footer .cancel {
+  color: #464F60;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 148.6%;
+}
+
+.priorities-list .modal-footer .delete {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 148.6%;
+  background: #FF645A;
+}

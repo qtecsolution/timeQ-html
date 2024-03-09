@@ -168,4 +168,44 @@
     padding-left: 10px;
   }
 
+  .main-body .priorities-body .priorities-head,
+  .main-body .priorities-body .priorities-list {
+    padding: 10px;
+  }
+
+  #staticBackdrop .inner-modal-body .description {
+    width: 350px;
+
+  }
+
+  #staticBackdrop .inner-modal-body .description form {
+    padding: 10px 13px;
+    width: 350px;
+  }
+
+  .inner-modal-body .write-description .inner-description {
+    width: 350px;
+  }
+
+  .write-description .inner-description .write-description-footer .left-section {
+    gap: 22px;
+  }
+
+  .write-description .inner-description .write-description-footer .left-section div {
+    gap: 10px !important;
+  }
+
+  .write-description .inner-description .write-description-footer .inner-footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start !important;
+  }
+
+  #staticBackdrop .activity-side {
+    width: 350px;
+  }
+
+  .write-description .write-description {
+    width: 90%;
+  }
 }

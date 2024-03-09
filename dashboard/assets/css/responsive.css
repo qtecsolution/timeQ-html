@@ -21,6 +21,7 @@
   .today .inner-today .date-picker {
     justify-content: space-between;
   }
+
   .today .inner-today .today-header label {
     width: 100%;
   }
@@ -50,6 +51,10 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .today .inner-today .today-header label input {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -71,6 +76,10 @@
   .today .inner-today .today-header .date-picker {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .today .inner-today .today-header label input {
+    width: 90%;
   }
 }
 
@@ -127,5 +136,16 @@
     gap: 20px;
   }
 
+  .today .inner-today .today-header label input {
+    width: 90%;
+  }
 
+  .today .inner-today .today-body .todo-right .text {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .today .inner-today .today-body .todo-right .text .inner-text {
+    align-items: flex-start;
+  }
 }

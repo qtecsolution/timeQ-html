@@ -28,3 +28,117 @@
   font-weight: 400;
   text-transform: capitalize;
 }
+
+.today .inner-today .today-header label {
+  width: 250px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 0px 0px 1px rgba(104, 113, 130, 0.16), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.today .inner-today .today-header label input {
+  outline: none;
+  border: none;
+}
+
+.today .inner-today .today-header label input::placeholder {
+  color: #A1A9B8;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.today .inner-today .today-header .complete-btn {
+  color: #141B34;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 148.6%;
+}
+
+.today .inner-today .today-header .add-btn {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #FF645A;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.today .inner-today .today-body .single-todo {
+  border-bottom: 1px solid #E3E4E8;
+}
+
+/* Hide the default checkbox */
+.today .inner-today .today-body .custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Style the custom checkbox */
+.today .inner-today .today-body .checkmark {
+  /* margin-top: 5px; */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  /* background-color: #ccc; */
+  border-radius: 100%;
+  position: relative;
+  vertical-align: middle;
+  border: 2px solid #FF645A;
+  cursor: pointer;
+}
+
+/* Style the checkmark icon */
+.today .inner-today .today-body .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark icon when the checkbox is checked */
+.today .inner-today .today-body .custom-checkbox input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark icon */
+.today .inner-today .today-body .custom-checkbox .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #FF645A;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.today .inner-today .today-body .todo-right h3 {
+  color: #141B34;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.today .inner-today .today-body .todo-right p {
+  margin: 10px 0;
+  color: #464F60;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.today .inner-today .today-body .todo-right span {
+  color: #686D82;
+  font-size: 12px;
+}
+
+.today .inner-today .today-body .add-task p {
+  color: #686D82;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.today .inner-today .today-body .add-task span {
+  color: #FF645A;
+  margin-right: 15px;
+}

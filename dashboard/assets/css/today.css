@@ -1,0 +1,30 @@
+.today {
+  background: #F7F7FA;
+}
+
+.today .inner-today {
+  /* width: 1636px; */
+  height: 1211px;
+  border-radius: 10px;
+  border: 1px solid #E3E4E8;
+  background: #FFF;
+  padding: 20px;
+}
+
+.today .inner-today .today-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E3E4E8;
+}
+
+.today .inner-today .today-header h2 {
+  color: #0A0A0A;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.today .inner-today .today-header span {
+  color: #686D82;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}

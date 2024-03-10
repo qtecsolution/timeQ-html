@@ -34,7 +34,7 @@
   }
 
   #staticBackdrop .activity-side {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   #staticBackdrop .inner-modal-body {
@@ -43,7 +43,7 @@
 
   #staticBackdrop .modal-dialog-centered {
     min-height: 91vh;
-    min-width: 900px;
+    min-width: 95%;
   }
 
   .today .inner-today .today-header,
@@ -74,7 +74,7 @@
 
   #staticBackdrop .modal-dialog-centered {
     min-height: 91vh;
-    min-width: 700px;
+    min-width: 95%;
   }
 
   .today .inner-today .today-header,
@@ -127,13 +127,13 @@
 
   #staticBackdrop .todo-status {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
   }
 
   #staticBackdrop .modal-dialog-centered {
     min-height: 91vh;
-    min-width: 380px;
+    min-width: 95%;
   }
 
   .today {
@@ -201,11 +201,42 @@
     align-items: flex-start !important;
   }
 
+  .inner-time-picker {
+    left: 220px !important;
+  }
+
+  .select_menu2 .statusOptions {
+    padding: 10px;
+  }
+
+  #staticBackdrop .status .innder-button button .sBtn-text {
+    padding: 8px 5px 8px 0px;
+    font-size: 10px;
+  }
+
+  #staticBackdrop .status .innder-button button img {
+    padding: 0;
+    width: 10px;
+    height: 10px;
+  }
+
+  .jquery-datepicker.is-popup {
+    left: 100px !important;
+  }
+
+  #staticBackdrop .todo-status #from_date {
+    width: 85px;
+  }
+
   #staticBackdrop .activity-side {
-    width: 350px;
+    width: 310px;
   }
 
   .write-description .write-description {
     width: 90%;
+  }
+
+  .inner-modal-body .write-description .accordion {
+    width: 310px;
   }
 }

@@ -16,6 +16,9 @@
   <!-- richtexteditor theme default -->
   <link rel="stylesheet" href="./assets/css/richtexteditor_theme_default.css">
 
+  <!-- datepicker -->
+  <link rel="stylesheet" href="assets/css/datepicker/jquery.datepicker2.css">
+
   <!-- NEW-STYLES -->
   <link rel="stylesheet" href="assets/css/dashboard.css">
   <link rel="stylesheet" href="assets/css/modal.css">
@@ -829,7 +832,7 @@
             <div class="modal-body">
               <div class="inner-modal-body d-grid  ">
                 <div>
-                  <div class="todo-status d-grid   ">
+                  <div class="todo-status d-grid">
                     <div class="status">
                       <img src="./assets/images/modal/status.svg">
                       <span class="title">status</span>
@@ -881,7 +884,9 @@
                       <img src="./assets/images/modal/calendar.svg">
                       <div class="">
                         <span class="title">Date</span>
-                        <p>01 Feb, 2024</p>
+                        <!-- <p>01 Feb, 2024</p> -->
+                        <input type="text" name="from_date" id="from_date" data-select="datepicker"
+                          placeholder="From Date">
                       </div>
                     </div>
 
@@ -973,6 +978,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="write-description">
                     <div class="accordion" id="accordionExample">
                       <div class="accordion-item">
@@ -1188,7 +1194,10 @@
     <!-- Plugin Js-->
     <script src="assets/bundles/dataTables.bundle.js"></script>
 
+    <!-- datepicker -->
+    <script src="./js/datepicker.min.js"></script>
 
+    <!-- text editor -->
     <script type="text/javascript" src="./js/richtexteditor.js"></script>
     <script type="text/javascript" src='./js/richtexteditor_all_plugins.js'></script>
 

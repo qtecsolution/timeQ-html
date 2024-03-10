@@ -35,6 +35,25 @@ body {
   justify-content: space-between;
 }
 
+#staticBackdrop .todo-status #from_date {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #141B34;
+  font-size: 14px;
+  font-weight: 600;
+  width: 120px;
+}
+
+#staticBackdrop .todo-status #from_date::placeholder {
+  color: #141B34;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jquery-datepicker.is-popup {
+  z-index: 99999999;
+}
 
 #staticBackdrop .todo-status .title {
   color: #686D82;
@@ -50,7 +69,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
-  margin-top: 11px;
+  margin-top: 5px;
 }
 
 #staticBackdrop .status .innder-button button .sBtn-text {

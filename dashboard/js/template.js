@@ -30,14 +30,6 @@ $(function () {
     }
   });
 
-  //   $(document).on("click", function (e) {
-  //     if (!$(e.target).closest(".sidebar").length) {
-  //       // Clicked outside of the sidebar
-  //       $(".sidebar").removeClass("open");
-  //       $(".sidebar-mini").removeClass("open");
-  //     }
-  //   });
-
   // cSidebar overflow daynamic height
 
   overFlowDynamic();
@@ -247,23 +239,24 @@ function numberToOption(number) {
 
 activate();
 
-const optionMenu = document.querySelector(".select-menu"),
-  selectBtn = optionMenu.querySelector(".select-btn"),
-  options = optionMenu.querySelectorAll(".option"),
-  sBtn_text = optionMenu.querySelector(".sBtn-text");
+//  Status dropdown menu
+const statusOptionMenu = document.querySelector(".select_menu2"),
+  statusSelectBtn = statusOptionMenu.querySelector(".select_btn2"),
+  statusOptions = statusOptionMenu.querySelectorAll(".option"),
+  status_sBtn_text = statusOptionMenu.querySelector(".sBtn-text");
 
-selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+statusSelectBtn.addEventListener("click", () => statusOptionMenu.classList.toggle("active"));
 
-options.forEach((option) => {
+statusOptions.forEach((option) => {
   option.addEventListener("click", () => {
     let selectedOption = option.querySelector(".option-text").innerText;
-    sBtn_text.innerText = selectedOption;
+    status_sBtn_text.innerText = selectedOption;
 
-    optionMenu.classList.remove("active");
+    statusOptionMenu.classList.remove("active");
   });
 });
 
-// 
+// Priority dropdown menu
 let selectContainer = document.querySelector(".select-container");
 let select = document.querySelector(".select");
 let input = document.getElementById("input");
@@ -284,8 +277,22 @@ options1.forEach((e) => {
   });
 });
 
+// Category dropdown menu
+const optionMenu = document.querySelector(".select-menu"),
+  selectBtn = optionMenu.querySelector(".select-btn"),
+  options = optionMenu.querySelectorAll(".option"),
+  sBtn_text = optionMenu.querySelector(".sBtn-text");
 
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
 
-// 
+options.forEach((option) => {
+  option.addEventListener("click", () => {
+    let selectedOption = option.querySelector(".option-text").innerText;
+    sBtn_text.innerText = selectedOption;
 
+    optionMenu.classList.remove("active");
+  });
+});
+
+// richTextEditor
 var editor1 = new RichTextEditor("#div_editor1");

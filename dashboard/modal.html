@@ -16,13 +16,11 @@
   <!-- richtexteditor theme default -->
   <link rel="stylesheet" href="./assets/css/richtexteditor_theme_default.css">
 
-  <!-- Datepicker style-->
-  <!-- <link rel="stylesheet" href="assets/css/datepicker-bulma.css"> -->
-
   <!-- NEW-STYLES -->
   <link rel="stylesheet" href="assets/css/dashboard.css">
   <link rel="stylesheet" href="assets/css/modal.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
@@ -837,8 +835,44 @@
                       <span class="title">status</span>
                       <div class="innder-button">
                         <button class="d-flex align-items-center ">
-                          <span>Completed</span>
-                          <img src="./assets/images/modal/play.svg">
+                          <div class="select_menu2">
+                            <div class="select_btn2">
+                              <span class="sBtn-text">Shopping</span>
+                              <img src="./assets/images/modal/play.svg">
+                            </div>
+
+                            <ul class="statusOptions">
+                              <li class="option">
+                                <span class="option-text d-flex align-items-center gap-2">
+                                  <img src="./assets/images/modal/to-do.svg"> To-do
+                                </span>
+                              </li>
+
+                              <li class="option">
+                                <span class="option-text d-flex align-items-center gap-2">
+                                  <img src="./assets/images/modal/in-progress.svg"> In Progress
+                                </span>
+                              </li>
+
+                              <li class="option">
+                                <span class="option-text d-flex align-items-center gap-2">
+                                  <img src="./assets/images/modal/upcoming.svg"> Upcoming
+                                </span>
+                              </li>
+
+                              <li class="option">
+                                <span class="option-text d-flex align-items-center gap-2">
+                                  <img src="./assets/images/modal/completed.svg"> Completed
+                                </span>
+                              </li>
+                              <li class="option">
+                                <span class="option-text d-flex align-items-center gap-2">
+                                  <img src="./assets/images/modal/reject.svg"> Reject
+                                </span>
+                              </li>
+
+                            </ul>
+                          </div>
                         </button>
                       </div>
                     </div>
@@ -960,12 +994,8 @@
                           </div>
                         </div>
                       </div>
-
                     </div>
-
-
                   </div>
-
                 </div>
 
                 <div class="activity-side">
@@ -1157,11 +1187,7 @@
 
     <!-- Plugin Js-->
     <script src="assets/bundles/dataTables.bundle.js"></script>
-    <!-- Datepicker js-->
-    <!-- <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
 
-    <script src="./js/page/datepicker.min.js"></script>
-    <script src="./js/page/live-demo.js"></script> -->
 
     <script type="text/javascript" src="./js/richtexteditor.js"></script>
     <script type="text/javascript" src='./js/richtexteditor_all_plugins.js'></script>
@@ -1172,7 +1198,6 @@
     <script>
       $(document).ready(function () {
         $('#category-table').DataTable({
-          // responsive: true,
           dom: '<"top">rt<"bottom"irlp>',
           "emptyTable": "No data available in table",
           "info": "Showing _START_ to _END_ of _TOTAL_ entries",

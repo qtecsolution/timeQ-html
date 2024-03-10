@@ -35,70 +35,6 @@ body {
   justify-content: space-between;
 }
 
-/* #staticBackdrop .todo-status .control input {
-  padding-left: -10px;
-  color: #141B34;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  font-weight: 600;
-  background: transparent;
-  width: 100px;
-}
-
-#staticBackdrop .todo-status .control input::placeholder {
-  color: #141B34;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-#staticBackdrop .todo-status .datepicker-dropdown .datepicker-picker {
-  padding: 20px 20px 20px 20px;
-  border-radius: 11px;
-  border: 0.5px solid rgba(31, 41, 55, 0.15);
-  background: #FFF;
-  box-shadow: 0px 0px 20px 0px rgba(31, 41, 55, 0.15);
-}
-
-.datepicker .days-of-week {
-  display: flex;
-  margin: 20px 0;
-  padding-bottom: 16px;
-}
-
-.datepicker-header .datepicker-controls .button {
-  color: #141B34;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 20px;
-}
-
-.datepicker .dow {
-  color: #464F60;
-  text-align: center;
-  font-size: 13px;
-}
-
-.datepicker-cell.prev:not(.disabled),
-.datepicker-cell.next:not(.disabled) {
-  color: hsl(0, 0%, 48%);
-  display: none;
-}
-
-.datepicker-cell.day {
-  font-size: 14px;
-}
-
-.datepicker-cell.day {
-  font-size: 14px;
-  transition: all .4s ease;
-}
-
-.datepicker-cell.day:hover {
-  background-color: #485fc7;
-  color: #fff;
-  cursor: pointer;
-} */
 
 #staticBackdrop .todo-status .title {
   color: #686D82;
@@ -117,9 +53,10 @@ body {
   margin-top: 11px;
 }
 
-#staticBackdrop .status .innder-button button span {
+#staticBackdrop .status .innder-button button .sBtn-text {
   border-right: 1px dashed #fff;
   padding: 8px 7px 8px 6px;
+  color: #fff;
 }
 
 #staticBackdrop .status .innder-button button img {
@@ -437,6 +374,98 @@ body {
   font-weight: 600;
 }
 
+/* ------------start  Status dropdown---------------- */
+
+.select_menu2 .select_btn2 {
+  cursor: pointer;
+}
+
+.select_menu2 .select_btn2 span {
+  color: #141B34;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+
+.select_menu2 .statusOptions {
+  position: absolute;
+  /* width: 200px; */
+  overflow-y: auto;
+  max-height: 295px;
+  padding: .5px;
+  margin-top: 10px;
+  background: #fff;
+  animation-name: fadeInDown;
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  border-radius: 8px;
+  border: 0.5px solid rgba(31, 41, 55, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(31, 41, 55, 0.15);
+  width: 166px;
+}
+
+.select_menu2 .statusOptions .option {
+  display: flex;
+  /* height: 55px; */
+  cursor: pointer;
+  /* padding: 0 16px; */
+  /* border-radius: 8px; */
+  align-items: center;
+  background: #fff;
+}
+
+.select_menu2 .statusOptions .option:hover,
+.select_menu2 .statusOptions .option .option-text:hover {
+  background: #EFF1FA;
+  color: #141B3A;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.select_menu2 .statusOptions .option .option-text {
+  color: #464F60;
+  font-size: 14px;
+}
+
+
+.select_menu2.active .statusOptions {
+  display: block;
+  opacity: 0;
+  z-index: 10;
+  animation-name: fadeInUp;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 30px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+}
+
+/* ------------end  Status dropdown---------------- */
+
+/* ------------start Category dropdown---------------- */
 .select-menu .select-btn {
   cursor: pointer;
 }
@@ -523,7 +552,9 @@ body {
   }
 }
 
-/* ---------------------------- */
+/* ------------end Category dropdown---------------- */
+
+/* ------------start priority dropdown---------------- */
 .priority .select-container {
   position: relative;
   width: 60px;
@@ -563,6 +594,7 @@ body {
   height: 139px;
   width: 200px;
   position: absolute;
+  z-index: 9;
 }
 
 .priority .select-container .option-container::-webkit-scrollbar {
@@ -593,3 +625,5 @@ body {
   color: #000;
   cursor: pointer;
 }
+
+/* ------------end priority dropdown---------------- */

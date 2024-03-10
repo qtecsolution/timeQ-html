@@ -372,43 +372,57 @@ body {
 
 
 
-.inner-modal-body .write-description .inner-description {
-  width: 95%;
-  border-radius: 12px;
-  background: #F7F7FA;
+.inner-modal-body .write-description {
+  margin-top: 50px;
 }
 
-.write-description .inner-description textarea {
-  height: 200px;
+.inner-modal-body .write-description .accordion-item {
+  /* color:; */
+  /* background-color: ; */
   border: none;
-  outline: none;
-  border-bottom: 1px solid #D8D1F4;
-  padding-left: 15px;
 }
 
-.write-description .inner-description .write-description-footer {
-  padding: 21px 10px 15px 15px;
-}
-
-.write-description .inner-description .write-description-footer .left-section {
-  gap: 52px;
-}
-
-.write-description .inner-description .write-description-footer img {
-  cursor: pointer;
-}
-
-.write-description .inner-description .write-description-footer .right-section {
-  gap: 48px;
-}
-
-.write-description .write-description {
-  margin-top: 23px;
+.inner-modal-body .write-description .accordion {
   width: 95%;
-  gap: 20px;
 }
 
-.write-description .write-description .save-button {
+.inner-modal-body .write-description .accordion .accordion-body {
+  padding: 20px 0 0 0;
+}
+
+.inner-modal-body .write-description .accordion .accordion-button::after {
+  width: 0px;
+  height: 0px;
+}
+
+.inner-modal-body .write-description .accordion .accordion-button {
+  background: #F7F7FA;
+  color: #ADAFB5;
+  padding: 30px 20px;
+  border-radius: 12px;
+}
+
+.inner-modal-body .write-description .accordion .accordion-button:not(.collapsed) {
+  background: #F7F7FA;
+  /* color: #000; */
+  box-shadow: none;
+}
+
+.inner-modal-body .write-description .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+.inner-modal-body .write-description .rte-modern.rte-desktop.rte-toolbar-default {
+  min-width: 0;
+}
+
+.inner-modal-body .write-description #div_editor1 {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+
+.write-description .save-button {
   padding: 10px;
   border-radius: 8px;
   background: #FF645A;
@@ -417,7 +431,7 @@ body {
   font-weight: 600;
 }
 
-.write-description .write-description .cancel-button {
+.write-description .cancel-button {
   color: #464F60;
   font-size: 14px;
   font-weight: 600;

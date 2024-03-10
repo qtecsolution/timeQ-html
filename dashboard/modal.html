@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="assets/plugin/datatables/dataTables.bootstrap5.min.css">
   <link rel="stylesheet" href="assets/css/my-task.style.min.css">
 
+  <!-- richtexteditor theme default -->
+  <link rel="stylesheet" href="./assets/css/richtexteditor_theme_default.css">
+
   <!-- Datepicker style-->
   <!-- <link rel="stylesheet" href="assets/css/datepicker-bulma.css"> -->
 
@@ -936,66 +939,31 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="description">
-                    <form class="d-flex align-items-center gap-2 ">
-                      <img src="./assets/images/modal/description.svg" alt="">
-                      <input type="text" name="" id="" placeholder="Add Description">
-                    </form>
-                  </div>
-
                   <div class="write-description">
-                    <div class="inner-description">
-                      <div class="">
-                        <textarea name="" placeholder="Write something" id="" cols="30" rows="10"></textarea>
-                      </div>
-
-                      <div class="write-description-footer">
-
-                        <div class="inner-footer d-flex justify-content-between align-items-center ">
-
-                          <div class="d-flex align-items-center left-section">
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame.svg" alt="">
-                              <img src="./assets/images/modal/Frame (1).svg" alt="">
-                              <img src="./assets/images/modal/Frame (2).svg" alt="">
-                              <img src="./assets/images/modal/Frame (3).svg" alt="">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <img src="./assets/images/modal/description.svg" alt=""> <span class="ms-2  ">Add
+                              Description</span>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <div id="div_editor1">
                             </div>
-
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame (4).svg" alt="">
-                              <img src="./assets/images/modal/Frame (5).svg" alt="">
-                              <img src="./assets/images/modal/Frame (6).svg" alt="">
-                            </div>
-
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame (7).svg" alt="">
-                              <img src="./assets/images/modal/Frame (8).svg" alt="">
-                              <img src="./assets/images/modal/Frame (9).svg" alt="">
+                            <div class="write-description d-flex flex-row-reverse ">
+                              <button class="save-button">Save</button>
+                              <button class="cancel-button">Cancel</button>
                             </div>
                           </div>
-
-                          <div class="d-flex align-items-center right-section">
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame (10).svg" alt="">
-                              <img src="./assets/images/modal/Frame (11).svg" alt="">
-                            </div>
-
-                            <div class="d-flex align-items-center gap-4">
-                              <img src="./assets/images/modal/Frame (12).svg" alt="">
-                              <img src="./assets/images/modal/Frame (13).svg" alt="">
-                              <img src="./assets/images/modal/Frame (14).svg" alt="">
-                            </div>
-                          </div>
-
                         </div>
                       </div>
+
                     </div>
 
-                    <div class="write-description d-flex flex-row-reverse ">
-                      <button class="save-button">Save</button>
-                      <button class="cancel-button">Cancel</button>
-                    </div>
+
                   </div>
 
                 </div>
@@ -1194,6 +1162,9 @@
 
     <script src="./js/page/datepicker.min.js"></script>
     <script src="./js/page/live-demo.js"></script> -->
+
+    <script type="text/javascript" src="./js/richtexteditor.js"></script>
+    <script type="text/javascript" src='./js/richtexteditor_all_plugins.js'></script>
 
     <!-- Jquery Page Js -->
     <script src="./js/template.js"></script>

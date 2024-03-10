@@ -283,3 +283,9 @@ options1.forEach((e) => {
     e.classList.add("selected");
   });
 });
+
+
+
+// 
+
+var editor1 = new RichTextEditor("#div_editor1");

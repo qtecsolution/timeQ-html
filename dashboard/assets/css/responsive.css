@@ -229,7 +229,23 @@
   }
 
   #staticBackdrop .activity-side {
-    width: 310px;
+    width: 95%;
+  }
+
+  #staticBackdrop .activity-side ul {
+    padding-left: 30px;
+  }
+
+  #staticBackdrop .activity-side ul .reply-section {
+    margin: 30px 10px 0px -19px;
+  }
+
+  .inner-modal-body .write-description {
+    margin-top: 15px;
+  }
+
+  #staticBackdrop .activity-side .textarea {
+    padding: 16px 12px;
   }
 
   .write-description .write-description {
@@ -237,6 +253,6 @@
   }
 
   .inner-modal-body .write-description .accordion {
-    width: 310px;
+    width: 95%;
   }
 }

@@ -824,7 +824,7 @@
           <h3>Today, 30 Jan,Tue</h3>
 
           <div class="grid">
-            <div class="todos d-flex flex-column">
+            <div class="singleTodo todos d-flex flex-column">
               <div class="todos-header d-flex justify-content-between">
                 <h4>To do (5)</h4>
                 <div class="images d-flex align-items-center ">
@@ -1007,7 +1007,7 @@
               </div>
             </div>
 
-            <div class="inProgress d-flex flex-column">
+            <div class="singleTodo inProgress d-flex flex-column">
               <div class="inProgress-header d-flex justify-content-between ">
                 <h4>In Progress (1)</h4>
                 <div class="images d-flex align-items-center ">
@@ -1027,7 +1027,7 @@
                       </li>
                     </ul>
                   </div>
-                  
+
                   <div class="dropdown color-dropdown">
                     <a href="#" data-bs-toggle="dropdown">
                       <img src="./assets/images/todo-list/grayplus.svg">
@@ -1115,7 +1115,7 @@
               </div>
             </div>
 
-            <div class="upcoming d-flex flex-column">
+            <div class="singleTodo upcoming d-flex flex-column">
               <div class="upcoming-header d-flex justify-content-between">
                 <h4>UPCOMING (1)</h4>
                 <div class="images d-flex align-items-center ">
@@ -1135,7 +1135,7 @@
                       </li>
                     </ul>
                   </div>
-                  
+
                   <div class="dropdown color-dropdown">
                     <a href="#" data-bs-toggle="dropdown">
                       <img src="./assets/images/todo-list/grayplus.svg">
@@ -1224,7 +1224,510 @@
               </div>
             </div>
 
-            <div class="completed d-flex flex-column">
+            <div class="singleTodo completed d-flex flex-column">
+              <div class="completed-header d-flex justify-content-between">
+                <h4>COMPLETED (1)</h4>
+                <div class="images d-flex align-items-center ">
+                  <div class="dropdown">
+                    <a class="" href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/threedots.svg" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu last">
+                      <li class="list">
+                        <img src="./assets/images/todo-list/pencil.svg" alt="">
+                        <span>Rename</span>
+                      </li>
+                      <li>
+                        <img src="./assets/images/todo-list/change-color.svg" alt="">
+                        <span>Change color</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown color-dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/grayplus.svg">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <div class="add-status d-flex flex-column">
+                        <div class="add-status-name">
+                          <label for="status-name">
+                            <input type="text" name="" id="status-name" placeholder="Status Name">
+                          </label>
+                          <button>Save</button>
+                        </div>
+
+                        <div class="add-color align-self-end ">
+                          <div class="d-flex justify-content-end  align-items-center ">
+                            <img class="closed" src="./assets/images/todo-list/x-mark-color.svg">
+                          </div>
+
+                          <div class="d-flex justify-content-between align-items-center set-color ">
+                            <span>Colors:</span>
+                            <img src="./assets/images/todo-list/Union.svg">
+                          </div>
+
+                          <div class="inner-color d-flex ">
+                            <input type="radio" name="color" id="myCheckbox1">
+                            <label for="myCheckbox1" class="checkbox-label1"></label>
+
+                            <input type="radio" name="color" id="myCheckbox2">
+                            <label for="myCheckbox2" class="checkbox-label2"></label>
+
+                            <input type="radio" name="color" id="myCheckbox3">
+                            <label for="myCheckbox3" class="checkbox-label3"></label>
+
+                            <input type="radio" name="color" id="myCheckbox4">
+                            <label for="myCheckbox4" class="checkbox-label4"></label>
+
+                            <input type="radio" name="color" id="myCheckbox5">
+                            <label for="myCheckbox5" class="checkbox-label5"></label>
+
+                            <input type="radio" name="color" id="myCheckbox6">
+                            <label for="myCheckbox6" class="checkbox-label6"></label>
+
+                            <input type="radio" name="color" id="myCheckbox7">
+                            <label for="myCheckbox7" class="checkbox-label7"></label>
+                          </div>
+                          <div class="inner-color2 d-flex ">
+                            <input type="radio" name="color" id="myCheckbox8">
+                            <label for="myCheckbox8" class="checkbox-label8"></label>
+
+                            <input type="radio" name="color" id="myCheckbox9">
+                            <label for="myCheckbox9" class="checkbox-label9"></label>
+
+                            <input type="radio" name="color" id="myCheckbox10">
+                            <label for="myCheckbox10" class="checkbox-label10"></label>
+
+                            <input type="radio" name="color" id="myCheckbox11">
+                            <label for="myCheckbox11" class="checkbox-label11"></label>
+
+                            <input type="radio" name="color" id="myCheckbox12">
+                            <label for="myCheckbox12" class="checkbox-label12"></label>
+
+                            <input type="radio" name="color" id="myCheckbox13">
+                            <label for="myCheckbox13" class="checkbox-label13"></label>
+
+                            <input type="radio" name="color" id="myCheckbox14">
+                            <label for="myCheckbox14" class="checkbox-label14"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="task-name">
+                <label for="">
+                  <input type="radio" name="" id="">
+                  <span>Go to gym</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="singleTodo todos d-flex flex-column">
+              <div class="todos-header d-flex justify-content-between">
+                <h4>To do (5)</h4>
+                <div class="images d-flex align-items-center ">
+                  <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/threedots.svg">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li class="list">
+                        <img src="./assets/images/todo-list/pencil.svg">
+                        <span>Rename</span>
+                      </li>
+                      <li>
+                        <img src="./assets/images/todo-list/change-color.svg" alt="">
+                        <span>Change color</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown color-dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/grayplus.svg">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <div class="add-status d-flex flex-column">
+                        <div class="add-status-name">
+                          <label for="status-name">
+                            <input type="text" name="" id="status-name" placeholder="Status Name">
+                          </label>
+                          <button>Save</button>
+                        </div>
+
+                        <div class="add-color align-self-end ">
+                          <div class="d-flex justify-content-end  align-items-center ">
+                            <img class="closed" src="./assets/images/todo-list/x-mark-color.svg">
+                          </div>
+
+                          <div class="d-flex justify-content-between align-items-center set-color ">
+                            <span>Colors:</span>
+                            <img src="./assets/images/todo-list/Union.svg">
+                          </div>
+
+                          <div class="inner-color d-flex ">
+                            <input type="radio" name="color" id="myCheckbox1">
+                            <label for="myCheckbox1" class="checkbox-label1"></label>
+
+                            <input type="radio" name="color" id="myCheckbox2">
+                            <label for="myCheckbox2" class="checkbox-label2"></label>
+
+                            <input type="radio" name="color" id="myCheckbox3">
+                            <label for="myCheckbox3" class="checkbox-label3"></label>
+
+                            <input type="radio" name="color" id="myCheckbox4">
+                            <label for="myCheckbox4" class="checkbox-label4"></label>
+
+                            <input type="radio" name="color" id="myCheckbox5">
+                            <label for="myCheckbox5" class="checkbox-label5"></label>
+
+                            <input type="radio" name="color" id="myCheckbox6">
+                            <label for="myCheckbox6" class="checkbox-label6"></label>
+
+                            <input type="radio" name="color" id="myCheckbox7">
+                            <label for="myCheckbox7" class="checkbox-label7"></label>
+                          </div>
+                          <div class="inner-color2 d-flex ">
+                            <input type="radio" name="color" id="myCheckbox8">
+                            <label for="myCheckbox8" class="checkbox-label8"></label>
+
+                            <input type="radio" name="color" id="myCheckbox9">
+                            <label for="myCheckbox9" class="checkbox-label9"></label>
+
+                            <input type="radio" name="color" id="myCheckbox10">
+                            <label for="myCheckbox10" class="checkbox-label10"></label>
+
+                            <input type="radio" name="color" id="myCheckbox11">
+                            <label for="myCheckbox11" class="checkbox-label11"></label>
+
+                            <input type="radio" name="color" id="myCheckbox12">
+                            <label for="myCheckbox12" class="checkbox-label12"></label>
+
+                            <input type="radio" name="color" id="myCheckbox13">
+                            <label for="myCheckbox13" class="checkbox-label13"></label>
+
+                            <input type="radio" name="color" id="myCheckbox14">
+                            <label for="myCheckbox14" class="checkbox-label14"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="task-name d-flex justify-content-between ">
+                <label for="gym">
+                  <input type="radio" name="" id="gym">
+                  <span>Go to gym</span>
+                </label>
+
+                <div class="dropdown">
+                  <a class="" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/images/todo-list/edit.svg" alt="">
+                  </a>
+
+                  <ul class="dropdown-menu todo-popup">
+                    <div class="d-flex align-items-center justify-content-between ">
+                      <h4>LIST OF ACTIONS</h4>
+                      <img src="./assets/images/todo-list/popup-x.svg" alt="">
+                    </div>
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/todo-list/popup-square.svg" alt="">
+                      <span>Edit</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/todo-list/popup-share.svg" alt="">
+                      <span>Share</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/todo-list/popup-copy.svg" alt="">
+                      <span>Copy</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/todo-list/popup-delete.svg" alt="">
+                      <span>Delete</span>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="task-edit d-flex flex-column ">
+                <input type="text" name="" id="" placeholder="Enter Task Name">
+                <div class="align-self-end task-button">
+                  <img src="./assets/images/todo-list/x-mark.svg" alt="">
+                  <button>Save</button>
+                </div>
+              </div>
+
+              <div class="task-name d-flex justify-content-between ">
+                <label for="gym">
+                  <input type="radio" name="" id="gym">
+                  <span>Go to gym</span>
+                </label>
+
+                <div class="dropdown">
+                  <a class="" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/images/todo-list/edit.svg" alt="">
+                  </a>
+
+                  <ul class="dropdown-menu todo-popup">
+                    <div class="d-flex align-items-center justify-content-between ">
+                      <h4>LIST OF ACTIONS</h4>
+                      <img src="./assets/images/todo-list/popup-x.svg" alt="">
+                    </div>
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/todo-list/popup-square.svg" alt="">
+                      <span>Edit</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/todo-list/popup-share.svg" alt="">
+                      <span>Share</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/todo-list/popup-copy.svg" alt="">
+                      <span>Copy</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <img src="./assets/images/todo-list/popup-delete.svg" alt="">
+                      <span>Delete</span>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="task-add">
+                <p><span>+</span>Add Task</p>
+              </div>
+            </div>
+
+            <div class="singleTodo inProgress d-flex flex-column">
+              <div class="inProgress-header d-flex justify-content-between ">
+                <h4>In Progress (1)</h4>
+                <div class="images d-flex align-items-center ">
+                  <div class="dropdown">
+                    <a class="" href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/threedots.svg" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li class="list">
+                        <img src="./assets/images/todo-list/pencil.svg" alt="">
+                        <span>Rename</span>
+                      </li>
+                      <li>
+                        <img src="./assets/images/todo-list/change-color.svg" alt="">
+                        <span>Change color</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown color-dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/grayplus.svg">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <div class="add-status d-flex flex-column">
+                        <div class="add-status-name">
+                          <label for="status-name">
+                            <input type="text" name="" id="status-name" placeholder="Status Name">
+                          </label>
+                          <button>Save</button>
+                        </div>
+
+                        <div class="add-color align-self-end ">
+                          <div class="d-flex justify-content-end  align-items-center ">
+                            <img class="closed" src="./assets/images/todo-list/x-mark-color.svg">
+                          </div>
+
+                          <div class="d-flex justify-content-between align-items-center set-color ">
+                            <span>Colors:</span>
+                            <img src="./assets/images/todo-list/Union.svg">
+                          </div>
+
+                          <div class="inner-color d-flex ">
+                            <input type="radio" name="color" id="myCheckbox1">
+                            <label for="myCheckbox1" class="checkbox-label1"></label>
+
+                            <input type="radio" name="color" id="myCheckbox2">
+                            <label for="myCheckbox2" class="checkbox-label2"></label>
+
+                            <input type="radio" name="color" id="myCheckbox3">
+                            <label for="myCheckbox3" class="checkbox-label3"></label>
+
+                            <input type="radio" name="color" id="myCheckbox4">
+                            <label for="myCheckbox4" class="checkbox-label4"></label>
+
+                            <input type="radio" name="color" id="myCheckbox5">
+                            <label for="myCheckbox5" class="checkbox-label5"></label>
+
+                            <input type="radio" name="color" id="myCheckbox6">
+                            <label for="myCheckbox6" class="checkbox-label6"></label>
+
+                            <input type="radio" name="color" id="myCheckbox7">
+                            <label for="myCheckbox7" class="checkbox-label7"></label>
+                          </div>
+                          <div class="inner-color2 d-flex ">
+                            <input type="radio" name="color" id="myCheckbox8">
+                            <label for="myCheckbox8" class="checkbox-label8"></label>
+
+                            <input type="radio" name="color" id="myCheckbox9">
+                            <label for="myCheckbox9" class="checkbox-label9"></label>
+
+                            <input type="radio" name="color" id="myCheckbox10">
+                            <label for="myCheckbox10" class="checkbox-label10"></label>
+
+                            <input type="radio" name="color" id="myCheckbox11">
+                            <label for="myCheckbox11" class="checkbox-label11"></label>
+
+                            <input type="radio" name="color" id="myCheckbox12">
+                            <label for="myCheckbox12" class="checkbox-label12"></label>
+
+                            <input type="radio" name="color" id="myCheckbox13">
+                            <label for="myCheckbox13" class="checkbox-label13"></label>
+
+                            <input type="radio" name="color" id="myCheckbox14">
+                            <label for="myCheckbox14" class="checkbox-label14"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="task-name">
+                <label for="">
+                  <input type="radio" name="" id="">
+                  <span>Go to gym</span>
+                </label>
+              </div>
+
+              <div class="task-add">
+                <p><span>+</span>Add Task</p>
+              </div>
+            </div>
+
+            <div class="singleTodo upcoming d-flex flex-column">
+              <div class="upcoming-header d-flex justify-content-between">
+                <h4>UPCOMING (1)</h4>
+                <div class="images d-flex align-items-center ">
+                  <div class="dropdown">
+                    <a class="" href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/threedots.svg" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li class="list">
+                        <img src="./assets/images/todo-list/pencil.svg" alt="">
+                        <span>Rename</span>
+                      </li>
+                      <li>
+                        <img src="./assets/images/todo-list/change-color.svg" alt="">
+                        <span>Change color</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown color-dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                      <img src="./assets/images/todo-list/grayplus.svg">
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <div class="add-status d-flex flex-column">
+                        <div class="add-status-name">
+                          <label for="status-name">
+                            <input type="text" name="" id="status-name" placeholder="Status Name">
+                          </label>
+                          <button>Save</button>
+                        </div>
+
+                        <div class="add-color align-self-end ">
+                          <div class="d-flex justify-content-end  align-items-center ">
+                            <img class="closed" src="./assets/images/todo-list/x-mark-color.svg">
+                          </div>
+
+                          <div class="d-flex justify-content-between align-items-center set-color ">
+                            <span>Colors:</span>
+                            <img src="./assets/images/todo-list/Union.svg">
+                          </div>
+
+                          <div class="inner-color d-flex ">
+                            <input type="radio" name="color" id="myCheckbox1">
+                            <label for="myCheckbox1" class="checkbox-label1"></label>
+
+                            <input type="radio" name="color" id="myCheckbox2">
+                            <label for="myCheckbox2" class="checkbox-label2"></label>
+
+                            <input type="radio" name="color" id="myCheckbox3">
+                            <label for="myCheckbox3" class="checkbox-label3"></label>
+
+                            <input type="radio" name="color" id="myCheckbox4">
+                            <label for="myCheckbox4" class="checkbox-label4"></label>
+
+                            <input type="radio" name="color" id="myCheckbox5">
+                            <label for="myCheckbox5" class="checkbox-label5"></label>
+
+                            <input type="radio" name="color" id="myCheckbox6">
+                            <label for="myCheckbox6" class="checkbox-label6"></label>
+
+                            <input type="radio" name="color" id="myCheckbox7">
+                            <label for="myCheckbox7" class="checkbox-label7"></label>
+                          </div>
+                          <div class="inner-color2 d-flex ">
+                            <input type="radio" name="color" id="myCheckbox8">
+                            <label for="myCheckbox8" class="checkbox-label8"></label>
+
+                            <input type="radio" name="color" id="myCheckbox9">
+                            <label for="myCheckbox9" class="checkbox-label9"></label>
+
+                            <input type="radio" name="color" id="myCheckbox10">
+                            <label for="myCheckbox10" class="checkbox-label10"></label>
+
+                            <input type="radio" name="color" id="myCheckbox11">
+                            <label for="myCheckbox11" class="checkbox-label11"></label>
+
+                            <input type="radio" name="color" id="myCheckbox12">
+                            <label for="myCheckbox12" class="checkbox-label12"></label>
+
+                            <input type="radio" name="color" id="myCheckbox13">
+                            <label for="myCheckbox13" class="checkbox-label13"></label>
+
+                            <input type="radio" name="color" id="myCheckbox14">
+                            <label for="myCheckbox14" class="checkbox-label14"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="task-name">
+                <label for="">
+                  <input type="radio" name="" id="">
+                  <span>Go to gym</span>
+                </label>
+
+              </div>
+
+              <div class="task-add">
+                <p><span>+</span>Add Task</p>
+              </div>
+            </div>
+
+            <div class="singleTodo completed d-flex flex-column">
               <div class="completed-header d-flex justify-content-between">
                 <h4>COMPLETED (1)</h4>
                 <div class="images d-flex align-items-center ">

@@ -1297,7 +1297,7 @@ textarea {
   background: transparent;
   display: flex;
   width: 95%;
-  height: 1211px;
+  max-width: 1550px;
   margin: 25px 24px;
   padding: 23px 24px 0 23px;
   flex-direction: column;
@@ -1346,9 +1346,13 @@ textarea {
 }
 
 #all-todo-body .all-todo .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 24px;
+  overflow-x: scroll;
+  height: 1211px;
+}
+#all-todo-body .all-todo .grid .singleTodo {
+  min-width: 360px;
 }
 
 
